@@ -12,9 +12,22 @@ const defaultTheme = createTheme({
   cssVariables: true,
   palette: {
     mode: 'dark',
+    primary: {
+      main: '#2151DA',
+    },
   },
   typography: {
     fontFamily: roboto.style.fontFamily,
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: '100px',
+          minWidth: '70px',
+        },
+      },
+    },
   },
 });
 
