@@ -1,3 +1,4 @@
+import Introduction from '@/components/Sections/Introduction/Introduction';
 import { Button } from '@mui/material';
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <div>
       This is the weight color
       <Button variant='contained'>find</Button>
+      <Introduction />
     </div>
   );
 }

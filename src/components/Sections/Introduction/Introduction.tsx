@@ -1,0 +1,19 @@
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+
+export default function Introduction() {
+  return (
+    <Box component='section'>
+      {/* left section */}
+      <Box>
+        <Typography fontSize={'36px'}>{"Hey, I'm"}</Typography>
+        <Typography color='primary' fontSize={'45px'} fontWeight={'bold'}>
+          Hadi Bakhshi👋
+        </Typography>
+        <Typography fontSize={'32px'}>A Software Engineer</Typography>
+      </Box>
+      {/* right section */}
+      <Box>right section</Box>
+    </Box>
+  );
+}
