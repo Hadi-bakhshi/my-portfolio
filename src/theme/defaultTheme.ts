@@ -11,9 +11,12 @@ const roboto = Roboto({
 const defaultTheme = createTheme({
   cssVariables: true,
   palette: {
-    mode: 'dark',
+    mode: 'light',
     primary: {
       main: '#2151DA',
+    },
+    background: {
+      default: '#EFEFFF',
     },
   },
   typography: {
