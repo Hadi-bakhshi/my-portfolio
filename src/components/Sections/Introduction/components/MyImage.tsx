@@ -11,8 +11,8 @@ export default function MyImage() {
     <Box sx={{ position: 'relative' }}>
       <Box
         sx={{
-          width: '350px',
-          height: '350px',
+          width: { xs: '260px', md: '350px' },
+          height: { xs: '260px', md: '350px' },
           borderRadius: '200px',
           background: 'linear-gradient(150deg, #FEFBFF 9.69%, #2151DA 84.71%)',
           boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
