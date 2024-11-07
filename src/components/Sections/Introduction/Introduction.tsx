@@ -8,11 +8,12 @@ export default function Introduction() {
       component='section'
       sx={{
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: { xs: 'column-reverse', md: 'row' },
         width: '100%',
         alignItems: 'center',
         justifyContent: 'space-around',
         mt: 6,
+        rowGap: { xs: '2rem', md: 0 },
       }}
     >
       {/* left section */}
