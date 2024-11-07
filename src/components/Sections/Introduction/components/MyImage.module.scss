@@ -1,0 +1,39 @@
+.emptyLeftCircle {
+    position: absolute;
+    left: -15px;
+    top: 35px;
+    z-index: -1;
+}
+
+.emptyRightCircle{
+    position: absolute;
+    right: -15px;
+    bottom: 35px;
+    z-index: -1;
+}
+.reactIcon{
+    position:absolute;
+    left: -6px;
+    top: 55px;
+}
+.cSharpIcon{
+ position:absolute;
+ left: -3px;
+ bottom: 60px;
+}
+.dotNetIcon{
+    position: absolute;
+    top: -33px;
+    left: 150px;
+}
+.nodeJsIcon{
+    position: absolute;
+    right: -3px;
+    bottom: 60px;
+    
+}
+.sqlServerIcon{
+    position: absolute;
+    right: -6px;
+    top: 58px;
+}

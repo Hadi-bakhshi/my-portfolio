@@ -1,9 +1,20 @@
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import MyImage from './components/MyImage';
 
 export default function Introduction() {
   return (
-    <Box component='section'>
+    <Box
+      component='section'
+      sx={{
+        display: 'flex',
+        flexDirection: 'row',
+        width: '100%',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        mt: 6,
+      }}
+    >
       {/* left section */}
       <Box>
         <Typography fontSize={'36px'}>{"Hey, I'm"}</Typography>
@@ -13,7 +24,9 @@ export default function Introduction() {
         <Typography fontSize={'32px'}>A Software Engineer</Typography>
       </Box>
       {/* right section */}
-      <Box>right section</Box>
+      <Box>
+        <MyImage />
+      </Box>
     </Box>
   );
 }
