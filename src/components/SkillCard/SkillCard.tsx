@@ -33,8 +33,15 @@ export default function SkillCard(props: SkillCardProps) {
           className={styles.skillCardImg}
         ></Box>
       )}
-      <Box sx={{ paddingTop: '3.5rem' }}>
-        <Typography component='h6' textAlign={'center'} px={'4px'}>
+      <Box sx={{ paddingTop: '4.5rem' }}>
+        <Typography
+          component='h6'
+          textAlign={'center'}
+          px={'4px'}
+          fontWeight='700'
+          lineHeight={'20px'}
+          letterSpacing={'0.1px'}
+        >
           {props.title}
         </Typography>
       </Box>
