@@ -6,5 +6,332 @@
             "I consider myself to be an innovative and creative individual, and I believe that these qualities are essential to staying ahead of the curve in the fast-paced tech industry. I make it a priority to stay up-to-date with the latest tools and technologies, always looking for ways to improve and expand my skill set.",
             "Overall, I'm committed to my craft and dedicated to delivering exceptional results that exceed expectations. I'm excited to take on new challenges and continue growing both personally and professionally."
         ]
+    },
+    "skills": {
+        "technical": [
+            {
+                "id": 1,
+                "category": "Programming Language",
+                "categoryId": 1,
+                "name": "C#",
+                "tag": "csharp"
+            },
+            {
+                "id": 2,
+                "category": "Programming Language",
+                "categoryId": 1,
+                "name": "JavaScript",
+                "tag": "js"
+            },
+            {
+                "id": 3,
+                "category": "Programming Language",
+                "categoryId": 1,
+                "name": "TypeScript",
+                "tag": "ts"
+            },
+            {
+                "id": 4,
+                "category": "Back-end Development",
+                "categoryId": 2,
+                "name": "ASP.NET Core",
+                "tag": "aspnetcore"
+            },
+            {
+                "id": 5,
+                "category": "Back-end Development",
+                "categoryId": 2,
+                "name": "EF Core",
+                "tag": "efcore"
+            },
+            {
+                "id": 6,
+                "category": "Back-end Development",
+                "categoryId": 2,
+                "name": "Dapper",
+                "tag": "dapper"
+            },
+            {
+                "id": 7,
+                "category": "Back-end Development",
+                "categoryId": 2,
+                "name": "NodeJS",
+                "tag": "node"
+            },
+            {
+                "id": 8,
+                "category": "Back-end Development",
+                "categoryId": 2,
+                "name": "ExpressJS",
+                "tag": "express"
+            },
+            {
+                "id": 9,
+                "category": "Back-end Development",
+                "categoryId": 2,
+                "name": "NestJS",
+                "tag": "nest"
+            },
+            {
+                "id": 10,
+                "category": "Back-end Development",
+                "categoryId": 2,
+                "name": "Prisma",
+                "tag": "prisma"
+            },
+            {
+                "id": 11,
+                "category": "Back-end Development",
+                "categoryId": 2,
+                "name": "TypeORM",
+                "tag": "typeorm"
+            },
+            {
+                "id": 12,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "HTML",
+                "tag": "html"
+            },
+            {
+                "id": 13,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "CSS",
+                "tag": "css"
+            },
+            {
+                "id": 14,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "SASS",
+                "tag": "sass"
+            },
+            {
+                "id": 15,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "TailwindCSS",
+                "tag": "tailwind"
+            },
+            {
+                "id": 16,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "ReactJS",
+                "tag": "react"
+            },
+            {
+                "id": 17,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "NextJS",
+                "tag": "next"
+            },
+            {
+                "id": 18,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "Material-UI",
+                "tag": "mui"
+            },
+            {
+                "id": 19,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "Redux",
+                "tag": "redux"
+            },
+            {
+                "id": 20,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "Redux Toolkit",
+                "tag": "reduxtoolkit"
+            },
+            {
+                "id": 21,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "Redux-Saga",
+                "tag": "reduxsaga"
+            },
+            {
+                "id": 22,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "Next-UI",
+                "tag": "nextui"
+            },
+            {
+                "id": 23,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "Zustand",
+                "tag": "zustand"
+            },
+            {
+                "id": 24,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "Jotai",
+                "tag": "jotai"
+            },
+            {
+                "id": 25,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "Formik",
+                "tag": "formik"
+            },
+            {
+                "id": 26,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "React Hook Form",
+                "tag": "rhf"
+            },
+            {
+                "id": 27,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "TanStack Query",
+                "tag": "tq"
+            },
+            {
+                "id": 28,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "RTK Query",
+                "tag": "rtkq"
+            },
+            {
+                "id": 29,
+                "category": "Front-end Development",
+                "categoryId": 3,
+                "name": "React Router Dom",
+                "tag": "rrd"
+            },
+            {
+                "id": 30,
+                "category": "Database Management",
+                "categoryId": 4,
+                "name": "SQL",
+                "tag": "sql"
+            },
+            {
+                "id": 31,
+                "category": "Database Management",
+                "categoryId": 4,
+                "name": "SQL Server",
+                "tag": "mssql"
+            },
+            {
+                "id": 32,
+                "category": "Database Management",
+                "categoryId": 4,
+                "name": "Postgre",
+                "tag": "postgre"
+            },
+            {
+                "id": 33,
+                "category": "Database Management",
+                "categoryId": 4,
+                "name": "Redis",
+                "tag": "redis"
+            },
+            {
+                "id": 34,
+                "category": "Database Management",
+                "categoryId": 4,
+                "name": "MongoDB",
+                "tag": "mongodb"
+            },
+            {
+                "id": 35,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "Git",
+                "tag": "git"
+            },
+            {
+                "id": 36,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "GitHub Actions",
+                "tag": "githubactions"
+            },
+            {
+                "id": 37,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "Docker",
+                "tag": "docker"
+            },
+            {
+                "id": 38,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "Nginx",
+                "tag": "nginx"
+            },
+            {
+                "id": 39,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "Linux",
+                "tag": "linux"
+            },
+            {
+                "id": 40,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "Monorepo Management",
+                "tag": "monorepo"
+            },
+            {
+                "id": 41,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "UI/UX Design",
+                "tag": "uud"
+            },
+            {
+                "id": 42,
+                "category": "Architectural & Design Patterns",
+                "categoryId": 6,
+                "name": "Clean Architecture",
+                "tag": "cleanarch"
+            },
+            {
+                "id": 43,
+                "category": "Architectural & Design Patterns",
+                "categoryId": 6,
+                "name": "Vertical Slice",
+                "tag": "verticalslice"
+            },
+            {
+                "id": 44,
+                "category": "Architectural & Design Patterns",
+                "categoryId": 6,
+                "name": "Modular Monolith",
+                "tag": "modularmonolith"
+            },
+            {
+                "id": 45,
+                "category": "Architectural & Design Patterns",
+                "categoryId": 6,
+                "name": "Microservices",
+                "tag": "microservices"
+            },
+            {
+                "id": 46,
+                "category": "Architectural & Design Patterns",
+                "categoryId": 6,
+                "name": "SOLID Principles",
+                "tag": "solidprinciples"
+            }
+        ],
+        "soft": []
     }
 }
