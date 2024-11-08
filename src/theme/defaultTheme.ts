@@ -28,6 +28,7 @@ const defaultTheme = createTheme({
         root: {
           borderRadius: '100px',
           minWidth: '70px',
+          textTransform: 'none',
         },
       },
     },
