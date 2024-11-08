@@ -21,6 +21,7 @@ export default function Skills() {
       const filteredData = data.skills.technical.filter((item) => item.name.toLowerCase().includes(event.target.value));
       setFilteredData(filteredData);
     } else {
+      // TODO
       console.error(event.target.value);
     }
     if (event.target.value === '') {
