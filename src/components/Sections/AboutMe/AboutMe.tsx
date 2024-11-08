@@ -17,12 +17,12 @@ export default function AboutMe() {
               A little about me
             </Typography>
             <Typography fontWeight={'400'} lineHeight={'20px'} textAlign={'justify'} fontSize={'14px'}>
-              {data.aboutMe.description.map((item) => {
+              {data.aboutMe.description.map((item, index) => {
                 return (
-                  <>
+                  <span key={index}>
                     <br />
                     <>{item}</>
-                  </>
+                  </span>
                 );
               })}
             </Typography>
