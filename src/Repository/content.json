@@ -333,5 +333,34 @@
             }
         ],
         "soft": []
+    },
+    "experiences": {
+        "work": [
+            {
+                "id": 89,
+                "companyName": "ReLOOQ",
+                "role": "Software engineer",
+                "detail": {
+                    "startDate": "2022 Nov",
+                    "endDate": "",
+                    "achievements": [
+                        "list1",
+                        "list2"
+                    ],
+                    "location": "Iran, Tehran"
+                }
+            }
+        ],
+        "education": [
+            {
+                "id": 90,
+                "universityName": "University of Applied Science and Technology",
+                "degree": "Associate of English Translation",
+                "detail": {
+                    "startDate": "2020 Oct",
+                    "endDate": "2022 Aug"
+                }
+            }
+        ]
     }
 }
