@@ -1,12 +1,16 @@
+import AboutMe from '@/components/Sections/AboutMe/AboutMe';
 import Introduction from '@/components/Sections/Introduction/Introduction';
-import { Button } from '@mui/material';
+import { Container } from '@mui/material';
+import Skills from '@/components/Sections/Skills/Skills';
+import Experiences from '@/components/Sections/Experiences/Experiences';
 
 export default function Home() {
   return (
-    <div>
-      This is the weight color
-      <Button variant='contained'>find</Button>
+    <Container maxWidth='lg' component={'main'}>
       <Introduction />
-    </div>
+      <AboutMe />
+      <Skills />
+      <Experiences />
+    </Container>
   );
 }
