@@ -3,7 +3,7 @@ import Tab from '@/components/Tab/Tab';
 import { Box, Typography } from '@mui/material';
 import { useState } from 'react';
 import data from '@/Repository/content.json';
-import ExperienceCard from '@/components/ExperienceCard/ExperienceCard';
+import ExperienceCard from '@/components/Cards/ExperienceCard/ExperienceCard';
 
 export default function Experiences() {
   const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
