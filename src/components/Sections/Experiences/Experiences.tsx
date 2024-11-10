@@ -5,7 +5,6 @@ import { useState } from 'react';
 import data from '@/Repository/content.json';
 import ExperienceCard from '@/components/ExperienceCard/ExperienceCard';
 
-console.log(data);
 export default function Experiences() {
   const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
 
