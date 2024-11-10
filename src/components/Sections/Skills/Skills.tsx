@@ -50,7 +50,7 @@ export default function Skills() {
           id='filled-search'
           label='Search for specific skill'
           type='search'
-          variant='filled'
+          variant='outlined'
           onChange={changeHandler}
           size='small'
           slotProps={{
