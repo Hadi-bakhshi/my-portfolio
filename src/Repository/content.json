@@ -387,5 +387,43 @@
                 }
             ]
         }
+    ],
+    "interestsAndHobbies": [
+        {
+            "id": 84,
+            "name": "Traveling",
+            "img": "/travel.svg",
+            "bgColor": "#BFCCB5"
+        },
+        {
+            "id": 86,
+            "name": "Coding",
+            "img": "/coding.svg",
+            "bgColor": "#FDF7C3"
+        },
+        {
+            "id": 87,
+            "name": "Shopping",
+            "img": "/shopping-cart.svg",
+            "bgColor": "#E4D0D0"
+        },
+        {
+            "id": 88,
+            "name": "Movies and Series",
+            "img": "/movie.svg",
+            "bgColor": "#DFFFD8"
+        },
+        {
+            "id": 89,
+            "name": "Photography",
+            "img": "/travel.svg",
+            "bgColor": "#EDDBC7"
+        },
+        {
+            "id": 90,
+            "name": "Workout",
+            "img": "/gym.svg",
+            "bgColor": "#DFD3C3"
+        }
     ]
 }
