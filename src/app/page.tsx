@@ -3,6 +3,7 @@ import Introduction from '@/components/Sections/Introduction/Introduction';
 import { Container } from '@mui/material';
 import Skills from '@/components/Sections/Skills/Skills';
 import Experiences from '@/components/Sections/Experiences/Experiences';
+import Projects from '@/components/Sections/Projects/Projects';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <AboutMe />
       <Skills />
       <Experiences />
+      <Projects />
     </Container>
   );
 }

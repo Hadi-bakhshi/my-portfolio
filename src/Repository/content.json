@@ -362,5 +362,30 @@
                 }
             }
         ]
-    }
+    },
+    "projects": [
+        {
+            "id": 65,
+            "projectName": "After Sales Service Inspection",
+            "description": "Dolor voluptate cupidatat nostrud amet consectetur nisi ullamco cupidatat commodo aliquip anim consequat occaecat. Culpa minim sit non non dolor id cillum adipisicing aute deserunt. Velit amet minim dolore elit. Eiusmod laborum nostrud excepteur nostrud eiusmod. Pariatur occaecat irure aute occaecat aliqua est tempor culpa eiusmod ad culpa Lorem.",
+            "summary": "Nostrud adipisicing esse quis excepteur aliqua laborum aute commodo non esse proident dolor.",
+            "repositoryLink": "https://github.com",
+            "liveDemoLink": "https://hadibakhshi.ir",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "NextJs",
+                    "tag": "next"
+                },
+                {
+                    "name": "ExpressJS",
+                    "tag": "express"
+                },
+                {
+                    "name": "Material-UI",
+                    "tag": "mui"
+                }
+            ]
+        }
+    ]
 }

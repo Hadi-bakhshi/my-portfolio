@@ -1,10 +1,10 @@
 'use client';
 import { Box, Button, IconButton, Tooltip, Typography } from '@mui/material';
-import { GithubIcon } from '../Icons/SocialMedia';
-import { EyeIcon } from '../Icons/General';
 import { useState } from 'react';
 import ProjectDetailModal from './components/ProjectDetailModal';
 import { ProjectCardProps } from './ProjectCard.types';
+import { GithubIcon } from '@/components/Icons/SocialMedia';
+import { EyeIcon } from '@/components/Icons/General';
 
 export default function ProjectCard(props: ProjectCardProps) {
   const [isDetailModalOpen, setIsDetailModalOpen] = useState<boolean>(false);
