@@ -2,13 +2,13 @@ name: Generate and Update Pull Request Description
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]  # Triggers on specific pull request events
-  push:
-    branches:
-      - main  # Triggers on pushes to the master branch
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
 
 jobs:
-  handle-pull-request:
+  update-pull-request-description:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,24 +18,13 @@ jobs:
     - name: Generate Pull Request Description
       id: generate_description
       run: |
-        # Example script for generating PR description from branch diff
         echo "## Changes" > pr_description.txt
-        git log origin/release..HEAD --oneline >> pr_description.txt
+        git log --oneline HEAD^..HEAD >> pr_description.txt
         echo "pull_request_description=$(cat pr_description.txt)" >> $GITHUB_ENV
 
     - name: Update Pull Request Description
-      if: ${{ github.event_name == 'pull_request' }}
       uses: kt3k/update-pr-description@v2.1.1
       with:
-        pull_request_url: ${{ github.event.pull_request.url }}
+        pull_request_url: ${{ github.event.pull_request.html_url }}
         api_token: ${{ secrets.GITHUB_TOKEN }}
-        pr_body: ${{ env.pull_request_description }}
-
-    - name: Sync Pull Request
-      if: ${{ github.event_name == 'push' }}
-      uses: repo-sync/pull-request@v2
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        destination_branch: release
-        pr_title: Release
         pr_body: ${{ env.pull_request_description }}
