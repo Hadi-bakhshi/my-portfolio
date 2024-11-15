@@ -409,19 +409,19 @@
         },
         {
             "id": 88,
-            "name": "Movies and Series",
+            "name": "Movies/Series",
             "img": "/movie.svg",
             "bgColor": "#DFFFD8"
         },
         {
             "id": 89,
             "name": "Photography",
-            "img": "/travel.svg",
+            "img": "/photography.svg",
             "bgColor": "#EDDBC7"
         },
         {
             "id": 90,
-            "name": "Workout",
+            "name": "Fitness/MMA",
             "img": "/gym.svg",
             "bgColor": "#DFD3C3"
         }
