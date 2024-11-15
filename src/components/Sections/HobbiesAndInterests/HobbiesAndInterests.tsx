@@ -14,6 +14,7 @@ export default function HobbiesAndInterests() {
         justifyContent: 'center',
         gap: '1rem',
       }}
+      id='Interests'
     >
       <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} margin={'2rem'}>
         Hobbies and Interests

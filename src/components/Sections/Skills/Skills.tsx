@@ -40,6 +40,7 @@ export default function Skills() {
         justifyContent: 'center',
         gap: '1rem',
       }}
+      id='Skills'
     >
       <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} margin={'2rem'}>
         Skills

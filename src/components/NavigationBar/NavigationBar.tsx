@@ -7,11 +7,13 @@ import {
   CodeFolderIcon,
   FavoriteSquareIcon,
   HomeIcon,
+  // SidebarLeftIcon,
   UserListIcon,
   WorkIcon,
 } from '@/components/Icons/General';
 import Link from 'next/link';
-import { Button } from '@mui/material';
+import { Button, Typography } from '@mui/material';
+import Sidebar from '../Sidebar/Sidebar';
 
 const sections = [
   { name: 'Home', icon: <HomeIcon color='inherit' /> },
@@ -26,14 +28,20 @@ function NavigationBar() {
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
+        <div className={styles.sideBar}>
+          <Sidebar list={sections} />
+        </div>
         <div className={styles.logoWrapper}>
           <Image src={CodeLabIcon} alt='hadi-bakhshi-portfolio-icon' width={38} height={38} />
+          <Typography component='h1' color='#3A0099' fontWeight={500}>
+            Code Lab
+          </Typography>
         </div>
         <div className={styles.sectionsWrapper}>
           {sections.map((item, index) => {
             return (
               <div key={index + 1}>
-                <Link href={`#${item.name}`}>
+                <Link href={item.name !== 'Home' ? `#${item.name}` : ''}>
                   <Button startIcon={item.icon}>{item.name}</Button>
                 </Link>
               </div>

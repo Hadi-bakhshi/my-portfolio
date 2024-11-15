@@ -11,9 +11,9 @@ export default function Home() {
     <Container maxWidth='lg' component={'main'}>
       <Introduction />
       <AboutMe />
+      <Projects />
       <Skills />
       <Experiences />
-      <Projects />
       <HobbiesAndInterests />
     </Container>
   );

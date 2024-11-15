@@ -22,6 +22,7 @@ export default function Experiences() {
         justifyContent: 'center',
         gap: '1rem',
       }}
+      id='Experiences'
     >
       <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} margin={'2rem'}>
         Work and Education Experiences

@@ -6,4 +6,5 @@ export { default as CodeFolderIcon } from './CodeFolderIcon';
 export { default as FavoriteSquareIcon } from './FavoriteSquareIcon';
 export { default as HomeIcon } from './HomeIcon';
 export { default as UserListIcon } from './UserListIcon';
+export { default as SidebarLeftIcon } from './SidebarLeftIcon';
 export { default as WorkIcon } from './WorkIcon';

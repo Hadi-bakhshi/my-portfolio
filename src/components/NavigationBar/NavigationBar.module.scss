@@ -18,12 +18,29 @@
     align-items: center;
     justify-content: space-between;
 
+    .sideBar {
+      display: none;
+
+      @media (max-width: 950px) {
+        display: block;
+      }
+    }
+
+    .logoWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
     .sectionsWrapper {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
       gap: 1rem;
+
+      @media (max-width: 950px) {
+        display: none;
+      }
     }
 
     @media (min-width: 600px) {
