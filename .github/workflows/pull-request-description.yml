@@ -1,25 +1,41 @@
-name: Generate Pull Request Description
+name: Generate and Update Pull Request Description
 
 on:
-  pull_request:  # Triggers the workflow on pull request events
-    types: [opened, synchronize, reopened]  # You can adjust these if needed
+  pull_request:
+    types: [opened, synchronize, reopened]  # Triggers on specific pull request events
+  push:
+    branches:
+      - main  # Triggers on pushes to the master branch
 
 jobs:
-  update-pull-request-description:
+  handle-pull-request:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3  # No changes needed here
+    - name: Checkout Code
+      uses: actions/checkout@v3
 
-    - name: Update Pull Request Description on Push
-      id: pr-description
+    - name: Generate Pull Request Description
+      id: generate_description
+      run: |
+        # Example script for generating PR description from branch diff
+        echo "## Changes" > pr_description.txt
+        git log origin/release..HEAD --oneline >> pr_description.txt
+        echo "pull_request_description=$(cat pr_description.txt)" >> $GITHUB_ENV
+
+    - name: Update Pull Request Description
+      if: ${{ github.event_name == 'pull_request' }}
       uses: kt3k/update-pr-description@v2.1.1
       with:
-        pull_request_url: ${{ github.event.pull_request.url }}  # No changes needed
-        api_token: ${{ secrets.GITHUB_TOKEN }}  # Ensure GITHUB_TOKEN is set or replace with your custom token
+        pull_request_url: ${{ github.event.pull_request.url }}
+        api_token: ${{ secrets.GITHUB_TOKEN }}
+        pr_body: ${{ env.pull_request_description }}
 
-    - name: Update Pull Request Body
-      uses: riskledger/update-pr-description@v2
+    - name: Sync Pull Request
+      if: ${{ github.event_name == 'push' }}
+      uses: repo-sync/pull-request@v2
       with:
-        body: ${{ steps.pr-description.outputs.pull_request_description }}  # No changes needed
-        token: ${{ secrets.GITHUB_TOKEN }}  # Ensure GITHUB_TOKEN is set or replace with your custom token
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        destination_branch: release
+        pr_title: Release
+        pr_body: ${{ env.pull_request_description }}
