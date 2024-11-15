@@ -11,9 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3  # No changes needed here
 
-    - name: Generate Pull Request Description
+    - name: Update Pull Request Description on Push
       id: pr-description
-      uses: octue/generate-pull-request-description@1.0.0.beta-2
+      uses: kt3k/update-pr-description@v2.1.1
       with:
         pull_request_url: ${{ github.event.pull_request.url }}  # No changes needed
         api_token: ${{ secrets.GITHUB_TOKEN }}  # Ensure GITHUB_TOKEN is set or replace with your custom token
