@@ -1,7 +1,8 @@
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
+import { HobbyCardProps } from './HobbyCard.types';
 
-export default function HobbyCard() {
+export default function HobbyCard(props: HobbyCardProps) {
   return (
     <Box
       sx={{
@@ -13,6 +14,7 @@ export default function HobbyCard() {
         justifyContent: 'center',
         alignItems: 'flex-start',
         gap: '12px',
+        backgroundColor: props.bgColor || '#ccc',
       }}
     >
       <Box
@@ -26,7 +28,7 @@ export default function HobbyCard() {
           borderRadius: '100px',
         }}
       >
-        <Image src={'/travel.svg'} alt='travel' width={28} height={28} />
+        <Image src={props.imageSrc} alt={props.name} width={28} height={28} />
       </Box>
       <Typography
         sx={{
@@ -37,7 +39,7 @@ export default function HobbyCard() {
         }}
         component='span'
       >
-        Traveling
+        {props.name}
       </Typography>
     </Box>
   );
