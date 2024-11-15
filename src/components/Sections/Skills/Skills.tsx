@@ -4,7 +4,7 @@ import Tab from '@/components/Tab/Tab';
 import { Box, InputAdornment, TextField, Typography } from '@mui/material';
 import { ChangeEvent, useState } from 'react';
 import data from '@/Repository/content.json';
-import SkillCard from '@/components/SkillCard/SkillCard';
+import SkillCard from '@/components/Cards/SkillCard/SkillCard';
 import { Skill } from './Skills.types';
 import { SearchIcon } from '@/components/Icons/General';
 
@@ -40,6 +40,7 @@ export default function Skills() {
         justifyContent: 'center',
         gap: '1rem',
       }}
+      id='Skills'
     >
       <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} margin={'2rem'}>
         Skills

@@ -1,10 +1,10 @@
 'use client';
 import { Box, Button, Typography } from '@mui/material';
-import { MoreDetailsIcon } from '../Icons/General';
 import ExperienceDetailsModal from './components/ExperienceDetailsModal';
 import { useState } from 'react';
 import { ExperienceCardProps } from './ExperienceCard.types';
 import { EducationExperience, ExperienceDetailData, WorkExperience } from './components/ExperienceDetailsModal.types';
+import { MoreDetailsIcon } from '@/components/Icons/General';
 
 const getExperienceData = (type: 'work' | 'education', detail: Omit<ExperienceDetailData, 'type'>) => {
   return type === 'work'

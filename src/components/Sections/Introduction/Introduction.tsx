@@ -13,7 +13,7 @@ export default function Introduction() {
         width: '100%',
         alignItems: 'center',
         justifyContent: 'space-around',
-        mt: 6,
+        mt: 15,
         rowGap: { xs: '2rem', md: 0 },
       }}
     >

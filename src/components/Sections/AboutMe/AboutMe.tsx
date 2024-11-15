@@ -6,7 +6,7 @@ import MyPhoto from '@/public/hb.png';
 
 export default function AboutMe() {
   return (
-    <Box component='section' className={styles.sectionWrapper}>
+    <Box component='section' className={styles.sectionWrapper} id='AboutMe'>
       <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} margin={'2rem'}>
         About Me
       </Typography>

@@ -3,9 +3,8 @@ import Tab from '@/components/Tab/Tab';
 import { Box, Typography } from '@mui/material';
 import { useState } from 'react';
 import data from '@/Repository/content.json';
-import ExperienceCard from '@/components/ExperienceCard/ExperienceCard';
+import ExperienceCard from '@/components/Cards/ExperienceCard/ExperienceCard';
 
-console.log(data);
 export default function Experiences() {
   const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
 
@@ -23,6 +22,7 @@ export default function Experiences() {
         justifyContent: 'center',
         gap: '1rem',
       }}
+      id='Experiences'
     >
       <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} margin={'2rem'}>
         Work and Education Experiences
