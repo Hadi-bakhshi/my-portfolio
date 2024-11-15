@@ -1,3 +1,9 @@
 export { default as EyeIcon } from './EyeIcon';
 export { default as MoreDetailsIcon } from './MoreDetailsIcon';
 export { default as SearchIcon } from './SearchIcon';
+export { default as BodyPartMuscleIcon } from './BodyPartMuscleIcon';
+export { default as CodeFolderIcon } from './CodeFolderIcon';
+export { default as FavoriteSquareIcon } from './FavoriteSquareIcon';
+export { default as HomeIcon } from './HomeIcon';
+export { default as UserListIcon } from './UserListIcon';
+export { default as WorkIcon } from './WorkIcon';
