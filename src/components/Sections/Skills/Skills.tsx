@@ -80,7 +80,9 @@ export default function Skills() {
         >
           {!filterData &&
             data.skills.technical.map((item) => {
-              return <SkillCard key={item.id} imageSrc='' title={item.name} width={103} height={100} />;
+              return (
+                <SkillCard key={item.id} imageSrc={`/${item.tag}.svg`} title={item.name} width={103} height={100} />
+              );
             })}
           {filterData &&
             filterData.map((item) => {
