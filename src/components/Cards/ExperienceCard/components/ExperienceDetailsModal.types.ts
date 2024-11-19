@@ -4,6 +4,7 @@ export type ExperienceDetailsModalProps = {
   open: boolean;
   onClose: () => void;
   data: ExperienceDetailData;
+  title: string;
 };
 
 export type WorkExperience = {
