@@ -20,11 +20,16 @@ export default function Introduction() {
       {/* left section */}
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5rem' }}>
         <Box>
-          <Typography fontSize={'36px'}>{"Hey, I'm"}</Typography>
-          <Typography color='primary' fontSize={'45px'} fontWeight={'bold'}>
+          <Typography sx={{ fontSize: { xs: '28px', md: '36px' } }}>{"Hey, I'm"}</Typography>
+          <Typography
+            color='primary'
+            // fontSize={'45px'}
+            fontWeight={'bold'}
+            sx={{ fontSize: { xs: '38px', md: '45px' } }}
+          >
             Hadi Bakhshi👋
           </Typography>
-          <Typography fontSize={'32px'}>A Software Engineer</Typography>
+          <Typography sx={{ fontSize: { xs: '26px', md: '32px' } }}>A Software Engineer</Typography>
         </Box>
         <SocialMediaLinks direction='row' />
       </Box>
