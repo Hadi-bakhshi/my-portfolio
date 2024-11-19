@@ -1,39 +1,60 @@
 .emptyLeftCircle {
-    position: absolute;
-    left: -15px;
-    top: 35px;
-    z-index: -1;
+  position: absolute;
+  left: -15px;
+  top: 35px;
+  z-index: -1;
 }
+.MyImage {
+  width: 100%;
+  height: 100%;
+  //   opacity: 0.8;
+}
+.emptyRightCircle {
+  position: absolute;
+  right: -15px;
+  bottom: 35px;
+  z-index: -1;
+}
+.reactIcon {
+  position: absolute;
+  left: -6px;
+  top: 55px;
+  @media (max-width: 899px) {
+    left: -10px;
+  }
+}
+.cSharpIcon {
+  position: absolute;
+  left: -3px;
+  bottom: 60px;
 
-.emptyRightCircle{
-    position: absolute;
+  @media (max-width: 899px) {
+    left: -12px;
+    // top: 50px;
+    bottom: 55px;
+  }
+}
+.dotNetIcon {
+  position: absolute;
+  top: -33px;
+  left: 150px;
+
+  @media (max-width: 899px) {
+    left: 125px;
+  }
+}
+.nodeJsIcon {
+  position: absolute;
+  right: -3px;
+  bottom: 60px;
+}
+.sqlServerIcon {
+  position: absolute;
+  right: -6px;
+  top: 58px;
+
+  @media (max-width: 899px) {
     right: -15px;
-    bottom: 35px;
-    z-index: -1;
-}
-.reactIcon{
-    position:absolute;
-    left: -6px;
-    top: 55px;
-}
-.cSharpIcon{
- position:absolute;
- left: -3px;
- bottom: 60px;
-}
-.dotNetIcon{
-    position: absolute;
-    top: -33px;
-    left: 150px;
-}
-.nodeJsIcon{
-    position: absolute;
-    right: -3px;
-    bottom: 60px;
-    
-}
-.sqlServerIcon{
-    position: absolute;
-    right: -6px;
-    top: 58px;
+    top: 50px;
+  }
 }

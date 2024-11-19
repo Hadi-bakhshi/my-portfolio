@@ -80,6 +80,7 @@ export default function ExperienceCard(props: ExperienceCardProps) {
         open={isDetailModalOpen}
         onClose={() => setIsDetailModalOpen(false)}
         data={getExperienceData(props.type, props.detail)}
+        title={props.type === 'work' ? props.role : props.degree}
       />
     </Box>
   );

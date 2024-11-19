@@ -42,7 +42,7 @@ export default function Skills() {
       }}
       id='Skills'
     >
-      <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} margin={'2rem'}>
+      <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} my={'4rem'}>
         Skills
       </Typography>
       <Tab tabList={['Technical', 'Soft']} activeTabIndex={activeTabIndex} onClick={tabClickHandler} />
@@ -80,7 +80,9 @@ export default function Skills() {
         >
           {!filterData &&
             data.skills.technical.map((item) => {
-              return <SkillCard key={item.id} imageSrc='' title={item.name} width={103} height={100} />;
+              return (
+                <SkillCard key={item.id} imageSrc={`/${item.tag}.svg`} title={item.name} width={103} height={100} />
+              );
             })}
           {filterData &&
             filterData.map((item) => {

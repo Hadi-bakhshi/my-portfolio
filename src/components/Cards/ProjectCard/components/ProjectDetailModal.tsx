@@ -1,29 +1,32 @@
-import { Box, Button, Modal, Typography } from '@mui/material';
+import { Box, Button, IconButton, Modal, Tooltip, Typography } from '@mui/material';
 import { ProjectDetailModalProps } from './ProjectDetailModal.types';
 import Image from 'next/image';
 import { GithubIcon } from '@/components/Icons/SocialMedia';
-import { EyeIcon } from '@/components/Icons/General';
-
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  bgcolor: 'background.paper',
-  p: 4,
-  borderRadius: '16px',
-  //   width: 'max-content',
-  //   minWidth: '280px',
-  maxWidth: '733px',
-};
+import { CancelIcon, EyeIcon } from '@/components/Icons/General';
 
 export default function ProjectDetailModal(props: ProjectDetailModalProps) {
   return (
     <Modal open={props.open} onClose={() => props.onClose()}>
-      <Box sx={style}>
+      <Box
+        sx={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          bgcolor: 'background.paper',
+          p: 4,
+          borderRadius: '16px',
+          //   width: 'max-content',
+          //   minWidth: '280px',
+          width: '95%',
+          maxWidth: { xs: '100%', md: '733px' },
+          maxHeight: '90vh',
+          overflow: 'auto',
+        }}
+      >
         {props.screenShotImage && <Image src={props.screenShotImage} alt='screen-shot' width={250} height={250} />}
-        <Box>
-          <Typography component='h2' fontSize={22} fontWeight={400} lineHeight='28px'>
+        <Box sx={{ position: 'relative', width: '100%' }}>
+          <Typography component='h2' fontSize={22} fontWeight={400} lineHeight='28px' mt={'1rem'}>
             {props.projectName}
           </Typography>
           <Typography fontSize={14} fontWeight={400} lineHeight='16px' py='20px' textAlign='justify'>
@@ -52,14 +55,20 @@ export default function ProjectDetailModal(props: ProjectDetailModalProps) {
                   sx={{
                     background: 'linear-gradient(254deg, rgba(140, 151, 189, 0.24) 4.22%, #CFD1DA 100%)',
                     width: 'max-content',
-                    padding: '4px 8px',
+                    padding: '8px',
                     borderRadius: '16px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
                   }}
                 >
-                  <Image src={`/${item.tag}`} alt={item.name} width={50} height={50} />
-                  <Typography fontSize={12} textAlign={'center'} fontWeight={400}>
+                  <Tooltip title={item.name} arrow>
+                    <Image src={`/${item.tag}.svg`} alt={item.name} width={50} height={50} />
+                  </Tooltip>
+                  {/* <Typography fontSize={12} textAlign={'center'} fontWeight={400}>
                     {item.name}
-                  </Typography>
+                  </Typography> */}
                 </Box>
               );
             })}
@@ -69,7 +78,7 @@ export default function ProjectDetailModal(props: ProjectDetailModalProps) {
               display: 'flex',
               flexDirection: 'row',
               alignItems: 'center',
-              justifyContent: 'flex-start',
+              justifyContent: { xs: 'center', md: 'flex-start' },
               flexWrap: 'wrap',
               gap: '0.5rem',
               pt: '16px',
@@ -88,6 +97,14 @@ export default function ProjectDetailModal(props: ProjectDetailModalProps) {
             )}
           </Box>
         </Box>
+        <IconButton
+          sx={{ position: 'absolute', left: '8px', top: '8px' }}
+          onClick={() => props.onClose()}
+          color='error'
+          size='small'
+        >
+          <CancelIcon color='inherit' />
+        </IconButton>
       </Box>
     </Modal>
   );
