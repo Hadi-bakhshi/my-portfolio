@@ -42,7 +42,7 @@ export default function Skills() {
       }}
       id='Skills'
     >
-      <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} margin={'2rem'}>
+      <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} my={'4rem'}>
         Skills
       </Typography>
       <Tab tabList={['Technical', 'Soft']} activeTabIndex={activeTabIndex} onClick={tabClickHandler} />
