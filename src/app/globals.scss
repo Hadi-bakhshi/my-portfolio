@@ -1,3 +1,28 @@
 html {
   scroll-behavior: smooth;
 }
+/* Works on Firefox */
+// * {
+//   scrollbar-width: thin;
+//   scrollbar-color: #2151da #efefff;
+//   scrollbar-width: 6px;
+//   // scrollbar-3dlight-color: red;
+//   // scrollb
+// }
+
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+  // border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2151da;
+  border-radius: 8px;
+}

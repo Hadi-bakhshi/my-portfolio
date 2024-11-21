@@ -4,6 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from '@/theme/defaultTheme';
 import NavigationBar from '@/components/NavigationBar/NavigationBar';
+import Footer from '@/components/Footer/Footer';
 
 const RootProvider = ({ children }: { children: ReactNode }) => {
   return (
@@ -12,6 +13,7 @@ const RootProvider = ({ children }: { children: ReactNode }) => {
         <CssBaseline />
         <NavigationBar />
         {children}
+        <Footer />
       </ThemeProvider>
     </AppRouterCacheProvider>
   );

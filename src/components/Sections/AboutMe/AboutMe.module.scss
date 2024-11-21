@@ -1,57 +1,58 @@
 .sectionWrapper {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+
+  .aboutMe {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2rem auto;
 
-    .aboutMe {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .aboutMeWrapper {
+      width: 730px;
+      background-color: var(--mui-palette-background-paper);
+      box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
 
-        .aboutMeWrapper {
-            width: 730px;
-            background-color: var(--mui-palette-background-paper);
-            box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            position: relative;
-
-            .titleAndDescription {
-                width: 577px;
-                padding: 8px;
-
-                @media (max-width: 950px) {
-                    padding-top: 80px;
-                    width: 100%;
-                }
-            }
-
-            .myPhoto {
-                position: absolute;
-                left: -90px;
-                background-color: #E4E1E6;
-                border-radius: 16px;
-
-                @media (max-width: 950px) {
-                    top: -100px;
-                    left: 50%;
-                    transform: translate(-50%, -10%);
-                }
-            }
-
-            @media (max-width: 950px) {
-                width: 100%;
-            }
-        }
+      .titleAndDescription {
+        width: 577px;
+        padding: 8px;
 
         @media (max-width: 950px) {
-            width: 100%;
-            margin-top: 160px;
+          padding-top: 80px;
+          width: 100%;
         }
+      }
+
+      .myPhoto {
+        position: absolute;
+        left: -90px;
+        background-color: #e4e1e6;
+        border-radius: 16px;
+        box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+
+        @media (max-width: 950px) {
+          top: -100px;
+          left: 50%;
+          transform: translate(-50%, -10%);
+        }
+      }
+
+      @media (max-width: 950px) {
+        width: 100%;
+      }
     }
+
+    @media (max-width: 950px) {
+      width: 100%;
+      margin-top: 160px;
+    }
+  }
 }

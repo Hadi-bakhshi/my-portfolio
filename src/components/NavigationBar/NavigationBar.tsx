@@ -1,10 +1,12 @@
 'use client';
 import Image from 'next/image';
 import styles from './NavigationBar.module.scss';
-import CodeLabIcon from '@/public/codelab.svg';
+// import CodeLabIcon from '@/public/codelab.svg';
+import HLogo from '@/public/hLogo.png';
 import {
   BodyPartMuscleIcon,
   CodeFolderIcon,
+  DocumentIcon,
   FavoriteSquareIcon,
   HomeIcon,
   // SidebarLeftIcon,
@@ -12,7 +14,7 @@ import {
   WorkIcon,
 } from '@/components/Icons/General';
 import Link from 'next/link';
-import { Button, Typography } from '@mui/material';
+import { Button, IconButton, Tooltip } from '@mui/material';
 import Sidebar from '../Sidebar/Sidebar';
 
 const sections = [
@@ -32,23 +34,31 @@ function NavigationBar() {
           <Sidebar list={sections} />
         </div>
         <div className={styles.logoWrapper}>
-          <Image src={CodeLabIcon} alt='hadi-bakhshi-portfolio-icon' width={38} height={38} />
-          <Typography component='h1' color='#3A0099' fontWeight={500}>
+          <Image src={HLogo} alt='hadi-bakhshi-portfolio-icon' width={38} height={38} />
+          {/* <Typography component='h1' color='#3A0099' fontWeight={500}>
             Code Lab
-          </Typography>
+          </Typography> */}
         </div>
         <div className={styles.sectionsWrapper}>
           {sections.map((item, index) => {
             return (
               <div key={index + 1}>
                 <Link href={item.name !== 'Home' ? `#${item.name}` : ''}>
-                  <Button startIcon={item.icon}>{item.name}</Button>
+                  <Button startIcon={item.icon} color='primary'>
+                    {item.name}
+                  </Button>
                 </Link>
               </div>
             );
           })}
         </div>
-        <div></div>
+        <div className={styles.emptyElement}>
+          <Tooltip title='Download Resume' arrow>
+            <IconButton color='primary'>
+              <DocumentIcon color='inherit' />
+            </IconButton>
+          </Tooltip>
+        </div>
       </div>
     </header>
   );
