@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.scss';
 import RootProvider from '@/provider/RootProvider';
 import { Roboto } from 'next/font/google';
@@ -20,7 +20,25 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: 'Hadi Bakhshi | Software Engineer',
-  description: 'Want to know me better',
+  description: 'Hadi Bakhshi personal portfolio',
+  keywords: [
+    'Software engineer',
+    'Full-stack developer',
+    'Front-end developer',
+    '.Net Developer',
+    'Dotnet',
+    'Engineer',
+    'Developer',
+    'portfolio',
+  ],
+};
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
+  maximumScale: 1.0,
+  userScalable: false,
+  viewportFit: 'cover',
+  themeColor: '#2151DA',
 };
 
 export default function RootLayout({
