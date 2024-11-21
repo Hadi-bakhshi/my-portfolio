@@ -1,3 +1,28 @@
-.linkHover:hover > svg {
-    color:var(--mui-palette-primary-dark);
+.linkHover {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.4rem;
+
+  & > span {
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    overflow: hidden; // Prevent content overflow during animation
+    color: inherit;
+    font-weight: 400;
+    white-space: nowrap; // Prevent the span from wrapping text
+    transition: opacity 0.4s ease-in, visibility 0.4s ease-in, width 0.4s ease-in;
+  }
+
+  &:hover > span {
+    visibility: visible;
+    opacity: 1;
+    width: auto; // Use `auto` for smooth width adjustment
+  }
+
+  &:hover > svg {
+    color: var(--mui-palette-primary-dark);
+  }
 }
