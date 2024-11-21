@@ -56,8 +56,8 @@ export default function Sidebar(props: SidebarProps) {
     <div>
       {(['left'] as const).map((anchor) => (
         <Fragment key={anchor}>
-          <IconButton onClick={toggleDrawer(true)} sx={{ marginLeft: '1rem' }}>
-            <SidebarLeftIcon />
+          <IconButton color='primary' onClick={toggleDrawer(true)} sx={{ marginLeft: '1rem' }}>
+            <SidebarLeftIcon color='inherit' />
           </IconButton>
           <SwipeableDrawer
             anchor={anchor}

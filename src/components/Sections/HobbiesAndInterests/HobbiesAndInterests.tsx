@@ -13,6 +13,7 @@ export default function HobbiesAndInterests() {
         alignItems: 'center',
         justifyContent: 'center',
         gap: '1rem',
+        mb: 4,
       }}
       id='Interests'
     >
