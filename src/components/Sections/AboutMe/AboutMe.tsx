@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import data from '@/Repository/content.json';
 import styles from './AboutMe.module.scss';
 import Image from 'next/image';
-import MyPhoto from '@/public/hb.png';
+import MyPhoto from '@/public/MyImage.webp';
 
 export default function AboutMe() {
   return (
@@ -16,10 +16,11 @@ export default function AboutMe() {
             <Typography component='h2' fontWeight={'500'} lineHeight={'24px'}>
               A little about me
             </Typography>
-            <Typography fontWeight={'400'} lineHeight={'20px'} textAlign={'justify'} fontSize={'14px'}>
+            <Typography fontWeight={'400'} lineHeight={'22px'} textAlign={'justify'} fontSize={'14px'}>
               {data.aboutMe.description.map((item, index) => {
                 return (
                   <span key={index}>
+                    <br />
                     <br />
                     <>{item}</>
                   </span>
