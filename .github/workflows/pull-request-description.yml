@@ -15,7 +15,7 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v3
       with:
-        fetch-depth: 0  # Ensure full git history is available
+        fetch-depth: 0  # Fetch the full history
 
     - name: Generate Pull Request Description
       id: generate_description
@@ -24,6 +24,7 @@ jobs:
         if git rev-parse HEAD^ >/dev/null 2>&1; then
           git log --oneline HEAD^..HEAD >> pr_description.txt
         else
+          echo "Single commit or no prior commit found." >> pr_description.txt
           git log --oneline HEAD >> pr_description.txt
         fi
         echo "pull_request_description=$(cat pr_description.txt)" >> $GITHUB_ENV
