@@ -7,6 +7,7 @@ import data from '@/Repository/content.json';
 import SkillCard from '@/components/Cards/SkillCard/SkillCard';
 import { Skill } from './Skills.types';
 import { SearchIcon } from '@/components/Icons/General';
+import SoftSkillCard from '@/components/Cards/SoftSkillCard/SoftSkillCard';
 
 export default function Skills() {
   const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
@@ -17,15 +18,13 @@ export default function Skills() {
   };
 
   const changeHandler = (event: ChangeEvent<HTMLInputElement>) => {
+    if (event.target.value === '') {
+      setFilteredData(null);
+      return;
+    }
     if (activeTabIndex === 0) {
       const filteredData = data.skills.technical.filter((item) => item.name.toLowerCase().includes(event.target.value));
       setFilteredData(filteredData);
-    } else {
-      // TODO
-      console.error(event.target.value);
-    }
-    if (event.target.value === '') {
-      setFilteredData(null);
     }
   };
 
@@ -46,25 +45,27 @@ export default function Skills() {
         Skills
       </Typography>
       <Tab tabList={['Technical', 'Soft']} activeTabIndex={activeTabIndex} onClick={tabClickHandler} />
-      <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
-        <TextField
-          id='filled-search'
-          label='Search for specific skill'
-          type='search'
-          variant='outlined'
-          onChange={changeHandler}
-          size='small'
-          slotProps={{
-            input: {
-              endAdornment: (
-                <InputAdornment position='end'>
-                  <SearchIcon color='var(--mui-palette-primary-main)' />
-                </InputAdornment>
-              ),
-            },
-          }}
-        />
-      </Box>
+      {activeTabIndex === 0 && (
+        <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+          <TextField
+            id='filled-search'
+            label='Search for specific skill'
+            type='search'
+            variant='outlined'
+            onChange={changeHandler}
+            size='small'
+            slotProps={{
+              input: {
+                endAdornment: (
+                  <InputAdornment position='end'>
+                    <SearchIcon color='var(--mui-palette-primary-main)' />
+                  </InputAdornment>
+                ),
+              },
+            }}
+          />
+        </Box>
+      )}
       {activeTabIndex === 0 && (
         <Box
           sx={{
@@ -90,7 +91,33 @@ export default function Skills() {
             })}
         </Box>
       )}
-      {activeTabIndex === 1 && <Typography>No data found for soft skills</Typography>}
+      {activeTabIndex === 1 && (
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            justifyContent: 'center',
+            columnGap: '1rem',
+            rowGap: '5rem',
+            mt: '4rem',
+          }}
+        >
+          {data.skills.soft.map((item) => {
+            return (
+              <SoftSkillCard
+                key={item.id}
+                id={item.id}
+                bgColor={item.bgColor}
+                color={item.color}
+                borderRadius={item.borderRadius}
+                caption={item.caption}
+              />
+            );
+          })}
+        </Box>
+      )}
     </Box>
   );
 }
