@@ -5,6 +5,10 @@ import { GithubIcon } from '@/components/Icons/SocialMedia';
 import { CancelIcon, EyeIcon } from '@/components/Icons/General';
 
 export default function ProjectDetailModal(props: ProjectDetailModalProps) {
+  const urlNavigatorHandler = (link: string) => {
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <Modal open={props.open} onClose={() => props.onClose()}>
       <Box
@@ -86,12 +90,20 @@ export default function ProjectDetailModal(props: ProjectDetailModalProps) {
           >
             {/* TODO */}
             {props.repositoryLink && (
-              <Button variant='contained' startIcon={<GithubIcon color='inherit' width={18} height={18} />}>
+              <Button
+                variant='contained'
+                startIcon={<GithubIcon color='inherit' width={18} height={18} />}
+                onClick={() => urlNavigatorHandler(props.repositoryLink!)}
+              >
                 Github Repository
               </Button>
             )}
             {props.liveDemoLink && (
-              <Button variant='contained' startIcon={<EyeIcon color='inherit' width={18} height={18} />}>
+              <Button
+                variant='contained'
+                startIcon={<EyeIcon color='inherit' width={18} height={18} />}
+                onClick={() => urlNavigatorHandler(props.liveDemoLink!)}
+              >
                 Live Demo
               </Button>
             )}

@@ -8,6 +8,11 @@ import { EyeIcon } from '@/components/Icons/General';
 
 export default function ProjectCard(props: ProjectCardProps) {
   const [isDetailModalOpen, setIsDetailModalOpen] = useState<boolean>(false);
+
+  const urlNavigatorHandler = (link: string) => {
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <Box
       sx={{
@@ -39,16 +44,20 @@ export default function ProjectCard(props: ProjectCardProps) {
           px: '4px',
         }}
       >
-        <Tooltip title='Github Repository' arrow>
-          <IconButton>
-            <GithubIcon />
-          </IconButton>
-        </Tooltip>
-        <Tooltip title='Live Demo' arrow>
-          <IconButton>
-            <EyeIcon />
-          </IconButton>
-        </Tooltip>
+        {props.repositoryLink && (
+          <Tooltip title='Github Repository' arrow>
+            <IconButton onClick={() => urlNavigatorHandler(props.repositoryLink!)}>
+              <GithubIcon />
+            </IconButton>
+          </Tooltip>
+        )}
+        {props.liveDemoLink && (
+          <Tooltip title='Live Demo' arrow>
+            <IconButton onClick={() => urlNavigatorHandler(props.liveDemoLink!)}>
+              <EyeIcon />
+            </IconButton>
+          </Tooltip>
+        )}
       </Box>
       <Box sx={{ width: '100%' }}>
         <Typography component='h6' fontSize={22} fontWeight={400} lineHeight='28px'>
