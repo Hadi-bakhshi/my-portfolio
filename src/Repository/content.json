@@ -338,77 +338,77 @@
                 "caption": "Teamwork",
                 "borderRadius": "16% 84% 51% 49% / 39% 45% 55% 61%",
                 "bgColor": "#E5D9F2",
-                "color": "#393E46"
+                "color": "#222831"
             },
             {
                 "id": 850,
                 "caption": "R & D",
                 "borderRadius": "50% 50% 51% 49% / 30% 29% 71% 70%",
                 "bgColor": "#FDFFAE",
-                "color": "#393E46"
+                "color": "#222831"
             },
             {
                 "id": 851,
                 "caption": "Problem Solving",
                 "borderRadius": "50% 50% 51% 49% / 58% 47% 53% 42%",
                 "bgColor": "#B0D9B1",
-                "color": "#393E46"
+                "color": "#222831"
             },
             {
                 "id": 852,
                 "caption": "Teaching",
                 "borderRadius": "50% 50% 51% 49% / 74% 77% 23% 26%",
                 "bgColor": "#C6E7FF",
-                "color": "#393E46"
+                "color": "#222831"
             },
             {
                 "id": 853,
                 "caption": "Communication",
                 "borderRadius": "86% 14% 25% 75% / 45% 43% 57% 55%",
                 "bgColor": "#FF9B9B",
-                "color": "#393E46"
+                "color": "#222831"
             },
             {
                 "id": 854,
                 "caption": "leadership",
                 "borderRadius": "38% 62% 52% 48% / 51% 30% 70% 49%",
                 "bgColor": "#F9F9F9",
-                "color": "#393E46"
+                "color": "#222831"
             },
             {
                 "id": 855,
                 "caption": "Project management",
                 "borderRadius": "92% 8% 49% 51% / 51% 30% 70% 49%",
                 "bgColor": "#FFCF9D",
-                "color": "#393E46"
+                "color": "#222831"
             },
             {
                 "id": 856,
                 "caption": "Humility",
                 "borderRadius": "81% 19% 59% 41% / 70% 72% 28% 30%",
                 "bgColor": "#FEFBD8",
-                "color": "#393E46"
+                "color": "#222831"
             },
             {
                 "id": 857,
                 "caption": "Learning agility",
                 "borderRadius": "38% 62% 59% 41% / 70% 34% 66% 30%",
                 "bgColor": "#EED3D9",
-                "color": "#393E46"
+                "color": "#222831"
             },
             {
                 "id": 858,
                 "caption": "Innovation",
                 "borderRadius": "10% 90% 31% 69% / 70% 50% 50% 30%",
                 "bgColor": "#E1AFD1",
-                "color": "#393E46"
+                "color": "#222831"
             },
             {
                 "id": 859,
                 "caption": "Creativity",
                 "borderRadius": "92% 8% 90% 10% / 63% 68% 32% 37%",
                 "bgColor": "#C2DEDC",
-                "color": "#393E46"
+                "color": "#222831"
             }
         ]
     },
