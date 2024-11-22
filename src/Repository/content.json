@@ -504,6 +504,180 @@
     },
     "projects": [
         {
+            "id": 79,
+            "projectName": "Motorcycle And Machinery After-sales Inspection Dashboards",
+            "description": "The motorcycle and machinery after-sales inspection dashboard applications were designed to provide a comprehensive overview of inspection data accumulated over years. These applications present data through a variety of dynamic and visually engaging charts, offering actionable insights for stakeholders. My co-worker and I leveraged ECharts to implement a diverse range of chart types, ensuring that the visualizations effectively communicated the inspection trends and results. The applications were developed using modern web technologies, including React, Vite, and Redux Toolkit Query, to create a highly responsive and performant user interface. The combination of these tools allowed us to build a fast and efficient application with a great user experience, enabling users to navigate through extensive datasets effortlessly. This project highlights the ability to design and implement data-driven dashboard applications tailored to meet industry needs.",
+            "summary": "Comprehensive motorcycle and machinery after-sales inspection dashboard applications, offering years of inspection data presented through dynamic charts. Built with React, Vite, Redux Toolkit Query, and ECharts to deliver a fast, efficient, and visually appealing user experience.",
+            "repositoryLink": "",
+            "liveDemoLink": "",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "React",
+                    "tag": "react"
+                },
+                {
+                    "name": "TypeScript",
+                    "tag": "ts"
+                },
+                {
+                    "name": "Material-UI",
+                    "tag": "mui"
+                },
+                {
+                    "name": "React Hook Form",
+                    "tag": "rhf"
+                },
+                {
+                    "name": "React Router Dom",
+                    "tag": "rrd"
+                },
+                {
+                    "name": "Redux Toolkit Query",
+                    "tag": "redux"
+                },
+                {
+                    "name": "Echarts",
+                    "tag": ""
+                },
+                {
+                    "name": "Ag-grid",
+                    "tag": ""
+                },
+                {
+                    "name": "Axios",
+                    "tag": ""
+                },
+                {
+                    "name": "Emotion",
+                    "tag": ""
+                },
+                {
+                    "name": "Framer-motion",
+                    "tag": ""
+                },
+                {
+                    "name": "Vite",
+                    "tag": ""
+                },
+                {
+                    "name": "Redux-persist",
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "id": 78,
+            "projectName": "After Sales Service Inspection",
+            "description": "This after-sales service inspection application was specifically designed for the automotive industry to enhance and streamline the vehicle inspection process. It provides a dynamic checklist system with various question types, enabling it to adapt to the unique requirements of vehicle inspections. The application prioritizes user experience, allowing inspectors to efficiently submit their answers with minimal effort. It includes a scheduling system to organize and manage inspection appointments, automated PDF outputs for dealerships and inspectors, and comprehensive reporting capabilities that provide actionable insights from completed inspections. Developed as a collaborative effort, one co-worker managed the database design, while another assisted with both front-end and back-end development. My contributions encompassed implementing key functionalities on both the back-end and front-end, ensuring a smooth and cohesive system. This application revolutionized the inspection workflow for the automotive industry, providing a more efficient and user-friendly solution.",
+            "summary": "An after-sales service inspection application tailored for the automotive industry, featuring dynamic checklists, advanced reporting, scheduling, and PDF output capabilities. Contributed as both a back-end and front-end developer.",
+            "repositoryLink": "",
+            "liveDemoLink": "",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "NextJS",
+                    "tag": "next"
+                },
+                {
+                    "name": "Material-UI",
+                    "tag": "mui"
+                },
+                {
+                    "name": "Redux Toolkit",
+                    "tag": "redux"
+                },
+                {
+                    "name": "React Hook Form",
+                    "tag": "rhf"
+                },
+                {
+                    "name": "TypeScript",
+                    "tag": "ts"
+                },
+                {
+                    "name": "SASS",
+                    "tag": "sass"
+                },
+                {
+                    "name": "NodeJS",
+                    "tag": "node"
+                },
+                {
+                    "name": "ExpressJS",
+                    "tag": "express"
+                },
+                {
+                    "name": "SQL Server",
+                    "tag": "mssql"
+                },
+                {
+                    "name": "Emotion",
+                    "tag": ""
+                },
+                {
+                    "name": "Ag-grid",
+                    "tag": ""
+                },
+                {
+                    "name": "Axios",
+                    "tag": ""
+                },
+                {
+                    "name": "Framer-motion",
+                    "tag": ""
+                },
+                {
+                    "name": "Redux-persist",
+                    "tag": ""
+                },
+                {
+                    "name": "Archiver",
+                    "tag": ""
+                },
+                {
+                    "name": "Exceljs",
+                    "tag": ""
+                },
+                {
+                    "name": "Helmet",
+                    "tag": ""
+                },
+                {
+                    "name": "Joi",
+                    "tag": ""
+                },
+                {
+                    "name": "JWT",
+                    "tag": ""
+                },
+                {
+                    "name": "Morgan",
+                    "tag": ""
+                },
+                {
+                    "name": "Winston",
+                    "tag": ""
+                },
+                {
+                    "name": "mssql",
+                    "tag": ""
+                },
+                {
+                    "name": "Node-cron",
+                    "tag": ""
+                },
+                {
+                    "name": "Puppeteer",
+                    "tag": ""
+                },
+                {
+                    "name": "xlsx",
+                    "tag": ""
+                }
+            ]
+        },
+        {
             "id": 77,
             "projectName": "Mock API For Teaching",
             "description": "This project is a simple CRUD application developed in ASP.NET Core 8 to assist in teaching advanced concepts of TanStack Query. It employs the Minimal API approach, ensuring a lightweight and straightforward implementation. The application follows a service-based architecture, promoting clean separation of concerns and reusability of components. Instead of relying on a traditional database, the project uses the file system for data storage, reading and writing files directly to manage CRUD operations. This approach not only simplifies setup but also introduces an alternative method of handling data persistence. The application provides a clear and practical example of integrating a backend with advanced TanStack Query concepts, making it an effective teaching tool for exploring modern front-end and backend development patterns.",
