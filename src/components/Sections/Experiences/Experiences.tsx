@@ -28,37 +28,43 @@ export default function Experiences() {
         Work and Education Experiences
       </Typography>
       <Tab tabList={['Work', 'Education']} activeTabIndex={activeTabIndex} onClick={tabClickHandler} />
-      <Box>
-        {activeTabIndex === 0 && (
-          <Box>
-            {data.experiences.work.map((item) => {
-              return (
-                <ExperienceCard
-                  key={item.id}
-                  type='work'
-                  companyName={item.companyName}
-                  role={item.role}
-                  detail={item.detail}
-                />
-              );
-            })}
-          </Box>
-        )}
-        {activeTabIndex === 1 && (
-          <Box>
-            {data.experiences.education.map((item) => {
-              return (
-                <ExperienceCard
-                  key={item.id}
-                  type='education'
-                  universityName={item.universityName}
-                  degree={item.degree}
-                  detail={item.detail}
-                />
-              );
-            })}
-          </Box>
-        )}
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          justifyContent: 'center',
+          columnGap: '1rem',
+          rowGap: '5rem',
+          mt: '2rem',
+        }}
+      >
+        {activeTabIndex === 0 &&
+          data.experiences.work.map((item) => {
+            return (
+              <ExperienceCard
+                key={item.id}
+                type='work'
+                companyName={item.companyName}
+                role={item.role}
+                detail={item.detail}
+              />
+            );
+          })}
+
+        {activeTabIndex === 1 &&
+          data.experiences.education.map((item) => {
+            return (
+              <ExperienceCard
+                key={item.id}
+                type='education'
+                universityName={item.universityName}
+                degree={item.degree}
+                detail={item.detail}
+              />
+            );
+          })}
       </Box>
     </Box>
   );

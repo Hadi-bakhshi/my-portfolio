@@ -17,60 +17,64 @@ export default function ProjectCard(props: ProjectCardProps) {
     <Box
       sx={{
         width: '280px',
-        height: '330px',
+        height: '280px',
         borderRadius: '16px',
         backgroundColor: 'var(--mui-palette-background-paper)',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'flex-end',
-        padding: '8px 18px',
-        position: 'relative',
+        padding: '8px 12px',
         boxShadow: '0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.30)',
       }}
     >
       <Box
         sx={{
-          position: 'absolute',
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'space-between',
-          background: 'linear-gradient(254deg, rgba(140, 151, 189, 0.24) 4.22%, #CFD1DA 100%)',
-          width: '253px',
-          height: '70px',
-          top: '18px',
+          background: 'linear-gradient(254deg, rgba(140, 151, 189, 0.24) 4.22%, #00579255 100%)',
+          width: '100%',
+          minHeight: '40px',
           borderRadius: '16px',
-          px: '4px',
         }}
       >
         {props.repositoryLink && (
           <Tooltip title='Github Repository' arrow>
-            <IconButton onClick={() => urlNavigatorHandler(props.repositoryLink!)}>
+            <IconButton onClick={() => urlNavigatorHandler(props.repositoryLink!)} size='small'>
               <GithubIcon />
             </IconButton>
           </Tooltip>
         )}
         {props.liveDemoLink && (
           <Tooltip title='Live Demo' arrow>
-            <IconButton onClick={() => urlNavigatorHandler(props.liveDemoLink!)}>
+            <IconButton onClick={() => urlNavigatorHandler(props.liveDemoLink!)} size='small'>
               <EyeIcon />
             </IconButton>
           </Tooltip>
         )}
       </Box>
-      <Box sx={{ width: '100%' }}>
-        <Typography component='h6' fontSize={22} fontWeight={400} lineHeight='28px'>
+      <Box
+        sx={{
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'flex-start',
+          gap: '1rem',
+        }}
+      >
+        <Typography
+          component='h6'
+          fontSize={18}
+          fontWeight={400}
+          lineHeight='28px'
+          sx={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', width: '100%', pt: '1rem' }}
+        >
           {props.projectName}
         </Typography>
-        <Typography
-          fontSize={12}
-          fontWeight={400}
-          lineHeight='16px'
-          py='18px'
-          textAlign='justify'
-          //   sx={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}
-        >
+        <Typography fontSize={12} fontWeight={400} lineHeight='16px' textAlign={'justify'}>
           {props.summary}
         </Typography>
       </Box>
