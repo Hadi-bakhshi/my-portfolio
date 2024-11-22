@@ -419,13 +419,74 @@
                 "companyName": "ReLOOQ",
                 "role": "Software engineer",
                 "detail": {
-                    "startDate": "2022 Nov",
+                    "startDate": "Mar 2023",
                     "endDate": "",
                     "achievements": [
-                        "Number one",
-                        "Number two"
+                        "Enhanced performance and scalability by 20% through leading the development and maintenance of critical back-end systems using ASP.NET Core.",
+                        "Improved code quality and scalability by implementing clean architecture principles, design patterns, and best practices.",
+                        "Boosted data manipulation speed by optimizing SQL query performance and database structure.",
+                        "Led system design and architecture for complex backend services, ensuring scalability, reliability, and maintainability across multiple projects.",
+                        "Streamlined development workflows by introducing minimal APIs, reducing complexity in service design.",
+                        "Designed and developed efficient database systems using a database-first approach, SQL Server stored procedures, and thoughtful database model design for dashboard projects.",
+                        "Increased API efficiency by 30% through refactoring projects and applying REST API best practices and performance optimization."
                     ],
                     "location": "Iran, Tehran"
+                }
+            },
+            {
+                "id": 90,
+                "companyName": "Behinekavan Keyfiat",
+                "role": "Full-Stack Developer",
+                "detail": {
+                    "startDate": "Oct 2022",
+                    "endDate": "Mar 2023",
+                    "achievements": [
+                        "Designed and developed internal web applications using Next.js, React.js, and Node.js, improving operational efficiency by 12% through streamlined workflows and faster processing times.",
+                        "Advocated Agile methodologies, leading the team through the development lifecycle with iterative feedback and continuous improvement.",
+                        "Mentored junior developers, providing insightful code reviews and fostering a collaborative, growth-focused environment.",
+                        "Built secure and performant RESTful APIs, enabling efficient data exchange between frontend and backend systems.",
+                        "Implemented PDF and Excel generation features for inspection applications using Express.js, Puppeteer, and ExcelJS, ensuring accurate reporting and data handling.",
+                        "Improved application security, applying best practices in encryption, authentication, and data protection.",
+                        "Optimized database interactions using Nest.js, Prisma ORM, and MSSQL, enhancing performance and reducing query response times.",
+                        "Deployed and managed applications on servers, securing deployments with SSL certificates and configuring Nginx for optimized and secure web delivery.",
+                        "Led UI/UX design efforts, collaborating with frontend teams to create intuitive interfaces following Material design principles."
+                    ],
+                    "location": "Iran, Tehran"
+                }
+            },
+            {
+                "id": 91,
+                "companyName": "Behinekavan Keyfiat",
+                "role": "Front-end Developer",
+                "detail": {
+                    "startDate": "May 2022",
+                    "endDate": "Oct 2022",
+                    "achievements": [
+                        "Developed dynamic, database-driven dashboards and app interfaces for car inspection applications, improving sales and post-sale service efficiency using React, Vite, Material UI, and SASS.",
+                        "Collaborated closely with back-end developers to integrate front-end components, ensuring seamless data synchronization and a cohesive user experience across dashboards.",
+                        "Delivered high-quality code while adhering to deadlines, contributing to project success in a Scrum-based environment.",
+                        "Engineered optimized web pages and UI components, focusing on intuitive interactions and data visualization within interactive dashboards for the car inspection app.",
+                        "Implemented robust testing strategies, including code reviews and comprehensive test coverage, which significantly improved software quality and enhanced user satisfaction."
+                    ],
+                    "location": "Iran, Tehran"
+                }
+            },
+            {
+                "id": 92,
+                "companyName": "Freelance",
+                "role": "React Developer",
+                "detail": {
+                    "startDate": "Jan 2020",
+                    "endDate": "Mar 2022",
+                    "achievements": [
+                        "Developed and optimized key components for the user interface, improving usability and contributing to a smoother user experience across the application.",
+                        "Ensured full responsiveness across devices, particularly mobile and tablet, leading to a 15% improvement in mobile accessibility and user interaction.",
+                        "Resolved cross-device compatibility issues, ensuring seamless functionality across platforms using React and CSS pre-processors.",
+                        "Improved state management by implementing Redux and Context, enhancing scalability and reducing state-related issues by 20%.",
+                        "Integrated APIs with Axios for efficient data exchange, supporting reliable data-driven functionality.",
+                        "Prioritized a user-centric approach to component design and page optimization, improving overall user satisfaction and engagement."
+                    ],
+                    "location": "Iran, Tehran / US, North Carolina, Cary (Remote)"
                 }
             }
         ],
@@ -433,10 +494,10 @@
             {
                 "id": 90,
                 "universityName": "University of Applied Science and Technology",
-                "degree": "Associate of English Translation",
+                "degree": "Bachelor of English Translation",
                 "detail": {
                     "startDate": "2020 Oct",
-                    "endDate": "2022 Aug"
+                    "endDate": "2023 Aug"
                 }
             }
         ]

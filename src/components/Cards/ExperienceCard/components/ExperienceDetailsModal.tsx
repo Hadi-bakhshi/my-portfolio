@@ -19,37 +19,44 @@ export default function ExperienceDetailsModal(props: ExperienceDetailsModalProp
           width: '95%',
           maxWidth: { xs: '100%', md: '733px' },
           maxHeight: '90vh',
-          overflow: 'auto',
+          overflow: 'hidden',
         }}
       >
-        <Box sx={{ position: 'relative', width: '100%', height: '100%' }}>
+        <Box sx={{ position: 'relative', width: '100%', height: '100%', maxHeight: '80vh', overflow: 'auto' }}>
           <Typography fontWeight={700} lineHeight='24px' mt={'2rem'}>
             {props.title}
           </Typography>
           {props.data.type === 'education' && (
             <Box sx={{ display: 'flex', flexDirection: 'row', gap: '0.3rem', mt: '2rem' }}>
-              <Typography fontWeight={400}>Start studying from</Typography>
-              <Typography fontWeight={500}>{props.data.startDate}</Typography>
+              <Typography fontWeight={400}>Graduated in</Typography>
+              <Typography fontWeight={500}>{props.data.endDate}</Typography>
             </Box>
           )}
           {props.data.type === 'work' && (
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '1rem', mt: '2rem' }}>
               <Typography fontWeight={600} lineHeight={'24px'} color='primary'>
-                Location
-              </Typography>
-              <Typography ml={'1rem'}>{props.data.location}</Typography>
-              <Typography fontWeight={600} lineHeight={'24px'} color='primary'>
                 Achievements
               </Typography>
-              <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+              <Box
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  //  overflow: 'auto', maxHeight: '250px',
+                  pr: '6px',
+                }}
+              >
                 {props.data.achievements.map((item, index) => {
                   return (
-                    <Box key={index + 1} sx={{ ml: '1rem' }}>
+                    <Box key={index + 1} sx={{ ml: '1rem', color: '#222831' }}>
                       {index + 1}- {item}
                     </Box>
                   );
                 })}
               </Box>
+              <Typography fontWeight={600} lineHeight={'24px'} color='primary'>
+                Location
+              </Typography>
+              <Typography ml={'1rem'}>{props.data.location}</Typography>
               <Typography fontWeight={600} lineHeight={'24px'} color='primary'>
                 Duration
               </Typography>
