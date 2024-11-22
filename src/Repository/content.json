@@ -504,25 +504,178 @@
     },
     "projects": [
         {
-            "id": 65,
-            "projectName": "After Sales Service Inspection",
-            "description": "Dolor voluptate cupidatat nostrud amet consectetur nisi ullamco cupidatat commodo aliquip anim consequat occaecat. Culpa minim sit non non dolor id cillum adipisicing aute deserunt. Velit amet minim dolore elit. Eiusmod laborum nostrud excepteur nostrud eiusmod. Pariatur occaecat irure aute occaecat aliqua est tempor culpa eiusmod ad culpa Lorem.",
-            "summary": "Nostrud adipisicing esse quis excepteur aliqua laborum aute commodo non esse proident dolor.",
-            "repositoryLink": "https://github.com",
-            "liveDemoLink": "https://hadibakhshi.ir",
+            "id": 77,
+            "projectName": "Mock API For Teaching",
+            "description": "This project is a simple CRUD application developed in ASP.NET Core 8 to assist in teaching advanced concepts of TanStack Query. It employs the Minimal API approach, ensuring a lightweight and straightforward implementation. The application follows a service-based architecture, promoting clean separation of concerns and reusability of components. Instead of relying on a traditional database, the project uses the file system for data storage, reading and writing files directly to manage CRUD operations. This approach not only simplifies setup but also introduces an alternative method of handling data persistence. The application provides a clear and practical example of integrating a backend with advanced TanStack Query concepts, making it an effective teaching tool for exploring modern front-end and backend development patterns.",
+            "summary": "A simple CRUD application built with ASP.NET Core 8, utilizing Minimal API, a service-based architecture, and file system operations for data storage, designed to support teaching advanced concepts of TanStack Query.",
+            "repositoryLink": "https://github.com/Hadi-bakhshi/MockAPIsForTeaching",
+            "liveDemoLink": "",
             "screenShotImage": "",
             "technologies": [
                 {
-                    "name": "NextJs",
-                    "tag": "next"
+                    "name": "C#",
+                    "tag": "csharp"
+                },
+                {
+                    "name": "ASP.NET Core",
+                    "tag": "aspnetcore"
+                },
+                {
+                    "name": "Service-based arch",
+                    "tag": ""
+                },
+                {
+                    "name": "Minimal-API",
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "id": 76,
+            "projectName": "Modeling A Domain Using DDD",
+            "description": "This project serves as a guide for modeling a domain using the principles of Domain-Driven Design (DDD). It is structured into two primary layers: the Domain layer, which encapsulates the core business logic and rules, and the Persistence layer, which handles data storage and retrieval. The implementation uses EF Core and SQL Server to manage the database interactions, ensuring efficient and reliable data access. By adhering to DDD concepts, this project emphasizes the importance of creating a domain model that reflects the business domain accurately. It demonstrates how to separate concerns, maintain a clear boundary between the domain and infrastructure, and design systems that are both flexible and aligned with business needs. This project is ideal for developers seeking to deepen their understanding of DDD and its practical implementation.",
+            "summary": "A project demonstrating domain modeling using Domain-Driven Design (DDD), featuring two layers: Domain and Persistence. Built with EF Core and SQL Server, it showcases the practical application of DDD principles.",
+            "repositoryLink": "https://github.com/Hadi-bakhshi/EShop-DDD",
+            "liveDemoLink": "",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "C#",
+                    "tag": "csharp"
+                },
+                {
+                    "name": "EF Core",
+                    "tag": "efcore"
+                },
+                {
+                    "name": "SQL Server",
+                    "tag": "mssql"
+                },
+                {
+                    "name": "DDD",
+                    "tag": ""
+                },
+                {
+                    "name": ".NET 8",
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "id": 70,
+            "projectName": "Experimental NestJS Back-end",
+            "description": "This project is a user management module developed with NestJS, showcasing the implementation of CRUD (Create, Read, Update, Delete) functionalities. It includes robust authentication and authorization mechanisms to ensure secure access control. The application demonstrates best practices in backend development by integrating user authentication, role-based access control, and secure handling of sensitive data. To ensure reliability and functionality, comprehensive end-to-end (e2e) tests were written, covering all critical workflows and edge cases. This project highlights expertise in building secure and well-tested backend systems, reflecting proficiency in NestJS and software quality assurance.",
+            "summary": "A user module built with NestJS featuring CRUD operations, authentication, and authorization, complemented by comprehensive end-to-end (e2e) testing.",
+            "repositoryLink": "https://github.com/Hadi-bakhshi/Experimental-NestJS-Project",
+            "liveDemoLink": "",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "NestJS",
+                    "tag": "nest"
+                },
+                {
+                    "name": "TypeScript",
+                    "tag": "ts"
                 },
                 {
                     "name": "ExpressJS",
                     "tag": "express"
                 },
                 {
-                    "name": "Material-UI",
-                    "tag": "mui"
+                    "name": "Prisma",
+                    "tag": "prisma"
+                },
+                {
+                    "name": "Postgre",
+                    "tag": "postgre"
+                },
+                {
+                    "name": "Passport",
+                    "tag": ""
+                },
+                {
+                    "name": "JWT",
+                    "tag": ""
+                },
+                {
+                    "name": "class-validator",
+                    "tag": ""
+                },
+                {
+                    "name": "Jest",
+                    "tag": ""
+                },
+                {
+                    "name": "Pactum",
+                    "tag": ""
+                },
+                {
+                    "name": "Supertest",
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "id": 71,
+            "projectName": "Clean architecture in NestJS",
+            "description": "This NestJS boilerplate is a robust implementation of Clean Architecture, structured into four distinct layers: Application, Domain, Infrastructure, and Presentation. Designed to ensure maintainability and scalability, it provides an excellent foundation for modern web applications. The boilerplate uses TypeORM with MSSQL to handle database operations and integrates Passport to implement JWT-based authentication and authorization, ensuring secure access control. It incorporates class-validator for model binding and request body validation, enhancing data integrity. OpenAPI and Swagger are used to deliver comprehensive API documentation, making it easier for developers to understand and interact with the endpoints. Security is a key focus, with features such as throttling via Throttler to protect against DDoS attacks, response security headers implemented using Helmet, and compression for efficient API responses. Pino is used for structured and high-performance logging, facilitating effective monitoring and debugging. The boilerplate also includes health check endpoints to monitor the application's status. Jest is integrated to ensure high-quality code through comprehensive unit and integration testing. This boilerplate is open-source and free to use, offering developers a complete, ready-to-use framework for building secure, scalable, and well-documented applications with NestJS.",
+            "summary": "A ready-to-use, open-source NestJS boilerplate implementing Clean Architecture with four layers: Application, Domain, Infrastructure, and Presentation. It includes robust features like JWT-based authentication, API documentation, and security enhancements.",
+            "repositoryLink": "https://github.com/Hadi-bakhshi/clean-arch-nestjs",
+            "liveDemoLink": "",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "NestJS",
+                    "tag": "nest"
+                },
+                {
+                    "name": "TypeScript",
+                    "tag": "ts"
+                },
+                {
+                    "name": "ExpressJS",
+                    "tag": "express"
+                },
+                {
+                    "name": "TypeORM",
+                    "tag": "typeorm"
+                },
+                {
+                    "name": "Swagger",
+                    "tag": ""
+                },
+                {
+                    "name": "Passport",
+                    "tag": ""
+                },
+                {
+                    "name": "JWT",
+                    "tag": ""
+                },
+                {
+                    "name": "Class-validator",
+                    "tag": ""
+                },
+                {
+                    "name": "Jest",
+                    "tag": ""
+                },
+                {
+                    "name": "Throttler",
+                    "tag": ""
+                },
+                {
+                    "name": "mssql",
+                    "tag": ""
+                },
+                {
+                    "name": "Helmet",
+                    "tag": ""
+                },
+                {
+                    "name": "Pino",
+                    "tag": ""
                 }
             ]
         },
@@ -615,6 +768,69 @@
                 },
                 {
                     "name": "Framer-motion",
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "id": 69,
+            "projectName": "Mahtisa Shop",
+            "description": "Mahtisa Shop is a full-stack e-commerce application built using the MERN (MongoDB, Express, React, Node.js) stack. It showcases the complete functionality of an online store, including a backend system for managing user authentication, product data, and order processing. The application features a collection of popular shoes and sneakers, providing users with the ability to explore products, add items to their cart, create accounts, and simulate purchases. While it is not a real shop, it offers a fully interactive experience that demonstrates essential e-commerce features, such as secure backend integration, user management, and seamless cart functionality. Mahtisa Shop highlights both front-end and back-end development skills, emphasizing expertise in building robust, full-stack applications.",
+            "summary": "An e-commerce MERN application offering a curated selection of popular shoes and sneakers, allowing users to browse, add items to their cart, create accounts, and submit purchases in a simulated shopping experience.",
+            "repositoryLink": "https://github.com/Hadi-bakhshi/mahtisa-shopping",
+            "liveDemoLink": "https://mahtisa-shopping-center.vercel.app/",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "JavaScript",
+                    "tag": "js"
+                },
+                {
+                    "name": "React",
+                    "tag": "react"
+                },
+                {
+                    "name": "React Router Dom",
+                    "tag": "rrd"
+                },
+                {
+                    "name": "Formik",
+                    "tag": "formik"
+                },
+                {
+                    "name": "Material-UI",
+                    "tag": "mui"
+                },
+                {
+                    "name": "ExpressJS",
+                    "tag": "express"
+                },
+                {
+                    "name": "NodeJS",
+                    "tag": "node"
+                },
+                {
+                    "name": "MongoDB",
+                    "tag": "mongodb"
+                },
+                {
+                    "name": "Axios",
+                    "tag": ""
+                },
+                {
+                    "name": "AOS",
+                    "tag": ""
+                },
+                {
+                    "name": "Yup",
+                    "tag": ""
+                },
+                {
+                    "name": "Swiper",
+                    "tag": ""
+                },
+                {
+                    "name": "Emotion",
                     "tag": ""
                 }
             ]
