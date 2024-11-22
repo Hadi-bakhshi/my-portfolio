@@ -525,6 +525,99 @@
                     "tag": "mui"
                 }
             ]
+        },
+        {
+            "id": 66,
+            "projectName": "Google Drive App",
+            "description": "This application simplifies sharing and embedding files stored on Google Drive. Users can effortlessly generate direct download links or embed codes for audio, video, and document files. The process is straightforward: right-click on any file in Google Drive, copy the shared link, paste it into the application, and click Generate. The app handles all the formatting and customization required to produce the desired output, ensuring compatibility across various platforms and use cases.This project is designed for content creators, educators, and professionals seeking to streamline file sharing and embedding workflows. It eliminates the hassle of manual adjustments, making it an essential tool for anyone leveraging Google Drive for their file-sharing needs.",
+            "summary": "A user-friendly application that transforms shared Google Drive links into direct download links and embedded media formats (audio, video, and documents) with just a few clicks.",
+            "repositoryLink": "https://github.com/Hadi-bakhshi/Googledriveapp",
+            "liveDemoLink": "https://googledriveapp.vercel.app/",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "JavaScript",
+                    "tag": "js"
+                },
+                {
+                    "name": "CSS",
+                    "tag": "css"
+                }
+            ]
+        },
+        {
+            "id": 67,
+            "projectName": "Expense Tracker",
+            "description": "This expense tracker provides a simple yet powerful solution for personal finance management. Users can easily add their income and expenses with just a few clicks, ensuring a seamless experience. The application organizes financial data into comprehensive lists, giving users a clear view of their financial history. Additionally, the app features visually appealing and interactive charts, offering insights into spending and saving patterns. Designed for simplicity and functionality, this tool is perfect for anyone looking to stay on top of their finances without unnecessary complexity.",
+            "summary": "A straightforward expense tracker that allows users to efficiently manage their income and expenses, view detailed lists, and analyze financial data with interactive charts.",
+            "repositoryLink": "https://github.com/Hadi-bakhshi/expense-tracker",
+            "liveDemoLink": "https://61cedbf89a1bec0f0a41de77--sharp-varahamihira-fb9bb8.netlify.app/",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "JavaScript",
+                    "tag": "js"
+                },
+                {
+                    "name": "React",
+                    "tag": "react"
+                },
+                {
+                    "name": "TailwindCSS",
+                    "tag": "tailwind"
+                },
+                {
+                    "name": "React Router Dom",
+                    "tag": "rrd"
+                },
+                {
+                    "name": "Headless UI",
+                    "tag": ""
+                },
+                {
+                    "name": "Victory",
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "id": 68,
+            "projectName": "My First Portfolio",
+            "description": "This portfolio serves as a comprehensive representation of my skills, experience, and knowledge in various technologies. It features a well-organized layout that includes sections for introducing myself, showcasing my projects, and detailing my technical expertise. The site is designed to make a strong impression on potential employers or collaborators by demonstrating my capabilities in web development.Built with modern tools and technologies, this portfolio reflects both my creative and technical skills, ensuring a user-friendly and visually engaging experience for visitors.",
+            "summary": "A personal portfolio website designed to showcase technical expertise, introduce myself, and highlight professional achievements and projects.",
+            "repositoryLink": "https://github.com/Hadi-bakhshi/fr-port-react",
+            "liveDemoLink": "https://hadibakhshi.ir",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "JavaScript",
+                    "tag": "js"
+                },
+                {
+                    "name": "React",
+                    "tag": "react"
+                },
+                {
+                    "name": "React Router Dom",
+                    "tag": "rrd"
+                },
+                {
+                    "name": "SASS",
+                    "tag": "sass"
+                },
+                {
+                    "name": "Axios",
+                    "tag": ""
+                },
+                {
+                    "name": "EmailJS",
+                    "tag": ""
+                },
+                {
+                    "name": "Framer-motion",
+                    "tag": ""
+                }
+            ]
         }
     ],
     "interestsAndHobbies": [

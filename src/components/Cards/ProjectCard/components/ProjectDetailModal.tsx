@@ -67,9 +67,27 @@ export default function ProjectDetailModal(props: ProjectDetailModalProps) {
                     cursor: 'pointer',
                   }}
                 >
-                  <Tooltip title={item.name} arrow>
-                    <Image src={`/${item.tag}.svg`} alt={item.name} width={50} height={50} />
-                  </Tooltip>
+                  {item.tag && (
+                    <Tooltip title={item.name} arrow>
+                      <Image src={`/${item.tag}.svg`} alt={item.name} width={50} height={50} />
+                    </Tooltip>
+                  )}
+                  {!item.tag && (
+                    <Typography
+                      fontSize={12}
+                      textAlign={'center'}
+                      fontWeight={400}
+                      sx={{
+                        width: '50px',
+                        height: '50px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      {item.name}
+                    </Typography>
+                  )}
                   {/* <Typography fontSize={12} textAlign={'center'} fontWeight={400}>
                     {item.name}
                   </Typography> */}

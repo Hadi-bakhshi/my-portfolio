@@ -19,7 +19,18 @@ export default function Projects() {
       <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} my={'4rem'}>
         Projects
       </Typography>
-      <Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          justifyContent: 'center',
+          columnGap: '1rem',
+          rowGap: '5rem',
+          mt: '2rem',
+        }}
+      >
         {data.projects?.map((item) => {
           return (
             <ProjectCard
