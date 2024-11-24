@@ -504,6 +504,117 @@
     },
     "projects": [
         {
+            "id": 80,
+            "projectName": "Sales Service Inspection",
+            "description": "The sales service inspection application is an upgraded version of the after-sales service inspection system, tailored to provide a more efficient and modern solution for inspection workflows. Building upon the foundation of its predecessor, this project introduced upgraded packages, ensuring improved performance and maintainability. The user interface was completely redesigned to offer a modern and intuitive experience, enhancing usability for inspectors and stakeholders alike. Significant refactoring was carried out on both the front-end and back-end codebases, improving readability, scalability, and adherence to best practices. The database design was also renewed to support new features and provide optimized data handling and retrieval. This project demonstrates a commitment to continuous improvement and the ability to evolve an existing system into a more robust and user-friendly application.",
+            "summary": "A sales service inspection application built as an enhanced version of the after-sales service inspection system, featuring upgraded packages, a refreshed UI, refactored front-end and back-end code, and a renewed database design.",
+            "repositoryLink": "",
+            "liveDemoLink": "",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "NextJS",
+                    "tag": "next"
+                },
+                {
+                    "name": "Material-UI",
+                    "tag": "mui"
+                },
+                {
+                    "name": "Redux Toolkit",
+                    "tag": "redux"
+                },
+                {
+                    "name": "React Hook Form",
+                    "tag": "rhf"
+                },
+                {
+                    "name": "TypeScript",
+                    "tag": "ts"
+                },
+                {
+                    "name": "SASS",
+                    "tag": "sass"
+                },
+                {
+                    "name": "NodeJS",
+                    "tag": "node"
+                },
+                {
+                    "name": "ExpressJS",
+                    "tag": "express"
+                },
+                {
+                    "name": "SQL Server",
+                    "tag": "mssql"
+                },
+                {
+                    "name": "Emotion",
+                    "tag": ""
+                },
+                {
+                    "name": "Ag-grid",
+                    "tag": ""
+                },
+                {
+                    "name": "Axios",
+                    "tag": ""
+                },
+                {
+                    "name": "Framer-motion",
+                    "tag": ""
+                },
+                {
+                    "name": "Redux-persist",
+                    "tag": ""
+                },
+                {
+                    "name": "Archiver",
+                    "tag": ""
+                },
+                {
+                    "name": "Exceljs",
+                    "tag": ""
+                },
+                {
+                    "name": "Helmet",
+                    "tag": ""
+                },
+                {
+                    "name": "Joi",
+                    "tag": ""
+                },
+                {
+                    "name": "JWT",
+                    "tag": ""
+                },
+                {
+                    "name": "Morgan",
+                    "tag": ""
+                },
+                {
+                    "name": "Winston",
+                    "tag": ""
+                },
+                {
+                    "name": "mssql",
+                    "tag": ""
+                },
+                {
+                    "name": "Node-cron",
+                    "tag": ""
+                },
+                {
+                    "name": "Puppeteer",
+                    "tag": ""
+                },
+                {
+                    "name": "xlsx",
+                    "tag": ""
+                }
+            ]
+        },
+        {
             "id": 79,
             "projectName": "Motorcycle And Machinery After-sales Inspection Dashboards",
             "description": "The motorcycle and machinery after-sales inspection dashboard applications were designed to provide a comprehensive overview of inspection data accumulated over years. These applications present data through a variety of dynamic and visually engaging charts, offering actionable insights for stakeholders. My co-worker and I leveraged ECharts to implement a diverse range of chart types, ensuring that the visualizations effectively communicated the inspection trends and results. The applications were developed using modern web technologies, including React, Vite, and Redux Toolkit Query, to create a highly responsive and performant user interface. The combination of these tools allowed us to build a fast and efficient application with a great user experience, enabling users to navigate through extensive datasets effortlessly. This project highlights the ability to design and implement data-driven dashboard applications tailored to meet industry needs.",
