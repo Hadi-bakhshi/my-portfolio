@@ -504,6 +504,168 @@
     },
     "projects": [
         {
+            "id": 82,
+            "projectName": "Chabok Application",
+            "description": "Chabok is an innovative application that connects and integrates diverse organizational systems into a unified platform, offering a streamlined experience for employees, managers, and executives. Whether it's submitting HR requests like leave applications and mission declarations or accessing financial information such as payslips, users no longer need multiple applications. Chabok consolidates all services in one place, tailored to meet the unique needs of each organization. The app's modular design supports dynamic system extensions, allowing organizations to request and implement new modules or connect to any existing systems seamlessly. This flexibility makes it suitable for organizations of any size, accommodating roles ranging from employees to CEOs and board members. As a key contributor, I led the design and implementation of modules, database architecture, and back-end functionality. We opted for SQL Server and Redis to handle data storage and caching, ensuring high performance and scalability. Implementing efficient data retrieval was a priority, so we developed flexible patterns that adapt to various system requirements, switching between database and back-end approaches as needed. The application was developed using ASP.NET Core 8 with EF Core, Dapper, FluentValidation, and MediatR, adhering to clean architecture principles and leveraging essential design patterns tailored to each module. My role involved crafting robust software architectures, enabling the application to meet diverse organizational demands while maintaining exceptional performance and reliability.",
+            "summary": "Chabok is a modular app unifying organizational systems, providing seamless access to services like HR requests and financial management. As product owner and software engineer, I led module design, database architecture, and back-end development.",
+            "repositoryLink": "",
+            "liveDemoLink": "",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "C#",
+                    "tag": "csharp"
+                },
+                {
+                    "name": "ASP.NET Core",
+                    "tag": "aspnetcore"
+                },
+                {
+                    "name": "EF Core",
+                    "tag": "efcore"
+                },
+                {
+                    "name": "Dapper",
+                    "tag": "dapper"
+                },
+                {
+                    "name": "SQL Server",
+                    "tag": "mssql"
+                },
+                {
+                    "name": "Redis",
+                    "tag": "redis"
+                },
+                {
+                    "name": "Clean Architecture",
+                    "tag": "cleanarch"
+                },
+                {
+                    "name": "Modular Monolith",
+                    "tag": "modularmonolith"
+                },
+                {
+                    "name": "MediatR",
+                    "tag": ""
+                },
+                {
+                    "name": "Fluent Validation",
+                    "tag": ""
+                },
+                {
+                    "name": "Mapster",
+                    "tag": ""
+                },
+                {
+                    "name": "Serilog",
+                    "tag": ""
+                },
+                {
+                    "name": "Open Telemetry",
+                    "tag": ""
+                },
+                {
+                    "name": "JWT",
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "id": 81,
+            "projectName": "Reception Assistant",
+            "description": "Reception Assistant is an innovative application designed to improve efficiency and customer satisfaction at dealership after-sales service centers. It offers a range of features, including tracking customer history, analyzing their behavior through AI, and providing insights into their satisfaction levels and any issues encountered. Additionally, it generates personalized customer personas and offers counseling services to centers on topics like increasing Customer Satisfaction Index (CSI). As part of the development team, my co-worker and I collaboratively designed the system and database architecture. Given the large volume of data and the need for high performance, we selected SQL Server as the database solution and adopted a database-first approach, using Prisma to scaffold and implement database interactions. My contributions focused primarily on the back-end, where I utilized NestJS to build a robust, secure, and scalable framework. To ensure application security, we implemented JWT for authentication and authorization, adhering to best practices for session management and using tools like Passport, Helmet, and Pino for security, logging, and performance monitoring. The application also includes advanced features like XLSX support for report generation and data uploading and an IPG integration to handle subscription purchases seamlessly. Each agency is required to subscribe to use the app, adding a layer of financial management to the system. Upon releasing the first version, I transitioned into the role of product owner, driving the vision and further development of the application. While my primary focus was on back-end and database development, I also contributed to the front-end implementation, ensuring the application delivered a seamless and efficient experience for its users.",
+            "summary": "Reception Assistant is a dealership application aiding receptionists with customer history tracking, behavior analysis, satisfaction insights, and counseling services. I contributed as a back-end developer and database designer, ensuring a secure, scalable, and high-performance system.",
+            "repositoryLink": "",
+            "liveDemoLink": "",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "SQL Server",
+                    "tag": "mssql"
+                },
+                {
+                    "name": "Redis",
+                    "tag": "redis"
+                },
+                {
+                    "name": "NodeJS",
+                    "tag": "node"
+                },
+                {
+                    "name": "TypeScript",
+                    "tag": "ts"
+                },
+                {
+                    "name": "NestJS",
+                    "tag": "nest"
+                },
+                {
+                    "name": "ExpressJS",
+                    "tag": "express"
+                },
+                {
+                    "name": "Prisma",
+                    "tag": "prisma"
+                },
+                {
+                    "name": "React",
+                    "tag": "react"
+                },
+                {
+                    "name": "Material-UI",
+                    "tag": "mui"
+                },
+                {
+                    "name": "React Hook Form",
+                    "tag": "rhf"
+                },
+                {
+                    "name": "SASS",
+                    "tag": "sass"
+                },
+                {
+                    "name": "Axios",
+                    "tag": ""
+                },
+                {
+                    "name": "Passport",
+                    "tag": ""
+                },
+                {
+                    "name": "JWT",
+                    "tag": ""
+                },
+                {
+                    "name": "xlsx",
+                    "tag": ""
+                },
+                {
+                    "name": "Pino",
+                    "tag": ""
+                },
+                {
+                    "name": "Throttler",
+                    "tag": ""
+                },
+                {
+                    "name": "Swagger",
+                    "tag": ""
+                },
+                {
+                    "name": "Ag-grid",
+                    "tag": ""
+                },
+                {
+                    "name": "Echarts",
+                    "tag": ""
+                },
+                {
+                    "name": "Swiper",
+                    "tag": ""
+                }
+            ]
+        },
+        {
             "id": 80,
             "projectName": "Sales Service Inspection",
             "description": "The sales service inspection application is an upgraded version of the after-sales service inspection system, tailored to provide a more efficient and modern solution for inspection workflows. Building upon the foundation of its predecessor, this project introduced upgraded packages, ensuring improved performance and maintainability. The user interface was completely redesigned to offer a modern and intuitive experience, enhancing usability for inspectors and stakeholders alike. Significant refactoring was carried out on both the front-end and back-end codebases, improving readability, scalability, and adherence to best practices. The database design was also renewed to support new features and provide optimized data handling and retrieval. This project demonstrates a commitment to continuous improvement and the ability to evolve an existing system into a more robust and user-friendly application.",
