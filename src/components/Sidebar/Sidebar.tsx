@@ -36,6 +36,7 @@ export default function Sidebar(props: SidebarProps) {
             key={index}
             href={item.name !== 'Home' ? `#${item.name}` : ''}
             style={{ color: 'var(--mui-palette-action-active)', textDecoration: 'none' }}
+            aria-label={item.name}
           >
             <ListItem
               disablePadding
@@ -56,7 +57,12 @@ export default function Sidebar(props: SidebarProps) {
     <div>
       {(['left'] as const).map((anchor) => (
         <Fragment key={anchor}>
-          <IconButton color='primary' onClick={toggleDrawer(true)} sx={{ marginLeft: '1rem' }}>
+          <IconButton
+            color='primary'
+            onClick={toggleDrawer(true)}
+            sx={{ marginLeft: '1rem' }}
+            aria-label='Open sidebar'
+          >
             <SidebarLeftIcon color='inherit' />
           </IconButton>
           <SwipeableDrawer

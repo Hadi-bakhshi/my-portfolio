@@ -25,7 +25,7 @@ export default function MyImage() {
           zIndex: '9',
         }}
       >
-        <Image className={styles.MyImage} src={Me} alt='my-photo' width={316} height={287} />
+        <Image className={styles.MyImage} src={Me} alt='my-photo' priority placeholder='blur' />
         <EmptyWhiteCircle className={styles.emptyLeftCircle} />
         <EmptyWhiteCircleWithShadow className={styles.emptyRightCircle} />
         <ReactIcon className={styles.reactIcon} />

@@ -49,7 +49,7 @@ export default function ExperienceCard(props: ExperienceCardProps) {
           }}
         >
           <Typography
-            component='h6'
+            component='h1'
             textAlign={'left'}
             px={'4px'}
             fontWeight='700'

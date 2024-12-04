@@ -342,7 +342,7 @@
             },
             {
                 "id": 850,
-                "caption": "R & D",
+                "caption": "R&D",
                 "borderRadius": "50% 50% 51% 49% / 30% 29% 71% 70%",
                 "bgColor": "#FDFFAE",
                 "color": "#222831"
@@ -350,7 +350,7 @@
             {
                 "id": 851,
                 "caption": "Problem Solving",
-                "borderRadius": "50% 50% 51% 49% / 58% 47% 53% 42%",
+                "borderRadius": "54% 46% 81% 19% / 52% 48% 52% 48%",
                 "bgColor": "#B0D9B1",
                 "color": "#222831"
             },
