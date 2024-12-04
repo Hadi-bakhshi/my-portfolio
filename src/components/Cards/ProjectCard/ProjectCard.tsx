@@ -66,7 +66,7 @@ export default function ProjectCard(props: ProjectCardProps) {
         }}
       >
         <Typography
-          component='h6'
+          component='h1'
           fontSize={18}
           fontWeight={400}
           lineHeight='28px'

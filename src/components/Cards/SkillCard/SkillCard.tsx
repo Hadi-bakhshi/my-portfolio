@@ -36,7 +36,7 @@ export default function SkillCard(props: SkillCardProps) {
       )}
       <Box sx={{ paddingTop: '4.5rem' }}>
         <Typography
-          component='h6'
+          component='h1'
           textAlign={'center'}
           px={'4px'}
           fontWeight='700'

@@ -1,15 +1,13 @@
 'use client';
 import Image from 'next/image';
 import styles from './NavigationBar.module.scss';
-// import CodeLabIcon from '@/public/codelab.svg';
 import HLogo from '@/public/hLogo.png';
 import {
   BodyPartMuscleIcon,
   CodeFolderIcon,
-  DocumentIcon,
   FavoriteSquareIcon,
+  FileDownloadIcon,
   HomeIcon,
-  // SidebarLeftIcon,
   UserListIcon,
   WorkIcon,
 } from '@/components/Icons/General';
@@ -27,6 +25,16 @@ const sections = [
 ];
 
 function NavigationBar() {
+  // ----------------------------- Handlers ----------------------------
+  const downloadHandler = () => {
+    const link = document.createElement('a');
+    link.href = '/Hadi Bakhshi-Software Engineer.pdf';
+    link.setAttribute('download', 'Hadi Bakhshi-Software Engineer.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
@@ -54,8 +62,8 @@ function NavigationBar() {
         </div>
         <div className={styles.emptyElement}>
           <Tooltip title='Download Resume' arrow>
-            <IconButton color='primary'>
-              <DocumentIcon color='inherit' />
+            <IconButton color='primary' onClick={downloadHandler}>
+              <FileDownloadIcon color='inherit' />
             </IconButton>
           </Tooltip>
         </div>

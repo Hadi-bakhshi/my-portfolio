@@ -5,7 +5,7 @@ export default function SoftSkillCard(props: SoftSkillCardProps) {
   return (
     <Box
       sx={{
-        width: '124px',
+        width: '134px',
         height: '130px',
         display: 'flex',
         alignItems: 'center',
@@ -17,7 +17,7 @@ export default function SoftSkillCard(props: SoftSkillCardProps) {
         // padding:"0.5rem"
       }}
     >
-      <Typography sx={{ fontWeight: 500, color: props.color || '#000', textAlign: 'center' }}>
+      <Typography sx={{ fontWeight: 500, color: props.color || '#000', textAlign: 'center', width: 'min-content' }}>
         {props.caption}
       </Typography>
     </Box>
