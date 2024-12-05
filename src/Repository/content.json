@@ -31,6 +31,13 @@
                 "tag": "ts"
             },
             {
+                "id": 50,
+                "category": "Back-end Development",
+                "categoryId": 2,
+                "name": ".NET",
+                "tag": "dotnet"
+            },
+            {
                 "id": 4,
                 "category": "Back-end Development",
                 "categoryId": 2,
@@ -50,6 +57,13 @@
                 "categoryId": 2,
                 "name": "Dapper",
                 "tag": "dapper"
+            },
+            {
+                "id": 51,
+                "category": "Back-end Development",
+                "categoryId": 2,
+                "name": "MediatR",
+                "tag": "mediatr"
             },
             {
                 "id": 7,
@@ -295,6 +309,27 @@
                 "categoryId": 5,
                 "name": "UI/UX Design",
                 "tag": "uud"
+            },
+            {
+                "id": 49,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "Figma",
+                "tag": "figma"
+            },
+            {
+                "id": 47,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "SCRUM",
+                "tag": "scrum"
+            },
+            {
+                "id": 48,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "Jira",
+                "tag": "jira"
             },
             {
                 "id": 42,
