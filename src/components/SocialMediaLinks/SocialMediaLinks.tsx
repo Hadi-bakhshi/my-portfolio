@@ -43,7 +43,7 @@ export default function SocialMediaLinks(props: ISocialMediaProps) {
         <MailIcon />
         <Typography component='span'>Mail</Typography>
       </Link>
-      <Link href={'tel:00989922615295'} target='_blank' className={styles.linkHover} aria-label='My phone number'>
+      <Link href={'tel:00989301377887'} target='_blank' className={styles.linkHover} aria-label='My phone number'>
         <SmartPhoneIcon />
         <Typography component='span'>Phone</Typography>
       </Link>
@@ -51,7 +51,12 @@ export default function SocialMediaLinks(props: ISocialMediaProps) {
         <TelegramIcon />
         <Typography component='span'>Telegram</Typography>
       </Link>
-      <Link href={'https://skype.com'} target='_blank' className={styles.linkHover} aria-label='Skype link'>
+      <Link
+        href={'https://join.skype.com/invite/Jb7eS6HF4l9S'}
+        target='_blank'
+        className={styles.linkHover}
+        aria-label='Skype link'
+      >
         <SkypeIcon />
         <Typography component='span'>Skype</Typography>
       </Link>
