@@ -1,0 +1,37 @@
+name: Generate and Update Pull Request Description
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  update-pull-request-description:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Fetch the full history
+
+    - name: Generate Pull Request Description
+      id: generate_description
+      run: |
+        echo "## Changes" > pr_description.txt
+        if git rev-parse HEAD^ >/dev/null 2>&1; then
+          git log --oneline HEAD^..HEAD >> pr_description.txt
+        else
+          echo "Single commit or no prior commit found." >> pr_description.txt
+          git log --oneline HEAD >> pr_description.txt
+        fi
+        echo "pull_request_description=$(cat pr_description.txt)" >> $GITHUB_ENV
+
+    - name: Update Pull Request Description
+      uses: kt3k/update-pr-description@v2.1.1
+      with:
+        pull_request_url: ${{ github.event.pull_request.html_url }}
+        api_token: ${{ secrets.GITHUB_TOKEN }}
+        pr_body: ${{ env.pull_request_description }}
