@@ -24,7 +24,14 @@ export default function Experiences() {
       }}
       id='Experiences'
     >
-      <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} my={'4rem'}>
+      <Typography
+        component='h1'
+        fontWeight='600'
+        fontSize={'28px'}
+        lineHeight={'36px'}
+        my={'4rem'}
+        textAlign={'center'}
+      >
         Work and Education Experiences
       </Typography>
       <Tab tabList={['Work', 'Education']} activeTabIndex={activeTabIndex} onClick={tabClickHandler} />

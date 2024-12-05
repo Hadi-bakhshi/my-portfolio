@@ -17,7 +17,14 @@ export default function HobbiesAndInterests() {
       }}
       id='Interests'
     >
-      <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} my={'4rem'}>
+      <Typography
+        component='h1'
+        fontWeight='600'
+        fontSize={'28px'}
+        lineHeight={'36px'}
+        my={'4rem'}
+        textAlign={'center'}
+      >
         Hobbies and Interests
       </Typography>
       <Box
