@@ -74,7 +74,7 @@ export default function ProjectCard(props: ProjectCardProps) {
         >
           {props.projectName}
         </Typography>
-        <Typography fontSize={12} fontWeight={400} lineHeight='16px' textAlign={'justify'}>
+        <Typography fontSize={12} fontWeight={400} lineHeight='16px' textAlign={'center'}>
           {props.summary}
         </Typography>
       </Box>

@@ -1,11 +1,12 @@
 import HobbyCard from '@/components/Cards/HobbyCard/HobbyCard';
 import data from '@/Repository/content.json';
 import { Box, Typography } from '@mui/material';
+import * as motion from 'motion/react-client';
 
 export default function HobbiesAndInterests() {
   return (
     <Box
-      component='section'
+      component={motion.section}
       sx={{
         width: '100%',
         display: 'flex',
@@ -16,6 +17,8 @@ export default function HobbiesAndInterests() {
         mb: 4,
       }}
       id='Interests'
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
     >
       <Typography
         component='h1'

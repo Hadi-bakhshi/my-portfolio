@@ -4,6 +4,7 @@ import { Box, Typography } from '@mui/material';
 import { useState } from 'react';
 import data from '@/Repository/content.json';
 import ExperienceCard from '@/components/Cards/ExperienceCard/ExperienceCard';
+import { motion } from 'motion/react';
 
 export default function Experiences() {
   const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
@@ -13,7 +14,7 @@ export default function Experiences() {
   };
   return (
     <Box
-      component='section'
+      component={motion.section}
       sx={{
         width: '100%',
         display: 'flex',
@@ -23,6 +24,8 @@ export default function Experiences() {
         gap: '1rem',
       }}
       id='Experiences'
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
     >
       <Typography
         component='h1'

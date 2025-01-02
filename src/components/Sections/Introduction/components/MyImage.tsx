@@ -1,11 +1,17 @@
 import Box from '@mui/material/Box';
 import Image from 'next/image';
-// import MyPhoto from '@/public/hb.png';
+import * as motion from 'motion/react-client';
 import Me from '@/public/me2.webp';
 import EmptyWhiteCircle from './EmptyWhiteCircle';
 import { ReactIcon, CSharpIcon, DotnetIcon, NodeJsIcon, SqlServerIcon } from '@/components/Icons/Introduction';
 import styles from './MyImage.module.scss';
 import EmptyWhiteCircleWithShadow from './EmptyWhiteCircleWithShadow';
+
+const animatedStyles = {
+  initial: { scale: 0.5, rotate: 0, opacity: 0 },
+  whileInView: { scale: 1, rotate: 360, opacity: 1 },
+  transition: { duration: 1.5, ease: 'easeInOut' },
+};
 
 export default function MyImage() {
   return (
@@ -21,19 +27,59 @@ export default function MyImage() {
           display: 'inline-flex',
           alignItems: 'center',
           justifyContent: 'flex-end',
-          // padding: '74px 4px 13px 39px',
           zIndex: '9',
         }}
       >
         <Image className={styles.MyImage} src={Me} alt='my-photo' priority placeholder='blur' />
         <EmptyWhiteCircle className={styles.emptyLeftCircle} />
         <EmptyWhiteCircleWithShadow className={styles.emptyRightCircle} />
-        <ReactIcon className={styles.reactIcon} />
-        <CSharpIcon className={styles.cSharpIcon} />
-        <DotnetIcon className={styles.dotNetIcon} />
-        <NodeJsIcon className={styles.nodeJsIcon} />
-        <SqlServerIcon className={styles.sqlServerIcon} />
-        <Box component='span'></Box>
+
+        {/* Animated Icons */}
+        <motion.div
+          initial={animatedStyles.initial}
+          whileInView={animatedStyles.whileInView}
+          transition={animatedStyles.transition}
+          // viewport={{ once: true }}
+          className={styles.reactIcon}
+        >
+          <ReactIcon />
+        </motion.div>
+        <motion.div
+          initial={animatedStyles.initial}
+          whileInView={animatedStyles.whileInView}
+          transition={animatedStyles.transition}
+          // viewport={{ once: true }}
+          className={styles.cSharpIcon}
+        >
+          <CSharpIcon />
+        </motion.div>
+        <motion.div
+          initial={animatedStyles.initial}
+          whileInView={animatedStyles.whileInView}
+          transition={animatedStyles.transition}
+          // viewport={{ once: true }}
+          className={styles.dotNetIcon}
+        >
+          <DotnetIcon />
+        </motion.div>
+        <motion.div
+          initial={animatedStyles.initial}
+          whileInView={animatedStyles.whileInView}
+          transition={animatedStyles.transition}
+          // viewport={{ once: true }}
+          className={styles.nodeJsIcon}
+        >
+          <NodeJsIcon />
+        </motion.div>
+        <motion.div
+          initial={animatedStyles.initial}
+          whileInView={animatedStyles.whileInView}
+          transition={animatedStyles.transition}
+          // viewport={{ once: true }}
+          className={styles.sqlServerIcon}
+        >
+          <SqlServerIcon />
+        </motion.div>
       </Box>
     </Box>
   );
