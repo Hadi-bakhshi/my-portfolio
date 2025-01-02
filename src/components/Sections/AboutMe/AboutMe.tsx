@@ -3,10 +3,17 @@ import data from '@/Repository/content.json';
 import styles from './AboutMe.module.scss';
 import Image from 'next/image';
 import MyPhoto from '@/public/MyImage.webp';
+import * as motion from 'motion/react-client';
 
 export default function AboutMe() {
   return (
-    <Box component='section' className={styles.sectionWrapper} id='AboutMe'>
+    <Box
+      component={motion.section}
+      className={styles.sectionWrapper}
+      id='AboutMe'
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
+    >
       <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} margin={'2rem'}>
         About Me
       </Typography>

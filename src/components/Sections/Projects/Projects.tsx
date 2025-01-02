@@ -1,11 +1,12 @@
 import ProjectCard from '@/components/Cards/ProjectCard/ProjectCard';
 import data from '@/Repository/content.json';
 import { Box, Typography } from '@mui/material';
+import * as motion from 'motion/react-client';
 
 export default function Projects() {
   return (
     <Box
-      component='section'
+      component={motion.section}
       sx={{
         width: '100%',
         display: 'flex',
@@ -15,6 +16,8 @@ export default function Projects() {
         gap: '1rem',
       }}
       id='Projects'
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
     >
       <Typography component='h1' fontWeight='600' fontSize={'28px'} lineHeight={'36px'} my={'4rem'}>
         Projects

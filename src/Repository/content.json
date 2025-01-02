@@ -1355,5 +1355,31 @@
             "img": "/gym.svg",
             "bgColor": "#DFD3C3"
         }
+    ],
+    "categories": [
+        {
+            "category": "Programming Language",
+            "categoryId": 1
+        },
+        {
+            "category": "Back-end Development",
+            "categoryId": 2
+        },
+        {
+            "category": "Front-end Development",
+            "categoryId": 3
+        },
+        {
+            "category": "Database Management",
+            "categoryId": 4
+        },
+        {
+            "category": "DevOps, Infrastructure & Workflow Automation",
+            "categoryId": 5
+        },
+        {
+            "category": "Architectural & Design Patterns",
+            "categoryId": 6
+        }
     ]
 }

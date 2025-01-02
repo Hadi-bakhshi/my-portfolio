@@ -58,3 +58,12 @@
     top: 50px;
   }
 }
+
+.cSharpIcon:hover,
+.dotNetIcon:hover,
+.nodeJsIcon:hover,
+.reactIcon:hover,
+.sqlServerIcon:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out; /* Adds smooth animation */
+}
