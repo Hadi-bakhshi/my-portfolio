@@ -339,6 +339,27 @@
                 "tag": "jira"
             },
             {
+                "id": 2005,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "Vite",
+                "tag": "vite"
+            },
+            {
+                "id": 2006,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "Rollup.js",
+                "tag": "rollup"
+            },
+            {
+                "id": 2007,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "NPM Package",
+                "tag": "npm"
+            },
+            {
                 "id": 42,
                 "category": "Architectural & Design Patterns",
                 "categoryId": 6,
