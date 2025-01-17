@@ -297,6 +297,13 @@
                 "tag": "linux"
             },
             {
+                "id": 2002,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "SIP.js/WebRTC",
+                "tag": "sip"
+            },
+            {
                 "id": 40,
                 "category": "DevOps, Infrastructure & Workflow Automation",
                 "categoryId": 5,
@@ -330,6 +337,27 @@
                 "categoryId": 5,
                 "name": "Jira",
                 "tag": "jira"
+            },
+            {
+                "id": 2005,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "Vite",
+                "tag": "vite"
+            },
+            {
+                "id": 2006,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "Rollup.js",
+                "tag": "rollup"
+            },
+            {
+                "id": 2007,
+                "category": "DevOps, Infrastructure & Workflow Automation",
+                "categoryId": 5,
+                "name": "NPM Package",
+                "tag": "npm"
             },
             {
                 "id": 42,
@@ -539,6 +567,179 @@
     },
     "projects": [
         {
+            "id": 85,
+            "projectName": "Survey Nexus",
+            "description": "Survey Nexus is a versatile package designed to handle any survey or questionnaire, offering a wide range of features including question creation, validation, conditions, logic, and quotas. The core of the package is framework-agnostic, ensuring that it can be easily integrated with various platforms. The system is built with several design patterns, such as builder, factory, observer, and state patterns, to ensure flexibility and scalability. The package includes a UI component that integrates seamlessly with React.js, providing a user-friendly interface for creating and managing surveys. To efficiently manage the development and deployment of the package, we adopted a monorepo strategy and used Turborepo to streamline the process. This architecture allows for easy maintenance and scaling. I played a key role in the design and implementation of the system, contributing to both the architecture and integration of design patterns. Survey Nexus is a highly scalable solution that can meet the needs of companies worldwide, and I believe it has the potential to be a leading product in the survey management space.",
+            "summary": "A comprehensive solution designed to handle all aspects of surveys and questionnaires.it provides a flexible and scalable way to design and manage surveys. The package is built to meet the needs of companies worldwide, offering a powerful and easy-to-use tool for managing complex survey processes.",
+            "repositoryLink": "",
+            "liveDemoLink": "",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "Typescript",
+                    "tag": "ts"
+                },
+                {
+                    "name": "React.js",
+                    "tag": "react"
+                },
+                {
+                    "name": "Jotai",
+                    "tag": "jotai"
+                },
+                {
+                    "name": "Material-UI",
+                    "tag": "mui"
+                },
+                {
+                    "name": "Design Patterns",
+                    "tag": ""
+                },
+                {
+                    "name": "Monorepo",
+                    "tag": ""
+                },
+                {
+                    "name": "Turborepo",
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "id": 84,
+            "projectName": "Retail Audit",
+            "description": "Retail Audit is a comprehensive application designed to streamline the retail audit process for businesses requesting audits of their products. The system allows auditors to manage product audits by adding products, checking their barcodes, and creating code-books. Admins can configure general questions as well as specific questions related to individual products, enabling a flexible and tailored auditing experience. The app also features robust reporting capabilities, allowing admins to generate detailed audit reports and upload or download code-books as needed. My contributions to the project were centered around the front-end architecture design, ensuring the user interface followed global best practices to provide auditors with the best possible experience. I also played a significant role in the database design, ensuring efficient storage and retrieval of audit data. Additionally, I helped implement the back-end APIs to handle the communication between the front-end and database, making sure the entire system functioned seamlessly. The goal was to create a streamlined, intuitive auditing process that meets the needs of both auditors and admins while maintaining performance and scalability.",
+            "summary": "Retail Audit is an application developed for managing retail audits, allowing admins to handle product audits, create code-books, and generate detailed reports. Auditors can check product barcodes and answer general or product-specific questions.",
+            "repositoryLink": "",
+            "liveDemoLink": "",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "C#",
+                    "tag": "csharp"
+                },
+                {
+                    "name": "ASP.NET Core",
+                    "tag": "aspnetcore"
+                },
+                {
+                    "name": "EF Core",
+                    "tag": "efcore"
+                },
+                {
+                    "name": "Dapper",
+                    "tag": "dapper"
+                },
+                {
+                    "name": "SQL Server",
+                    "tag": "mssql"
+                },
+                {
+                    "name": "React.js",
+                    "tag": "react"
+                },
+                {
+                    "name": "Next.js",
+                    "tag": "next"
+                },
+                {
+                    "name": "Redux Toolkit",
+                    "tag": "redux"
+                },
+                {
+                    "name": "Tanstack Query",
+                    "tag": "tq"
+                },
+                {
+                    "name": "Material-UI",
+                    "tag": "mui"
+                },
+                {
+                    "name": "Fluent Validation",
+                    "tag": ""
+                },
+                {
+                    "name": "Mapster",
+                    "tag": ""
+                },
+                {
+                    "name": "Serilog",
+                    "tag": ""
+                },
+                {
+                    "name": "JWT",
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "id": 83,
+            "projectName": "CAPI",
+            "description": "CAPI is an application designed to facilitate the process of conducting surveys, with a strong focus on real-time voice recording, location tracking, and efficient survey management. Interviewers use the app to ask questions and capture responses, while the system tracks their location and records audio for future reference. The application also includes an admin panel where administrators can create surveys, set conditions and logic, manage quotas, and assign specific tasks to interviewers based on predefined criteria. As a key contributor, I played an important role in both the front-end and back-end development. I helped design the user interface to ensure a seamless experience for interviewers while focusing on optimizing the performance of features like location tracking and voice recording. On the back-end, I contributed to building the server-side logic to handle data efficiently, ensuring that all survey responses were stored securely and processed correctly. The application was designed to be intuitive for both the interviewers using it on the field and the admins managing the system, with a focus on reliability and performance at all stages of the process.",
+            "summary": "CAPI is an app for conducting surveys with features like voice recording, location tracking, and real-time survey management. Admins can create surveys, set conditions, and manage quotas. I contributed to both the front-end and back-end design and development, ensuring a smooth user experience and high performance.",
+            "repositoryLink": "",
+            "liveDemoLink": "",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "C#",
+                    "tag": "csharp"
+                },
+                {
+                    "name": "ASP.NET Core",
+                    "tag": "aspnetcore"
+                },
+                {
+                    "name": "EF Core",
+                    "tag": "efcore"
+                },
+                {
+                    "name": "Dapper",
+                    "tag": "dapper"
+                },
+                {
+                    "name": "SQL Server",
+                    "tag": "mssql"
+                },
+                {
+                    "name": "React.js",
+                    "tag": "react"
+                },
+                {
+                    "name": "Next.js",
+                    "tag": "next"
+                },
+                {
+                    "name": "Redux Toolkit",
+                    "tag": "redux"
+                },
+                {
+                    "name": "Tanstack Query",
+                    "tag": "tq"
+                },
+                {
+                    "name": "Material-UI",
+                    "tag": "mui"
+                },
+                {
+                    "name": "Fluent Validation",
+                    "tag": ""
+                },
+                {
+                    "name": "Mapster",
+                    "tag": ""
+                },
+                {
+                    "name": "Serilog",
+                    "tag": ""
+                },
+                {
+                    "name": "JWT",
+                    "tag": ""
+                }
+            ]
+        },
+        {
             "id": 82,
             "projectName": "Chabok Application",
             "description": "Chabok is an innovative application that connects and integrates diverse organizational systems into a unified platform, offering a streamlined experience for employees, managers, and executives. Whether it's submitting HR requests like leave applications and mission declarations or accessing financial information such as payslips, users no longer need multiple applications. Chabok consolidates all services in one place, tailored to meet the unique needs of each organization. The app's modular design supports dynamic system extensions, allowing organizations to request and implement new modules or connect to any existing systems seamlessly. This flexibility makes it suitable for organizations of any size, accommodating roles ranging from employees to CEOs and board members. As a key contributor, I led the design and implementation of modules, database architecture, and back-end functionality. We opted for SQL Server and Redis to handle data storage and caching, ensuring high performance and scalability. Implementing efficient data retrieval was a priority, so we developed flexible patterns that adapt to various system requirements, switching between database and back-end approaches as needed. The application was developed using ASP.NET Core 8 with EF Core, Dapper, FluentValidation, and MediatR, adhering to clean architecture principles and leveraging essential design patterns tailored to each module. My role involved crafting robust software architectures, enabling the application to meet diverse organizational demands while maintaining exceptional performance and reliability.",
@@ -659,6 +860,14 @@
                     "tag": "sass"
                 },
                 {
+                    "name": "SIP.js",
+                    "tag": "sip"
+                },
+                {
+                    "name": "VOIP",
+                    "tag": ""
+                },
+                {
                     "name": "Axios",
                     "tag": ""
                 },
@@ -696,6 +905,61 @@
                 },
                 {
                     "name": "Swiper",
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "id": 86,
+            "projectName": "Sales Service Inspection Dashboard",
+            "description": "Sales Service Inspection Dashboard is designed to deliver valuable insights from inspections conducted in the automotive industry. The application provides various charts and data to different roles, including companies and dealerships. Companies can view dealership performance in terms of selling strategies, processes, and industry comparison scores. Dealerships, on the other hand, can log into their accounts to access their inspection results, customer satisfaction ratings, and other performance metrics. The admin panel allows for user management, report uploads, and settings adjustments. As a product owner and back-end developer, I was responsible for designing the database and the front-end interface. I also implemented dynamic services in ASP.NET Core, utilizing stored procedures to handle database operations, ensuring seamless performance and a simple yet effective back-end experience.",
+            "summary": "Data-driven application for the automotive industry, providing detailed inspection results and comparisons for companies and dealerships. It offers various charts and insights into selling strategies, industry performance, and customer satisfaction.",
+            "repositoryLink": "",
+            "liveDemoLink": "",
+            "screenShotImage": "",
+            "technologies": [
+                {
+                    "name": "C#",
+                    "tag": "csharp"
+                },
+                {
+                    "name": "ASP.NET Core",
+                    "tag": "aspnetcore"
+                },
+                {
+                    "name": "Dapper",
+                    "tag": "dapper"
+                },
+                {
+                    "name": "SQL Server",
+                    "tag": "mssql"
+                },
+                {
+                    "name": "React.js",
+                    "tag": "react"
+                },
+                {
+                    "name": "Typescript",
+                    "tag": "ts"
+                },
+                {
+                    "name": "Tanstack Query",
+                    "tag": "tq"
+                },
+                {
+                    "name": "Material-UI",
+                    "tag": "mui"
+                },
+                {
+                    "name": "Auto-mapper",
+                    "tag": ""
+                },
+                {
+                    "name": "Serilog",
+                    "tag": ""
+                },
+                {
+                    "name": "JWT",
                     "tag": ""
                 }
             ]
@@ -1014,7 +1278,7 @@
         },
         {
             "id": 76,
-            "projectName": "Modeling A Domain Using DDD",
+            "projectName": "Modeling A Domain Using DDD Boilerplate",
             "description": "This project serves as a guide for modeling a domain using the principles of Domain-Driven Design (DDD). It is structured into two primary layers: the Domain layer, which encapsulates the core business logic and rules, and the Persistence layer, which handles data storage and retrieval. The implementation uses EF Core and SQL Server to manage the database interactions, ensuring efficient and reliable data access. By adhering to DDD concepts, this project emphasizes the importance of creating a domain model that reflects the business domain accurately. It demonstrates how to separate concerns, maintain a clear boundary between the domain and infrastructure, and design systems that are both flexible and aligned with business needs. This project is ideal for developers seeking to deepen their understanding of DDD and its practical implementation.",
             "summary": "A project demonstrating domain modeling using Domain-Driven Design (DDD), featuring two layers: Domain and Persistence. Built with EF Core and SQL Server, it showcases the practical application of DDD principles.",
             "repositoryLink": "https://github.com/Hadi-bakhshi/EShop-DDD",
