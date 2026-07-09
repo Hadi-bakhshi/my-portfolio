@@ -38,6 +38,8 @@ export function ContactBlock() {
             {contact.email}
           </a>
           <p className="mt-1 font-mono text-sm text-muted-foreground">{contact.phone}</p>
+          <p className="mt-2 font-mono text-xs text-muted-foreground">{contact.location}</p>
+          <p className="mt-1 font-mono text-xs text-primary">{contact.availability}</p>
         </div>
 
         <div className="flex items-center gap-4">

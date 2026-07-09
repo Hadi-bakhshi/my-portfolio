@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import type { CaseStudy } from "@/data/resume";
@@ -34,12 +35,21 @@ export function CaseStudyRow({ study, reversed = false }: CaseStudyRowProps) {
           ))}
         </div>
 
-        <a
-          href={study.href}
-          className="mt-5 inline-block font-mono text-sm text-primary underline-offset-4 hover:underline"
-        >
-          read more →
-        </a>
+        {study.href.startsWith("/") ? (
+          <Link
+            href={study.href}
+            className="mt-5 inline-block font-mono text-sm text-primary underline-offset-4 hover:underline"
+          >
+            read more →
+          </Link>
+        ) : (
+          <a
+            href={study.href}
+            className="mt-5 inline-block font-mono text-sm text-primary underline-offset-4 hover:underline"
+          >
+            read more →
+          </a>
+        )}
       </div>
 
       <Card className="flex aspect-video items-center justify-center overflow-hidden border-border/70 bg-card/80 p-0">

@@ -16,10 +16,31 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://hadibakhshi.dev";
+const title = "Hadi Bakhshi | Senior Software Engineer";
+const description =
+  "Backend-focused senior software engineer building production systems, RAG pipelines, and event-driven platforms. Open to remote opportunities in Europe.";
+
 export const metadata: Metadata = {
-  title: "Hadi Bakhshi | Senior Software Engineer",
-  description:
-    "Backend-focused software engineer building production systems, AI-enabled products, and reliable platforms at scale.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    title,
+    description,
+    siteName: "Hadi Bakhshi",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({

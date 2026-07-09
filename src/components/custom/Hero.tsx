@@ -7,6 +7,7 @@ import { Eyebrow } from "@/components/custom/Eyebrow";
 import { TopologyDiagram } from "@/components/custom/TopologyDiagram";
 import { Icon } from "../ui/icon";
 import Link from "next/link";
+import { contact } from "@/data/resume";
 
 export function Hero() {
   return (
@@ -17,8 +18,9 @@ export function Hero() {
 
           <div className="flex flex-wrap items-center gap-2">
             <Badge variant="secondary">Backend-first</Badge>
-            <Badge variant="outline">AI-enabled products</Badge>
-            <Badge variant="outline">Production systems</Badge>
+            <Badge variant="outline">Production RAG & LLM</Badge>
+            <Badge variant="outline">System design</Badge>
+            <Badge variant="outline">Open to opportunities</Badge>
           </div>
 
           <h1 className="max-w-3xl font-heading text-4xl leading-tight tracking-tight md:text-6xl">
@@ -28,8 +30,12 @@ export function Hero() {
           </h1>
 
           <p className="max-w-xl text-base text-muted-foreground md:text-lg">
-            I design and ship production systems that are dependable under load, practical for teams to evolve, and
-            strong enough to support real product growth.
+            Six years building and owning production systems — from database schema to deployment. System design, clean
+            architecture, and practical AI integration shipped to real users.
+          </p>
+
+          <p className="font-mono text-xs text-muted-foreground">
+            {contact.location} · {contact.availability}
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">
@@ -60,9 +66,9 @@ export function Hero() {
             </div>
           </div>
           <div className="mt-6 space-y-3 text-sm text-muted-foreground">
-            <p>• 6 years shipping production platforms and internal tooling</p>
-            <p>• Strong in backend architecture, event-driven systems, and RAG integration</p>
-            <p>• Comfortable across product, infrastructure, and delivery</p>
+            <p>• 6+ years shipping production platforms end to end</p>
+            <p>• Strong in backend architecture, event-driven systems, and RAG</p>
+            <p>• DevOps ownership across CI/CD, Docker Swarm, and incidents</p>
           </div>
         </Card>
       </div>

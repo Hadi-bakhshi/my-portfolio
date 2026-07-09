@@ -4,11 +4,11 @@ export interface Metric {
 }
 
 export const metrics: Metric[] = [
-  { value: "6 yrs", label: "shipping production systems" },
+  { value: "6+ yrs", label: "shipping production systems" },
   { value: "100+", label: "agencies on Reception Assistant" },
   { value: "2,600+", label: "dealership network" },
   { value: "~600", label: "daily FAQ operators" },
-  { value: "9", label: "ERP modules unified" },
+  { value: "3,000+", label: "users on Follow-Up ETL" },
 ];
 
 export interface StackGroup {
@@ -20,24 +20,77 @@ export const stackGroups: StackGroup[] = [
   { label: "Languages", items: ["C#", "TypeScript", "JavaScript"] },
   {
     label: "Backend",
-    items: ["ASP.NET Core", "NestJS", "RabbitMQ", "EF Core", "MediatR", "gRPC", "GraphQL"],
+    items: [
+      "ASP.NET Core",
+      "NestJS",
+      "EF Core",
+      "Dapper",
+      "MediatR",
+      "Node.js",
+      "Express.js",
+      "Prisma",
+      "SignalR",
+      "gRPC",
+      "GraphQL",
+      "RabbitMQ",
+    ],
   },
   {
     label: "Frontend",
-    items: ["Next.js", "React", "Zustand", "Tailwind CSS", "shadcn/ui"],
+    items: [
+      "Next.js",
+      "React",
+      "TanStack Query",
+      "Redux Toolkit",
+      "Zustand",
+      "Jotai",
+      "Tailwind CSS",
+      "Material-UI",
+      "shadcn/ui",
+      "React Hook Form",
+      "PWA",
+    ],
   },
   {
     label: "Databases",
-    items: ["SQL Server", "PostgreSQL", "Redis", "Qdrant", "pgvector"],
+    items: ["SQL Server", "PostgreSQL", "Redis", "MongoDB", "pgvector", "Qdrant"],
   },
-  { label: "AI & LLM", items: ["OpenAI API", "RAG", "Vector Search"] },
+  {
+    label: "AI & LLM",
+    items: ["OpenAI API", "RAG", "Vector Search", "LLM Integration", "n8n"],
+  },
   {
     label: "DevOps",
-    items: ["Docker Swarm", "GitLab CI/CD", "Nginx", "Prometheus", "Grafana"],
+    items: [
+      "Docker",
+      "Docker Swarm",
+      "GitLab CI/CD",
+      "GitHub Actions",
+      "Nginx",
+      "Linux",
+      "Prometheus",
+      "Grafana",
+      "ELK",
+      "OpenTelemetry",
+    ],
   },
   {
     label: "Architecture",
-    items: ["Event-Driven", "CQRS", "Saga", "Inbox/Outbox", "DDD"],
+    items: [
+      "Event-Driven",
+      "Microservices",
+      "Modular Monolith",
+      "Clean Architecture",
+      "Vertical Slice",
+      "DDD",
+      "CQRS",
+      "Saga",
+      "Inbox/Outbox",
+    ],
+  },
+  {
+    label: "Testing",
+    items: ["xUnit", "NetArchTest", "Jest", "Cypress"],
   },
 ];
 
@@ -56,37 +109,37 @@ export const caseStudies: CaseStudy[] = [
     index: "01",
     title: "Reception Assistant",
     oneLiner:
-      "An AI-native dealership platform that turns customer history into actionable service and satisfaction insights.",
+      "An AI-powered dealership platform for customer history, behavior analysis, and satisfaction insights — upgraded with LLM text generation, bulk analysis, and a self-trained model integration.",
     metric: "100+ agencies · 2,600+ dealership network",
-    stack: ["NestJS", "React", "RabbitMQ", "Redis"],
-    href: "#contact",
+    stack: ["NestJS", "React", "RabbitMQ", "Redis", "OpenAI"],
+    href: "/work/reception-assistant",
   },
   {
     index: "02",
     title: "RAG FAQ System",
     oneLiner:
-      "A production retrieval system for call-center operators that reduces repetitive questions and shortens response time.",
+      "A production retrieval system for call-center operators. Questions outside the knowledge base are categorized and routed to the right department automatically.",
     metric: "~600 daily users · saves ~1 day/week per person",
     stack: ["n8n", "pgvector", "OpenAI"],
-    href: "#contact",
+    href: "/work/rag-faq",
   },
   {
     index: "03",
     title: "Razeman",
     oneLiner:
-      "An internal ERP-style integration platform that unifies 9 organizational modules behind one dependable workflow.",
+      "A modular ERP-style integration platform connecting HR, finance, and operations into one workflow — replacing a fragmented landscape of disconnected systems across a holding company.",
     metric: "9 modules · thousands of users",
-    stack: ["ASP.NET Core", "SQL Server", "React"],
+    stack: ["ASP.NET Core", "SQL Server", "Redis", "React"],
     href: "#contact",
   },
   {
     index: "04",
-    title: "Reception Assistant ETL",
+    title: "Follow-Up ETL",
     oneLiner:
-      "An event-driven data pipeline with runtime-configurable mappings that kept operations flexible without redeployments.",
-    metric: "Zero-redeploy configuration changes",
-    stack: ["ASP.NET Core", "RabbitMQ", "CQRS"],
-    href: "#contact",
+      "An event-driven pipeline that replaced a legacy batch system, giving automotive industry users near-real-time access to call center data instead of waiting over a week.",
+    metric: "3,000+ users · week-long delay → near real time",
+    stack: ["ASP.NET Core", "RabbitMQ", "SQL Server"],
+    href: "/work/follow-up-etl",
   },
 ];
 
@@ -103,15 +156,14 @@ export const experience: ExperienceEntry[] = [
     role: "Senior Software Engineer",
     org: "ReLOOQ, Tehran",
     bullets: [
-      "Owned architecture, backend, database design, and frontend of Reception Assistant, used by 100+ agencies across a 2,600+ dealership network.",
-      "Built a production RAG-based FAQ system serving ~600 call center operators daily.",
-      "Led full-cycle design of Razeman, an ERP-style integration platform unifying 9 organizational modules.",
-      "Designed Reception Assistant ETL, an event-driven pipeline built on RabbitMQ with runtime-configurable field mappings.",
-      "Introduced a microservices architecture and migrated several services from SQL to NoSQL to support large-scale traffic.",
-      "Cut API response times by 15% by rewriting heavy database queries and refactoring key services.",
-      "Built a modular survey engine inside a Turborepo monorepo, producing reusable packages powering the CAPI, CATI, and CAWI apps.",
-      "Owned DevOps end-to-end — GitLab CI/CD and GitHub Actions pipelines deploying to Docker Swarm via Nexus.",
-      "Led architectural decisions, ran code reviews, and mentored 3–4 engineers.",
+      "Owned architecture, backend, database design, and frontend of Reception Assistant — an AI-powered dealership platform used by 100+ agencies across a 2,600+ network. Led a major upgrade with LLM text generation, redesigned UI/UX, bulk analysis, and self-trained model integration.",
+      "Built a production RAG-based FAQ system using n8n, pgvector, and OpenAI, serving ~600 call center operators daily and saving roughly a full workday per person per week.",
+      "Owned full-cycle design and development of Razeman, an ERP-style integration platform unifying 9 organizational modules for thousands of users across a holding company.",
+      "Designed and built Reception Assistant ETL — an event-driven pipeline with a runtime management API for field mappings and pipeline control without redeployments.",
+      "Contributed to Follow-Up ETL using ASP.NET Core, RabbitMQ, and SQL Server, reducing data latency from over a week to near real time for 3,000+ users.",
+      "Contributed to Survey Nexus, a framework-agnostic survey engine in a Turborepo monorepo, now powering CAPI and Retail Audit applications.",
+      "Owned DevOps across production, staging, and dev — GitLab CI/CD pipelines deploying to Docker Swarm via Nexus, server infrastructure, and production incident response.",
+      "Drove performance improvements through SQL indexing, query rewrites, caching strategies, and architectural refactoring. Mentored 3–4 engineers.",
     ],
   },
   {
@@ -119,11 +171,10 @@ export const experience: ExperienceEntry[] = [
     role: "Full-Stack Developer",
     org: "ReLOOQ, Tehran",
     bullets: [
-      "Owned ASI and SI inspection applications for ISQI — inspector workflows, barcode validation, automated report generation.",
-      "Owned multi-role inspection dashboards for dealership performance and CSI benchmarking.",
-      "Created an AI-powered Reception Assistant app to personalize dealership services and improve customer experience.",
-      "Reduced manual reporting time by 40% by building automated reporting and monitoring tools with Node.js and .NET.",
-      "Optimized SQL Server and PostgreSQL queries; championed TypeScript adoption across teams.",
+      "Owned ASI and SI inspection applications for ISQI — inspector workflows, barcode validation, configurable question sets, and automated report generation with Express.js, SQL Server, and React/Next.js.",
+      "Owned ASI and SI inspection dashboards — multi-role reporting platforms for dealership performance benchmarking and CSI score review, with admin panels for user and report management.",
+      "Contributed to motorcycle and machinery after-sales inspection dashboards with dynamic ECharts visualizations, built with React, Vite, and Redux Toolkit Query.",
+      "Optimized SQL Server and PostgreSQL queries, redesigned schemas for evolving requirements, and managed deployments on Linux with Nginx and SSL. Championed TypeScript adoption.",
     ],
   },
   {
@@ -131,10 +182,10 @@ export const experience: ExperienceEntry[] = [
     role: "Front-End Developer (Remote)",
     org: "US Team, Cary, NC",
     bullets: [
-      "Developed responsive React/TypeScript UI features, contributing to a 10% rise in user engagement.",
-      "Built shared component libraries, increasing development velocity by 15% across multiple projects.",
+      "Developed responsive React/TypeScript UI features, contributing to a 10% rise in user engagement metrics.",
+      "Built shared component libraries that increased development velocity by 15% across multiple projects.",
       "Improved page load times by 1.5 seconds through code splitting, lazy loading, and bundle optimization.",
-      "Worked closely with senior engineers to integrate frontend features with REST APIs and improve data flow.",
+      "Integrated frontend features with REST APIs and improved state management using Redux and Context API.",
     ],
   },
 ];
@@ -164,15 +215,16 @@ export const languages: LanguageEntry[] = [
 
 export const about = {
   paragraphs: [
-    "I’m a backend-focused software engineer with six years of experience building systems that stay reliable as products grow — from API design and data modeling to architecture decisions that pay off long after launch.",
-    "I enjoy the full lifecycle of products: shaping the architecture, shipping the core services, and making sure the platform is operationally sound. I’ve worked across AI-enabled products, internal platforms, and data-heavy workflows, and I’m most energized by work that couples strong engineering with real product impact.",
+    "Senior Software Engineer with over six years of experience building and owning production systems, with a strong backend focus. I take products from conception to production — owning database schema, service architecture, and deployment — and contribute at a high level across complex, multi-application platforms.",
+    "I work in system design, clean architecture, and code that holds up as products scale. Recently I've shipped practical AI integration to production: RAG pipelines and LLM-powered features used by real operators every day — not demos, but systems with routing, fallbacks, and operational constraints.",
   ],
   softSkills: ["Problem Solving", "System Design", "Leadership", "Communication", "Teamwork", "Learning Agility"],
   highlights: [
-    "System design and architecture",
-    "Backend-first product delivery",
-    "AI integrations and RAG systems",
-    "Operational reliability and DevOps",
+    "End-to-end product ownership",
+    "Event-driven pipelines & system design",
+    "Production RAG & LLM integration",
+    "DevOps & operational reliability",
+    "Mentoring 3–4 engineers",
   ],
 };
 
@@ -186,9 +238,15 @@ export interface MoreProject {
 
 export const moreProjects: MoreProject[] = [
   {
+    title: "Reception Assistant ETL",
+    summary:
+      "Event-driven data pipeline with a runtime management API — operators configure field mappings and control pipeline behavior without redeployments.",
+    stack: ["ASP.NET Core", "RabbitMQ", "CQRS", "SQL Server"],
+  },
+  {
     title: "Survey Nexus",
     summary:
-      "A framework-agnostic survey engine supporting question logic, conditions, and quotas, built with builder, factory, observer, and state patterns in a Turborepo monorepo.",
+      "A framework-agnostic survey engine supporting question logic, conditions, quotas, and SEC classification in a Turborepo monorepo.",
     stack: ["TypeScript", "React", "Jotai", "Turborepo"],
   },
   {
@@ -231,6 +289,8 @@ export const moreProjects: MoreProject[] = [
 export const contact = {
   email: "hadi-bakhshi@outlook.com",
   phone: "+98 930 137 7887",
+  location: "Tehran, Iran",
+  availability: "Open to remote opportunities in Europe · Open to relocation",
   github: "https://github.com/hadi-bakhshi",
   linkedin: "https://linkedin.com/in/hadi-bakhshi-aa203221b",
 };
