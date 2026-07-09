@@ -7,12 +7,17 @@ export function AboutSection() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-20">
       <Eyebrow>system.about</Eyebrow>
-      <h2 className="mt-3 font-heading text-2xl md:text-3xl">A bit about me.</h2>
+      <h2 className="mt-3 font-heading text-2xl md:text-3xl">
+        A bit about me.
+      </h2>
 
       <Card className="mt-8 border-border/70 bg-card/80 p-6 md:p-8">
         <div className="flex flex-col gap-4">
           {about.paragraphs.map((paragraph) => (
-            <p key={paragraph} className="text-base leading-7 text-muted-foreground">
+            <p
+              key={paragraph}
+              className="text-base leading-7 text-muted-foreground"
+            >
               {paragraph}
             </p>
           ))}

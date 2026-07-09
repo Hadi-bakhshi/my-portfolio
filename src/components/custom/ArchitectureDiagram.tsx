@@ -4,7 +4,11 @@ interface ArchitectureDiagramProps {
   diagram: CaseStudyDetail["diagram"];
 }
 
-function edgePath(nodes: CaseStudyDetail["diagram"]["nodes"], fromId: string, toId: string): string {
+function edgePath(
+  nodes: CaseStudyDetail["diagram"]["nodes"],
+  fromId: string,
+  toId: string,
+): string {
   const from = nodes.find((n) => n.id === fromId);
   const to = nodes.find((n) => n.id === toId);
   if (!from || !to) return "";
@@ -33,7 +37,14 @@ export function ArchitectureDiagram({ diagram }: ArchitectureDiagramProps) {
 
       {diagram.nodes.map((node) => (
         <g key={node.id}>
-          <circle cx={node.x} cy={node.y} r={24} fill="var(--card)" stroke="var(--primary)" strokeWidth={1.5} />
+          <circle
+            cx={node.x}
+            cy={node.y}
+            r={24}
+            fill="var(--card)"
+            stroke="var(--primary)"
+            strokeWidth={1.5}
+          />
           <text
             x={node.x}
             y={node.y + 4}

@@ -53,7 +53,14 @@ export const stackGroups: StackGroup[] = [
   },
   {
     label: "Databases",
-    items: ["SQL Server", "PostgreSQL", "Redis", "MongoDB", "pgvector", "Qdrant"],
+    items: [
+      "SQL Server",
+      "PostgreSQL",
+      "Redis",
+      "MongoDB",
+      "pgvector",
+      "Qdrant",
+    ],
   },
   {
     label: "AI & LLM",
@@ -218,7 +225,14 @@ export const about = {
     "Senior Software Engineer with over six years of experience building and owning production systems, with a strong backend focus. I take products from conception to production — owning database schema, service architecture, and deployment — and contribute at a high level across complex, multi-application platforms.",
     "I work in system design, clean architecture, and code that holds up as products scale. Recently I've shipped practical AI integration to production: RAG pipelines and LLM-powered features used by real operators every day — not demos, but systems with routing, fallbacks, and operational constraints.",
   ],
-  softSkills: ["Problem Solving", "System Design", "Leadership", "Communication", "Teamwork", "Learning Agility"],
+  softSkills: [
+    "Problem Solving",
+    "System Design",
+    "Leadership",
+    "Communication",
+    "Teamwork",
+    "Learning Agility",
+  ],
   highlights: [
     "End-to-end product ownership",
     "Event-driven pipelines & system design",
@@ -275,7 +289,8 @@ export const moreProjects: MoreProject[] = [
   },
   {
     title: "Motorcycle & Machinery Inspection Dashboards",
-    summary: "Dashboards presenting years of after-sales inspection data through dynamic ECharts visualizations.",
+    summary:
+      "Dashboards presenting years of after-sales inspection data through dynamic ECharts visualizations.",
     stack: ["React", "Vite", "Redux Toolkit Query", "ECharts"],
   },
   {

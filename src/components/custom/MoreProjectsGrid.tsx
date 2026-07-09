@@ -13,11 +13,16 @@ export function MoreProjectsGrid() {
   return (
     <div className="mt-16">
       <Eyebrow>system.archive</Eyebrow>
-      <h3 className="mt-2 font-heading text-lg text-muted-foreground">More projects.</h3>
+      <h3 className="mt-2 font-heading text-lg text-muted-foreground">
+        More projects.
+      </h3>
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {moreProjects.map((project) => (
-          <Card key={project.title} className="flex flex-col justify-between border-border/70 bg-card/80 p-4">
+          <Card
+            key={project.title}
+            className="flex flex-col justify-between border-border/70 bg-card/80 p-4"
+          >
             <div>
               <div className="flex items-start justify-between gap-2">
                 <h4 className="font-heading text-sm">{project.title}</h4>
@@ -46,7 +51,9 @@ export function MoreProjectsGrid() {
                   )}
                 </div>
               </div>
-              <p className="mt-2 text-xs text-muted-foreground">{project.summary}</p>
+              <p className="mt-2 text-xs text-muted-foreground">
+                {project.summary}
+              </p>
             </div>
 
             <div className="mt-4 flex flex-wrap gap-1.5">

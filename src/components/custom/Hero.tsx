@@ -30,8 +30,9 @@ export function Hero() {
           </h1>
 
           <p className="max-w-xl text-base text-muted-foreground md:text-lg">
-            Six years building and owning production systems — from database schema to deployment. System design, clean
-            architecture, and practical AI integration shipped to real users.
+            Six years building and owning production systems — from database
+            schema to deployment. System design, clean architecture, and
+            practical AI integration shipped to real users.
           </p>
 
           <p className="font-mono text-xs text-muted-foreground">
@@ -42,7 +43,11 @@ export function Hero() {
             <Link href="#work">
               <Button size="lg">
                 View work
-                <Icon icon={ArrowRight01Icon} size={18} data-icon="inline-end" />
+                <Icon
+                  icon={ArrowRight01Icon}
+                  size={18}
+                  data-icon="inline-end"
+                />
               </Button>
             </Link>
             <Link href="/resume.pdf" download>
@@ -57,17 +62,24 @@ export function Hero() {
         <Card className="border-primary/20 bg-gradient-to-br from-primary/10 via-background to-background p-6 shadow-sm">
           <div className="flex items-center gap-4">
             <Avatar className="size-14 border border-border">
-              <AvatarImage src="https://github.com/hadi-bakhshi.png" alt="Hadi Bakhshi" />
+              <AvatarImage
+                src="https://github.com/hadi-bakhshi.png"
+                alt="Hadi Bakhshi"
+              />
               <AvatarFallback>HB</AvatarFallback>
             </Avatar>
             <div>
               <p className="font-heading text-lg">Hadi Bakhshi</p>
-              <p className="text-sm text-muted-foreground">Building resilient systems and AI products</p>
+              <p className="text-sm text-muted-foreground">
+                Building resilient systems and AI products
+              </p>
             </div>
           </div>
           <div className="mt-6 space-y-3 text-sm text-muted-foreground">
             <p>• 6+ years shipping production platforms end to end</p>
-            <p>• Strong in backend architecture, event-driven systems, and RAG</p>
+            <p>
+              • Strong in backend architecture, event-driven systems, and RAG
+            </p>
             <p>• DevOps ownership across CI/CD, Docker Swarm, and incidents</p>
           </div>
         </Card>

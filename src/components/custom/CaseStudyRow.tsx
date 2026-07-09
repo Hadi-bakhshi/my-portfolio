@@ -22,7 +22,9 @@ export function CaseStudyRow({ study, reversed = false }: CaseStudyRowProps) {
       }`}
     >
       <div>
-        <span className="font-mono text-xs text-muted-foreground">{study.index}</span>
+        <span className="font-mono text-xs text-muted-foreground">
+          {study.index}
+        </span>
         <h3 className="mt-2 font-heading text-2xl">{study.title}</h3>
         <p className="mt-2 text-muted-foreground">{study.oneLiner}</p>
         <p className="mt-3 font-mono text-xs text-foreground">{study.metric}</p>
@@ -62,7 +64,9 @@ export function CaseStudyRow({ study, reversed = false }: CaseStudyRowProps) {
             className="h-full w-full rounded-lg object-cover"
           />
         ) : (
-          <span className="font-mono text-xs text-muted-foreground">{study.title} — media placeholder</span>
+          <span className="font-mono text-xs text-muted-foreground">
+            {study.title} — media placeholder
+          </span>
         )}
       </Card>
     </div>

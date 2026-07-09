@@ -11,7 +11,11 @@ export function WorkSection() {
 
       <div className="mt-4">
         {caseStudies.map((study, i) => (
-          <CaseStudyRow key={study.title} study={study} reversed={i % 2 === 1} />
+          <CaseStudyRow
+            key={study.title}
+            study={study}
+            reversed={i % 2 === 1}
+          />
         ))}
       </div>
 

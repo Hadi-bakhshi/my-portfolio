@@ -2,7 +2,11 @@
 
 import { useState } from "react";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Download01Icon, Menu01Icon, Cancel01Icon } from "@hugeicons/core-free-icons";
+import {
+  Download01Icon,
+  Menu01Icon,
+  Cancel01Icon,
+} from "@hugeicons/core-free-icons";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/custom/ThemeToggle";
 
@@ -36,9 +40,18 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button size="sm" variant="outline" nativeButton={false} render={<a href="/resume.pdf" download />}>
+          <Button
+            size="sm"
+            variant="outline"
+            nativeButton={false}
+            render={<a href="/resume.pdf" download />}
+          >
             <span className="hidden sm:inline">Resume</span>
-            <HugeiconsIcon icon={Download01Icon} size={16} data-icon="inline-end" />
+            <HugeiconsIcon
+              icon={Download01Icon}
+              size={16}
+              data-icon="inline-end"
+            />
           </Button>
           <ThemeToggle />
           <Button
@@ -49,7 +62,10 @@ export function Header() {
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
           >
-            <HugeiconsIcon icon={mobileOpen ? Cancel01Icon : Menu01Icon} size={20} />
+            <HugeiconsIcon
+              icon={mobileOpen ? Cancel01Icon : Menu01Icon}
+              size={20}
+            />
           </Button>
         </div>
       </div>

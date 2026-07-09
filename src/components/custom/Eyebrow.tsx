@@ -12,5 +12,14 @@ interface EyebrowProps {
  * a generic section tag.
  */
 export function Eyebrow({ children, className }: EyebrowProps) {
-  return <p className={cn("font-mono text-xs lowercase tracking-wide text-muted-foreground", className)}>{children}</p>;
+  return (
+    <p
+      className={cn(
+        "font-mono text-xs lowercase tracking-wide text-muted-foreground",
+        className,
+      )}
+    >
+      {children}
+    </p>
+  );
 }

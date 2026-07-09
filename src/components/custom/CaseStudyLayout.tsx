@@ -28,7 +28,9 @@ export function CaseStudyLayout({ study }: CaseStudyLayoutProps) {
         </Link>
 
         <Eyebrow>case study</Eyebrow>
-        <h1 className="mt-3 font-heading text-3xl tracking-tight md:text-4xl">{study.title}</h1>
+        <h1 className="mt-3 font-heading text-3xl tracking-tight md:text-4xl">
+          {study.title}
+        </h1>
         <p className="mt-3 text-lg text-muted-foreground">{study.oneLiner}</p>
         <p className="mt-2 font-mono text-xs text-foreground">{study.metric}</p>
 
@@ -41,7 +43,8 @@ export function CaseStudyLayout({ study }: CaseStudyLayoutProps) {
         </div>
 
         <p className="mt-6 text-sm text-muted-foreground">
-          <span className="font-medium text-foreground">My role:</span> {study.role}
+          <span className="font-medium text-foreground">My role:</span>{" "}
+          {study.role}
         </p>
 
         <Card className="mt-10 border-border/70 bg-card/80 p-6">
@@ -50,14 +53,19 @@ export function CaseStudyLayout({ study }: CaseStudyLayoutProps) {
 
         <section className="mt-12">
           <h2 className="font-heading text-xl">Problem</h2>
-          <p className="mt-3 leading-7 text-muted-foreground">{study.problem}</p>
+          <p className="mt-3 leading-7 text-muted-foreground">
+            {study.problem}
+          </p>
         </section>
 
         <section className="mt-10">
           <h2 className="font-heading text-xl">Constraints</h2>
           <ul className="mt-3 flex flex-col gap-2">
             {study.constraints.map((item) => (
-              <li key={item} className="text-sm leading-6 text-muted-foreground">
+              <li
+                key={item}
+                className="text-sm leading-6 text-muted-foreground"
+              >
                 <span className="mr-2 text-primary">—</span>
                 {item}
               </li>
@@ -67,16 +75,23 @@ export function CaseStudyLayout({ study }: CaseStudyLayoutProps) {
 
         <section className="mt-10">
           <h2 className="font-heading text-xl">Architecture</h2>
-          <p className="mt-3 leading-7 text-muted-foreground">{study.architecture}</p>
+          <p className="mt-3 leading-7 text-muted-foreground">
+            {study.architecture}
+          </p>
         </section>
 
         <section className="mt-10">
           <h2 className="font-heading text-xl">Key decisions</h2>
           <div className="mt-4 flex flex-col gap-4">
             {study.decisions.map((decision) => (
-              <Card key={decision.title} className="border-border/70 bg-card/80 p-5">
+              <Card
+                key={decision.title}
+                className="border-border/70 bg-card/80 p-5"
+              >
                 <h3 className="font-heading text-base">{decision.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{decision.body}</p>
+                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  {decision.body}
+                </p>
               </Card>
             ))}
           </div>
@@ -86,9 +101,14 @@ export function CaseStudyLayout({ study }: CaseStudyLayoutProps) {
           <h2 className="font-heading text-xl">Trade-offs</h2>
           <div className="mt-4 flex flex-col gap-4">
             {study.tradeoffs.map((item) => (
-              <Card key={item.title} className="border-border/70 bg-card/80 p-5">
+              <Card
+                key={item.title}
+                className="border-border/70 bg-card/80 p-5"
+              >
                 <h3 className="font-heading text-base">{item.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.body}</p>
+                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  {item.body}
+                </p>
               </Card>
             ))}
           </div>
@@ -98,7 +118,10 @@ export function CaseStudyLayout({ study }: CaseStudyLayoutProps) {
           <h2 className="font-heading text-xl">Impact</h2>
           <ul className="mt-3 flex flex-col gap-2">
             {study.impact.map((item) => (
-              <li key={item} className="text-sm leading-6 text-muted-foreground">
+              <li
+                key={item}
+                className="text-sm leading-6 text-muted-foreground"
+              >
                 <span className="mr-2 text-primary">—</span>
                 {item}
               </li>

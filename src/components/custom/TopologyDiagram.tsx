@@ -21,7 +21,10 @@ const nodes: DiagramNode[] = [
 
 // One continuous path (no repeated `M`) so a single animateMotion pass can
 // travel the whole route instead of jumping between disconnected segments.
-const routePath = "M 60 130 C 140 130, 180 70, 260 70 " + "C 340 70, 380 130, 460 130 " + "C 520 130, 560 70, 620 70";
+const routePath =
+  "M 60 130 C 140 130, 180 70, 260 70 " +
+  "C 340 70, 380 130, 460 130 " +
+  "C 520 130, 560 70, 620 70";
 
 /**
  * Hero signature element: a small topology diagram naming real systems from
@@ -51,11 +54,24 @@ export function TopologyDiagram() {
       role="img"
       aria-label="Diagram of messages flowing from Reception Assistant through the ETL pipeline and RabbitMQ to the Follow-Up service"
     >
-      <path id="route" d={routePath} fill="none" stroke="var(--border)" strokeWidth={1.5} />
+      <path
+        id="route"
+        d={routePath}
+        fill="none"
+        stroke="var(--border)"
+        strokeWidth={1.5}
+      />
 
       {nodes.map((node) => (
         <g key={node.id}>
-          <circle cx={node.x} cy={node.y} r={22} fill="var(--card)" stroke="var(--primary)" strokeWidth={1.5} />
+          <circle
+            cx={node.x}
+            cy={node.y}
+            r={22}
+            fill="var(--card)"
+            stroke="var(--primary)"
+            strokeWidth={1.5}
+          />
           <text
             x={node.x}
             y={node.y + 4}
@@ -64,7 +80,12 @@ export function TopologyDiagram() {
           >
             {node.label}
           </text>
-          <text x={node.x} y={node.y + 40} textAnchor="middle" className="fill-muted-foreground font-mono text-[9px]">
+          <text
+            x={node.x}
+            y={node.y + 40}
+            textAnchor="middle"
+            className="fill-muted-foreground font-mono text-[9px]"
+          >
             {node.sub}
           </text>
         </g>

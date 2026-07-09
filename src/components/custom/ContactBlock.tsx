@@ -11,7 +11,9 @@ export function ContactBlock() {
           <Eyebrow>education</Eyebrow>
           <p className="mt-2 font-heading text-lg">{education.degree}</p>
           <p className="text-sm text-muted-foreground">{education.school}</p>
-          <p className="font-mono text-xs text-muted-foreground">{education.dateRange}</p>
+          <p className="font-mono text-xs text-muted-foreground">
+            {education.dateRange}
+          </p>
         </div>
 
         <div>
@@ -30,16 +32,24 @@ export function ContactBlock() {
       <div className="mt-16 flex flex-col gap-6 border-t border-border pt-12 md:flex-row md:items-end md:justify-between">
         <div>
           <Eyebrow>system.contact</Eyebrow>
-          <h2 className="mt-3 font-heading text-3xl md:text-4xl">Let&apos;s talk.</h2>
+          <h2 className="mt-3 font-heading text-3xl md:text-4xl">
+            Let&apos;s talk.
+          </h2>
           <a
             href={`mailto:${contact.email}`}
             className="mt-2 inline-block font-mono text-lg text-primary underline-offset-4 hover:underline"
           >
             {contact.email}
           </a>
-          <p className="mt-1 font-mono text-sm text-muted-foreground">{contact.phone}</p>
-          <p className="mt-2 font-mono text-xs text-muted-foreground">{contact.location}</p>
-          <p className="mt-1 font-mono text-xs text-primary">{contact.availability}</p>
+          <p className="mt-1 font-mono text-sm text-muted-foreground">
+            {contact.phone}
+          </p>
+          <p className="mt-2 font-mono text-xs text-muted-foreground">
+            {contact.location}
+          </p>
+          <p className="mt-1 font-mono text-xs text-primary">
+            {contact.availability}
+          </p>
         </div>
 
         <div className="flex items-center gap-4">
@@ -64,7 +74,9 @@ export function ContactBlock() {
         </div>
       </div>
 
-      <p className="mt-12 font-mono text-xs text-muted-foreground">© {new Date().getFullYear()} Hadi Bakhshi</p>
+      <p className="mt-12 font-mono text-xs text-muted-foreground">
+        © {new Date().getFullYear()} Hadi Bakhshi
+      </p>
     </footer>
   );
 }

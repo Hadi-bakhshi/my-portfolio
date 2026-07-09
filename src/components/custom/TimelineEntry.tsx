@@ -16,12 +16,18 @@ interface TimelineEntryProps {
  * `@base-ui/react/collapsible` if you want its built-in animation/height
  * handling, but its exact sub-component API wasn't verified here.
  */
-export function TimelineEntry({ entry, defaultOpen = false }: TimelineEntryProps) {
+export function TimelineEntry({
+  entry,
+  defaultOpen = false,
+}: TimelineEntryProps) {
   const [open, setOpen] = useState(defaultOpen);
 
   return (
     <div className="relative border-l border-border pb-10 pl-6 last:pb-0">
-      <span aria-hidden="true" className="absolute -left-[5px] top-1.5 size-2.5 rounded-full bg-primary" />
+      <span
+        aria-hidden="true"
+        className="absolute -left-[5px] top-1.5 size-2.5 rounded-full bg-primary"
+      />
 
       <button
         type="button"
@@ -29,9 +35,12 @@ export function TimelineEntry({ entry, defaultOpen = false }: TimelineEntryProps
         aria-expanded={open}
         className="flex w-full flex-col items-start gap-1 text-left"
       >
-        <span className="font-mono text-xs text-muted-foreground">{entry.dateRange}</span>
+        <span className="font-mono text-xs text-muted-foreground">
+          {entry.dateRange}
+        </span>
         <span className="font-heading text-lg">
-          {entry.role} — <span className="text-muted-foreground">{entry.org}</span>
+          {entry.role} —{" "}
+          <span className="text-muted-foreground">{entry.org}</span>
         </span>
       </button>
 

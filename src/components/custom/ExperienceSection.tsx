@@ -6,7 +6,9 @@ export function ExperienceSection() {
   return (
     <section id="experience" className="mx-auto max-w-3xl px-6 py-20">
       <Eyebrow>system.experience</Eyebrow>
-      <h2 className="mt-3 font-heading text-2xl md:text-3xl">Where it happened.</h2>
+      <h2 className="mt-3 font-heading text-2xl md:text-3xl">
+        Where it happened.
+      </h2>
 
       <div className="mt-8">
         {experience.map((entry, i) => (

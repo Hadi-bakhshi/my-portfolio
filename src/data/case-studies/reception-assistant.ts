@@ -6,7 +6,15 @@ export const receptionAssistant: CaseStudyDetail = {
   oneLiner:
     "An AI-powered dealership platform for customer history, behavior analysis, and satisfaction insights at scale.",
   metric: "100+ agencies · 2,600+ dealership network",
-  stack: ["NestJS", "React", "RabbitMQ", "Redis", "SQL Server", "Prisma", "OpenAI"],
+  stack: [
+    "NestJS",
+    "React",
+    "RabbitMQ",
+    "Redis",
+    "SQL Server",
+    "Prisma",
+    "OpenAI",
+  ],
   role: "Owned architecture, backend, database design, and frontend",
   problem:
     "After-sales service centers across a large dealership network needed a unified way to track customer history, analyze behavior, and act on satisfaction signals. Data volume was high, agencies operated independently, and generic CRM tooling did not fit automotive workflows or Persian-language operator needs.",
