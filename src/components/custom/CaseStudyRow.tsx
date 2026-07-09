@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import type { CaseStudy } from "@/data/resume";
 
 interface CaseStudyRowProps {
@@ -26,9 +28,9 @@ export function CaseStudyRow({ study, reversed = false }: CaseStudyRowProps) {
 
         <div className="mt-4 flex flex-wrap gap-2">
           {study.stack.map((tech) => (
-            <span key={tech} className="rounded-full bg-secondary px-3 py-1 text-xs text-secondary-foreground">
+            <Badge key={tech} variant="secondary">
               {tech}
-            </span>
+            </Badge>
           ))}
         </div>
 
@@ -40,7 +42,7 @@ export function CaseStudyRow({ study, reversed = false }: CaseStudyRowProps) {
         </a>
       </div>
 
-      <div className="flex aspect-video items-center justify-center rounded-lg border border-dashed border-border bg-card">
+      <Card className="flex aspect-video items-center justify-center overflow-hidden border-border/70 bg-card/80 p-0">
         {study.image ? (
           <Image
             src={study.image}
@@ -52,7 +54,7 @@ export function CaseStudyRow({ study, reversed = false }: CaseStudyRowProps) {
         ) : (
           <span className="font-mono text-xs text-muted-foreground">{study.title} — media placeholder</span>
         )}
-      </div>
+      </Card>
     </div>
   );
 }

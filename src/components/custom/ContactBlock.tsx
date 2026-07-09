@@ -5,7 +5,7 @@ import { Eyebrow } from "@/components/custom/Eyebrow";
 
 export function ContactBlock() {
   return (
-    <footer className="mx-auto max-w-6xl px-6 py-20">
+    <footer id="contact" className="mx-auto max-w-6xl px-6 py-20">
       <div className="grid gap-10 border-t border-border pt-12 md:grid-cols-2">
         <div>
           <Eyebrow>education</Eyebrow>

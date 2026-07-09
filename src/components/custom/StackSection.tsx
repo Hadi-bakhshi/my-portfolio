@@ -4,7 +4,7 @@ import { StackGroup } from "@/components/custom/StackGroup";
 
 export function StackSection() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20">
+    <section id="stack" className="mx-auto max-w-6xl px-6 py-20">
       <Eyebrow>system.stack</Eyebrow>
       <h2 className="mt-3 font-heading text-2xl md:text-3xl">What it&apos;s built with.</h2>
 

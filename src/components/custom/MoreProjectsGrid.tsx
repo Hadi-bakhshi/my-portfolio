@@ -1,5 +1,7 @@
 import { HugeiconsIcon } from "@hugeicons/react";
 import { GithubIcon, LinkSquare02Icon } from "@hugeicons/core-free-icons";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { moreProjects } from "@/data/resume";
 import { Eyebrow } from "@/components/custom/Eyebrow";
 
@@ -15,10 +17,7 @@ export function MoreProjectsGrid() {
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {moreProjects.map((project) => (
-          <div
-            key={project.title}
-            className="flex flex-col justify-between rounded-lg border border-border bg-card p-4"
-          >
+          <Card key={project.title} className="flex flex-col justify-between border-border/70 bg-card/80 p-4">
             <div>
               <div className="flex items-start justify-between gap-2">
                 <h4 className="font-heading text-sm">{project.title}</h4>
@@ -52,15 +51,12 @@ export function MoreProjectsGrid() {
 
             <div className="mt-4 flex flex-wrap gap-1.5">
               {project.stack.map((tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full bg-secondary px-2 py-0.5 text-[10px] text-secondary-foreground"
-                >
+                <Badge key={tech} variant="outline" className="text-[10px]">
                   {tech}
-                </span>
+                </Badge>
               ))}
             </div>
-          </div>
+          </Card>
         ))}
       </div>
     </div>

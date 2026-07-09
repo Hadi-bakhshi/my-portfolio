@@ -4,10 +4,10 @@ export interface Metric {
 }
 
 export const metrics: Metric[] = [
+  { value: "6 yrs", label: "shipping production systems" },
   { value: "100+", label: "agencies on Reception Assistant" },
   { value: "2,600+", label: "dealership network" },
   { value: "~600", label: "daily FAQ operators" },
-  { value: "3,000+", label: "users on Follow-Up" },
   { value: "9", label: "ERP modules unified" },
 ];
 
@@ -55,34 +55,38 @@ export const caseStudies: CaseStudy[] = [
   {
     index: "01",
     title: "Reception Assistant",
-    oneLiner: "AI-powered dealership platform for customer history and satisfaction insights.",
+    oneLiner:
+      "An AI-native dealership platform that turns customer history into actionable service and satisfaction insights.",
     metric: "100+ agencies · 2,600+ dealership network",
     stack: ["NestJS", "React", "RabbitMQ", "Redis"],
-    href: "#",
+    href: "#contact",
   },
   {
     index: "02",
     title: "RAG FAQ System",
-    oneLiner: "Production retrieval-augmented FAQ system for call center operators.",
+    oneLiner:
+      "A production retrieval system for call-center operators that reduces repetitive questions and shortens response time.",
     metric: "~600 daily users · saves ~1 day/week per person",
     stack: ["n8n", "pgvector", "OpenAI"],
-    href: "#",
+    href: "#contact",
   },
   {
     index: "03",
     title: "Razeman",
-    oneLiner: "Internal ERP-style integration platform unifying organizational modules.",
+    oneLiner:
+      "An internal ERP-style integration platform that unifies 9 organizational modules behind one dependable workflow.",
     metric: "9 modules · thousands of users",
     stack: ["ASP.NET Core", "SQL Server", "React"],
-    href: "#",
+    href: "#contact",
   },
   {
     index: "04",
     title: "Reception Assistant ETL",
-    oneLiner: "Event-driven data pipeline with runtime-configurable field mappings.",
+    oneLiner:
+      "An event-driven data pipeline with runtime-configurable mappings that kept operations flexible without redeployments.",
     metric: "Zero-redeploy configuration changes",
     stack: ["ASP.NET Core", "RabbitMQ", "CQRS"],
-    href: "#",
+    href: "#contact",
   },
 ];
 
@@ -160,10 +164,16 @@ export const languages: LanguageEntry[] = [
 
 export const about = {
   paragraphs: [
-    "I'm a backend-focused software engineer with six years of experience building systems that hold up as products scale — API design, data modeling, and the architecture decisions that pay off well after launch.",
-    "I like staying close to the technical edge: new frameworks, architectural patterns, and problems that don't have an obvious answer yet. Alongside backend work, I've shipped full-stack features end-to-end, mentored engineers, and owned DevOps for the systems I build.",
+    "I’m a backend-focused software engineer with six years of experience building systems that stay reliable as products grow — from API design and data modeling to architecture decisions that pay off long after launch.",
+    "I enjoy the full lifecycle of products: shaping the architecture, shipping the core services, and making sure the platform is operationally sound. I’ve worked across AI-enabled products, internal platforms, and data-heavy workflows, and I’m most energized by work that couples strong engineering with real product impact.",
   ],
   softSkills: ["Problem Solving", "System Design", "Leadership", "Communication", "Teamwork", "Learning Agility"],
+  highlights: [
+    "System design and architecture",
+    "Backend-first product delivery",
+    "AI integrations and RAG systems",
+    "Operational reliability and DevOps",
+  ],
 };
 
 export interface MoreProject {
@@ -215,53 +225,6 @@ export const moreProjects: MoreProject[] = [
     summary:
       "Dynamic checklist-based vehicle inspection app with scheduling, automated PDF output, and reporting for the automotive industry.",
     stack: ["Next.js", "Node.js", "SQL Server", "TypeScript"],
-  },
-  {
-    title: "Mock API for Teaching",
-    summary:
-      "A minimal-API CRUD service built to teach advanced TanStack Query concepts, using the file system in place of a database.",
-    stack: ["ASP.NET Core", "Minimal API"],
-    repo: "https://github.com/Hadi-bakhshi/MockAPIsForTeaching",
-  },
-  {
-    title: "Domain Modeling with DDD",
-    summary:
-      "A Domain-Driven Design boilerplate separating Domain and Persistence layers, built with EF Core and SQL Server.",
-    stack: ["C#", "EF Core", "SQL Server", "DDD"],
-    repo: "https://github.com/Hadi-bakhshi/EShop-DDD",
-  },
-  {
-    title: "Experimental NestJS Back-end",
-    summary: "A user management module with authentication, role-based access control, and full e2e test coverage.",
-    stack: ["NestJS", "Prisma", "PostgreSQL", "Jest"],
-    repo: "https://github.com/Hadi-bakhshi/Experimental-NestJS-Project",
-  },
-  {
-    title: "Clean Architecture in NestJS",
-    summary:
-      "An open-source NestJS boilerplate implementing four-layer Clean Architecture with JWT auth, Swagger docs, and structured logging.",
-    stack: ["NestJS", "TypeORM", "Swagger", "Jest"],
-    repo: "https://github.com/Hadi-bakhshi/clean-arch-nestjs",
-  },
-  {
-    title: "Google Drive App",
-    summary: "Converts shared Google Drive links into direct download and embeddable media links.",
-    stack: ["JavaScript", "CSS"],
-    repo: "https://github.com/Hadi-bakhshi/Googledriveapp",
-    demo: "https://googledriveapp.vercel.app/",
-  },
-  {
-    title: "Expense Tracker",
-    summary: "Personal finance tracker with income/expense entry and interactive charts of spending patterns.",
-    stack: ["React", "TailwindCSS"],
-    repo: "https://github.com/Hadi-bakhshi/expense-tracker",
-  },
-  {
-    title: "Mahtisa Shop",
-    summary: "A full-stack MERN e-commerce demo with cart, account creation, and simulated checkout.",
-    stack: ["React", "Express", "MongoDB"],
-    repo: "https://github.com/Hadi-bakhshi/mahtisa-shopping",
-    demo: "https://mahtisa-shopping-center.vercel.app/",
   },
 ];
 

@@ -4,7 +4,7 @@ import { TimelineEntry } from "./TimelineEntry";
 
 export function ExperienceSection() {
   return (
-    <section className="mx-auto max-w-3xl px-6 py-20">
+    <section id="experience" className="mx-auto max-w-3xl px-6 py-20">
       <Eyebrow>system.experience</Eyebrow>
       <h2 className="mt-3 font-heading text-2xl md:text-3xl">Where it happened.</h2>
 
