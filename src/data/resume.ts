@@ -222,26 +222,19 @@ export const languages: LanguageEntry[] = [
 
 export const about = {
   paragraphs: [
-    "Senior Software Engineer with over six years of experience building and owning production systems, with a strong backend focus. I take products from conception to production — owning database schema, service architecture, and deployment — and contribute at a high level across complex, multi-application platforms.",
-    "I work in system design, clean architecture, and code that holds up as products scale. Recently I've shipped practical AI integration to production: RAG pipelines and LLM-powered features used by real operators every day — not demos, but systems with routing, fallbacks, and operational constraints.",
-  ],
-  softSkills: [
-    "Problem Solving",
-    "System Design",
-    "Leadership",
-    "Communication",
-    "Teamwork",
-    "Learning Agility",
-  ],
-  highlights: [
-    "End-to-end product ownership",
-    "Event-driven pipelines & system design",
-    "Production RAG & LLM integration",
-    "DevOps & operational reliability",
-    "Mentoring 3–4 engineers",
-  ],
-};
+    "The engineering problems that interest me most emerge after software reaches production. That often means defining service boundaries, designing data models, improving deployment workflows, or simplifying complex business processes.",
 
+    "My work typically spans the entire software lifecycle, from architecture and implementation to production operations and continuous improvement. I build systems that make future development easier for both the product and the team. More recently, that has included bringing AI into production through RAG pipelines and LLM-powered features designed with the same focus on reliability, observability, and operational resilience as any other production system."
+  ],
+
+  highlights: [
+    "Backend architecture",
+    "Event-driven systems",
+    "Production AI integration",
+    "Operational reliability",
+    "Technical leadership"
+  ]
+};
 export interface MoreProject {
   title: string;
   summary: string;
