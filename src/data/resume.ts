@@ -116,37 +116,37 @@ export const caseStudies: CaseStudy[] = [
     index: "01",
     title: "Reception Assistant",
     oneLiner:
-      "An AI-powered dealership platform for customer history, behavior analysis, and satisfaction insights — upgraded with LLM text generation, bulk analysis, and a self-trained model integration.",
-    metric: "100+ agencies · 2,600+ dealership network",
-    stack: ["NestJS", "React", "RabbitMQ", "Redis", "OpenAI"],
+      "An internal platform that helps dealership receptionists prepare for customer interactions using historical survey data, behavioral prediction, and AI-assisted insight — turning millions of call-center survey responses into decisions a receptionist can act on in under a minute.",
+    metric: "100 agencies · 2,600+ dealership network",
+    stack: ["NestJS", "React", "SQL Server", "Redis", "Docker"],
     href: "/work/reception-assistant",
   },
   {
     index: "02",
+    title: "Reception Assistant ETL",
+    oneLiner:
+      "A real-time, event-driven pipeline built this year to replace three years of manual data uploads — syncing call-center survey data into Reception Assistant through RabbitMQ topic exchange, inbox/outbox messaging, and a configurable survey-mapping engine.",
+    metric: "Millions of records · manual upload → real-time sync",
+    stack: ["ASP.NET Core", "RabbitMQ", "SQL Server", "MediatR", "Next.js"],
+    href: "/work/reception-assistant-etl",
+  },
+  {
+    index: "03",
     title: "RAG FAQ System",
     oneLiner:
-      "A production retrieval system for call-center operators. Questions outside the knowledge base are categorized and routed to the right department automatically.",
-    metric: "~600 daily users · saves ~1 day/week per person",
+      "A production retrieval system for call-center operators that answered routine internal questions instantly and routed anything outside the knowledge base to the right department automatically.",
+    metric: "600 daily operators · ~1 workday saved per person each week",
     stack: ["n8n", "pgvector", "OpenAI"],
     href: "/work/rag-faq",
   },
   {
-    index: "03",
+    index: "04",
     title: "Razeman",
     oneLiner:
-      "A modular ERP-style integration platform connecting HR, finance, and operations into one workflow — replacing a fragmented landscape of disconnected systems across a holding company.",
+      "An ERP-style internal platform unifying HR, finance, and operations into one modular system, replacing a fragmented landscape of disconnected tools across a holding company.",
     metric: "9 modules · thousands of users",
     stack: ["ASP.NET Core", "SQL Server", "Redis", "React"],
-    href: "#contact",
-  },
-  {
-    index: "04",
-    title: "Follow-Up ETL",
-    oneLiner:
-      "An event-driven pipeline that replaced a legacy batch system, giving automotive industry users near-real-time access to call center data instead of waiting over a week.",
-    metric: "3,000+ users · week-long delay → near real time",
-    stack: ["ASP.NET Core", "RabbitMQ", "SQL Server"],
-    href: "/work/follow-up-etl",
+    href: "/work/razeman",
   },
 ];
 

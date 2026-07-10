@@ -1,4 +1,4 @@
-import { followUpEtl } from "./follow-up-etl";
+import { receptionAssistantEtl } from "./receptionAssistantEtl";
 import { ragFaq } from "./rag-faq";
 import { receptionAssistant } from "./reception-assistant";
 import type { CaseStudyDetail } from "./types";
@@ -6,7 +6,7 @@ import type { CaseStudyDetail } from "./types";
 export const caseStudyDetails: CaseStudyDetail[] = [
   receptionAssistant,
   ragFaq,
-  followUpEtl,
+  receptionAssistantEtl,
 ];
 
 export const caseStudyBySlug: Record<string, CaseStudyDetail> =

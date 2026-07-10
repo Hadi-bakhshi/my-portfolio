@@ -7,7 +7,9 @@ export function WorkSection() {
   return (
     <section id="work" className="mx-auto max-w-6xl px-6 py-20">
       <Eyebrow>system.work</Eyebrow>
-      <h2 className="mt-3 font-heading text-2xl md:text-3xl">Selected work.</h2>
+      <h2 className="mt-3 font-heading text-2xl md:text-3xl">
+        Selected projects.
+      </h2>
 
       <div className="mt-4">
         {caseStudies.map((study, i) => (
