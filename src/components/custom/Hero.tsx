@@ -4,7 +4,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Eyebrow } from "@/components/custom/Eyebrow";
-import { TopologyDiagram } from "@/components/custom/TopologyDiagram";
 import { Icon } from "../ui/icon";
 import Link from "next/link";
 import { contact } from "@/data/resume";
@@ -17,22 +16,23 @@ export function Hero() {
           <Eyebrow>system.identity</Eyebrow>
 
           <div className="flex flex-wrap items-center gap-2">
-            <Badge variant="secondary">Backend-first</Badge>
-            <Badge variant="outline">Production RAG & LLM</Badge>
-            <Badge variant="outline">System design</Badge>
-            <Badge variant="outline">Open to opportunities</Badge>
+            <Badge variant="secondary">Backend Architecture</Badge>
+            <Badge variant="outline">AI Products</Badge>
+            <Badge variant="outline">Production Systems</Badge>
           </div>
 
-          <h1 className="max-w-3xl font-heading text-4xl leading-tight tracking-tight md:text-6xl">
-            Senior Software Engineer.
+          <h1 className="max-w-3xl font-heading text-4xl leading-tight tracking-tight md:text-4xl">
+            I build software that stays
             <br />
-            Backend-first. Product-minded.
+            reliable, maintainable, and scalable as complexity grows.
           </h1>
 
           <p className="max-w-xl text-base text-muted-foreground md:text-lg">
-            Six years building and owning production systems — from database
-            schema to deployment. System design, clean architecture, and
-            practical AI integration shipped to real users.
+            Over the past six years, I've designed, built, and operated
+            production software from database design to deployment. I take
+            ownership across the entire software lifecycle, focusing on backend
+            architecture, business-critical platforms, and practical AI features
+            that solve real business problems.
           </p>
 
           <p className="font-mono text-xs text-muted-foreground">
@@ -59,7 +59,7 @@ export function Hero() {
           </div>
         </div>
 
-        <Card className="border-primary/20 bg-gradient-to-br from-primary/10 via-background to-background p-6 shadow-sm">
+        <Card className="border-primary/20 bg-linear-to-br from-primary/10 via-background to-background p-6 shadow-sm">
           <div className="flex items-center gap-4">
             <Avatar className="size-14 border border-border">
               <AvatarImage
@@ -71,21 +71,21 @@ export function Hero() {
             <div>
               <p className="font-heading text-lg">Hadi Bakhshi</p>
               <p className="text-sm text-muted-foreground">
-                Building resilient systems and AI products
+                Turning complex business problems into maintainable software.
               </p>
             </div>
           </div>
-          <div className="mt-6 space-y-3 text-sm text-muted-foreground">
-            <p>• 6+ years shipping production platforms end to end</p>
-            <p>
-              • Strong in backend architecture, event-driven systems, and RAG
-            </p>
-            <p>• DevOps ownership across CI/CD, Docker Swarm, and incidents</p>
+          <h6 className="mt-1 text-sm font-medium text-muted-foreground">
+            What I optimize for:
+          </h6>
+          <div className="space-y-1 text-sm text-muted-foreground">
+            <p>• Long-term maintainability over short-term convenience</p>
+            <p>• Products that solve real business problems</p>
+            <p>• AI features people actually use</p>
+            <p>• Systems that make future development easier</p>
           </div>
         </Card>
       </div>
-
-      <TopologyDiagram />
     </section>
   );
 }
