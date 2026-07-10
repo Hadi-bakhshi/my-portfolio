@@ -21,7 +21,7 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-border bg-card">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <a href="/" className="font-mono text-sm font-medium">
           hadi.bakhshi
@@ -44,7 +44,9 @@ export function Header() {
             size="sm"
             variant="outline"
             nativeButton={false}
-            render={<a href="/resume.pdf" download />}
+            render={
+              <a href="/resume.pdf" aria-label="download resume" download />
+            }
           >
             <span className="hidden sm:inline">Resume</span>
             <HugeiconsIcon

@@ -59,7 +59,7 @@ export function Hero() {
           </div>
         </div>
 
-        <Card className="border-primary/20 bg-linear-to-br from-primary/10 via-background to-background p-6 shadow-sm">
+        <Card className="p-6 shadow-none ring-0 ring-transparent">
           <div className="flex items-center gap-4">
             <Avatar className="size-14 border border-border">
               <AvatarImage

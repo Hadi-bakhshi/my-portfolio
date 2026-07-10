@@ -4,11 +4,11 @@ export interface Metric {
 }
 
 export const metrics: Metric[] = [
-  { value: "6+ yrs", label: "shipping production systems" },
-  { value: "100+", label: "agencies on Reception Assistant" },
-  { value: "2,600+", label: "dealership network" },
-  { value: "~600", label: "daily FAQ operators" },
-  { value: "3,000+", label: "users on Follow-Up ETL" },
+  { value: "6+ Years", label: "Engineering production software" },
+  { value: "2,600+ Network", label: "Platform reach across dealership operations" },
+  { value: "~600 Callcenter Operators", label: "Daily support via production RAG workflows" },
+  { value: "9 Modules", label: "Unified in an internal ERP-style platform" },
+  { value: "End-to-End", label: "From architecture and data design to deployment" },
 ];
 
 export interface StackGroup {
