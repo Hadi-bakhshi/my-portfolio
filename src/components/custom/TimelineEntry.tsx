@@ -1,7 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
+import { ArrowDown01Icon, ArrowUp01Icon } from "@hugeicons/core-free-icons";
 import type { ExperienceEntry } from "@/data/resume";
+import { Icon } from "@/components/ui/icon";
+import { focusRingClass, metaTextClass } from "@/lib/layout";
+import { cn } from "@/lib/utils";
 
 interface TimelineEntryProps {
   entry: ExperienceEntry;
@@ -10,17 +14,13 @@ interface TimelineEntryProps {
 
 /**
  * One role on the timeline, expand/collapse for the full bullet list.
- *
- * NOTE: implemented with plain useState + aria attributes rather than
- * base-ui's Collapsible primitive — worth swapping in
- * `@base-ui/react/collapsible` if you want its built-in animation/height
- * handling, but its exact sub-component API wasn't verified here.
  */
 export function TimelineEntry({
   entry,
   defaultOpen = false,
 }: TimelineEntryProps) {
   const [open, setOpen] = useState(defaultOpen);
+  const panelId = useId();
 
   return (
     <div className="relative border-l border-border pb-10 pl-6 last:pb-0">
@@ -33,10 +33,28 @@ export function TimelineEntry({
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        className="flex w-full flex-col items-start gap-1 text-left"
+        aria-controls={panelId}
+        className={cn(
+          "group flex w-full flex-col items-start gap-1 rounded-md text-left transition-colors",
+          "hover:text-foreground",
+          focusRingClass,
+        )}
       >
-        <span className="font-mono text-xs text-muted-foreground">
-          {entry.dateRange}
+        <span className="flex w-full items-center justify-between gap-3">
+          <span className={metaTextClass}>{entry.dateRange}</span>
+          <span
+            className={cn(
+              metaTextClass,
+              "inline-flex items-center gap-1 opacity-60 transition-opacity group-hover:opacity-100",
+            )}
+          >
+            {open ? "collapse" : "expand"}
+            <Icon
+              icon={open ? ArrowUp01Icon : ArrowDown01Icon}
+              size={14}
+              aria-hidden
+            />
+          </span>
         </span>
         <span className="font-heading text-lg">
           {entry.role} —{" "}
@@ -44,15 +62,17 @@ export function TimelineEntry({
         </span>
       </button>
 
-      {open && (
-        <ul className="mt-3 flex flex-col gap-2">
-          {entry.bullets.map((bullet) => (
-            <li key={bullet} className="text-sm text-muted-foreground">
-              {bullet}
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul
+        id={panelId}
+        hidden={!open}
+        className="mt-3 flex flex-col gap-2"
+      >
+        {entry.bullets.map((bullet) => (
+          <li key={bullet} className="text-sm leading-6 text-muted-foreground">
+            {bullet}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

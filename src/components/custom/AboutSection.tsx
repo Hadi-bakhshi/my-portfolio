@@ -5,7 +5,7 @@ import { Eyebrow } from "@/components/custom/Eyebrow";
 
 export function AboutSection() {
   return (
-    <section id="about" className="mx-auto max-w-5xl px-6 py-20">
+    <section id="about" className="mx-auto max-w-6xl px-6 py-20">
       <Eyebrow>system.about</Eyebrow>
       <h2 className="mt-3 font-heading text-2xl md:text-3xl">
         Engineering approach.

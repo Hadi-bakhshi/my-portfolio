@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { HugeiconsIcon } from "@hugeicons/react";
+import { useId, useState } from "react";
 import {
   Download01Icon,
   Menu01Icon,
@@ -9,6 +8,11 @@ import {
 } from "@hugeicons/core-free-icons";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/custom/ThemeToggle";
+import { Icon } from "@/components/ui/icon";
+import { navLinkClass, shellClass } from "@/lib/layout";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/#about", label: "About" },
@@ -20,23 +24,31 @@ const navLinks = [
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const menuId = useId();
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-card">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <a href="/" className="font-mono text-sm font-medium">
-          hadi.bakhshi
-        </a>
+      <div className={cn(shellClass, "flex h-16 items-center justify-between")}>
+        <Link
+          href="/"
+          className={cn(
+            "rounded-sm font-mono text-sm font-medium",
+            "outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30",
+          )}
+        >
+          <Image
+            src={"/hLogo.png"}
+            alt="hadi-bakhshi-portfolio-icon"
+            width={38}
+            height={38}
+          />
+        </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-6 md:flex" aria-label="Primary">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="font-mono text-sm text-muted-foreground hover:text-foreground"
-            >
+            <Link key={link.href} href={link.href} className={navLinkClass}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -46,15 +58,11 @@ export function Header() {
             variant="outline"
             nativeButton={false}
             render={
-              <a href="/resume.pdf" aria-label="download resume" download />
+              <Link href="/resume.pdf" aria-label="Download resume" download />
             }
           >
             <span className="hidden sm:inline">Resume</span>
-            <HugeiconsIcon
-              icon={Download01Icon}
-              size={16}
-              data-icon="inline-end"
-            />
+            <Icon icon={Download01Icon} size={16} data-icon="inline-end" />
           </Button>
           <ThemeToggle />
           <Button
@@ -64,32 +72,34 @@ export function Header() {
             onClick={() => setMobileOpen((open) => !open)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
+            aria-controls={menuId}
           >
-            <HugeiconsIcon
-              icon={mobileOpen ? Cancel01Icon : Menu01Icon}
-              size={20}
-            />
+            <Icon icon={mobileOpen ? Cancel01Icon : Menu01Icon} size={20} />
           </Button>
         </div>
       </div>
 
-      {mobileOpen && (
-        <nav className="border-t border-border px-6 py-4 md:hidden">
+      {mobileOpen ? (
+        <nav
+          id={menuId}
+          className="border-t border-border px-6 py-4 md:hidden"
+          aria-label="Mobile"
+        >
           <ul className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
+                <Link
                   href={link.href}
-                  className="block font-mono text-sm text-muted-foreground hover:text-foreground"
+                  className={cn(navLinkClass, "block")}
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </nav>
-      )}
+      ) : null}
     </header>
   );
 }

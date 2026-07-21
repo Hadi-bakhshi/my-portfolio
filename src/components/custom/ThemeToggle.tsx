@@ -1,29 +1,23 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { HugeiconsIcon } from "@hugeicons/react";
 import { Moon02Icon, Sun03Icon } from "@hugeicons/core-free-icons";
 import { Button } from "@/components/ui/button";
+import { Icon } from "@/components/ui/icon";
 
 const STORAGE_KEY = "theme";
 
 /**
  * Toggles the `.dark` class already wired up in your Tailwind theme.
  * Persists choice to localStorage; falls back to system preference on
- * first load. This is a plain project file (not an in-chat artifact), so
- * localStorage is fine to use here.
+ * first load. Initial class is applied by a blocking script in root layout
+ * to avoid a light→dark flash.
  */
 export function ThemeToggle() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)",
-    ).matches;
-    const dark = stored ? stored === "dark" : prefersDark;
-    setIsDark(dark);
-    document.documentElement.classList.toggle("dark", dark);
+    setIsDark(document.documentElement.classList.contains("dark"));
   }, []);
 
   function toggle() {
@@ -40,7 +34,7 @@ export function ThemeToggle() {
       onClick={toggle}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
     >
-      <HugeiconsIcon icon={isDark ? Sun03Icon : Moon02Icon} size={18} />
+      <Icon icon={isDark ? Sun03Icon : Moon02Icon} size={18} />
     </Button>
   );
 }

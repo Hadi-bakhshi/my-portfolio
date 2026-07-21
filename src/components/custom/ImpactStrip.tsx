@@ -71,7 +71,7 @@ export function ImpactStrip() {
     >
       <Eyebrow>system.impact</Eyebrow>
 
-      <div className="mt-6 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-5">
+      <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-5">
         {metrics.map((metric, index) => (
           <MetricCard
             key={metric.label}
