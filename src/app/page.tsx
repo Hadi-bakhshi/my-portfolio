@@ -1,5 +1,6 @@
 import { AboutSection } from "@/components/custom/AboutSection";
 import { ContactBlock } from "@/components/custom/ContactBlock";
+import { EducationLanguagesSection } from "@/components/custom/EducationLanguagesSection";
 import { ExperienceSection } from "@/components/custom/ExperienceSection";
 import { Header } from "@/components/custom/Header";
 import { Hero } from "@/components/custom/Hero";
@@ -11,13 +12,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="">
+      <main>
         <Hero />
         <ImpactStrip />
         <AboutSection />
         <WorkSection />
         <StackSection />
         <ExperienceSection />
+        <EducationLanguagesSection />
       </main>
       <ContactBlock />
     </>

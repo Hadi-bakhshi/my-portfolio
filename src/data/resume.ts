@@ -302,5 +302,5 @@ export const contact = {
   intent:
     "Looking for senior backend / platform roles with European teams — remote-first or relocation. Usually reply within one business day.",
   github: "https://github.com/hadi-bakhshi",
-  linkedin: "https://linkedin.com/in/hadi-bakhshi-aa203221b",
+  linkedin: "https://www.linkedin.com/in/hadi-bakhshi-aa203221b",
 };
