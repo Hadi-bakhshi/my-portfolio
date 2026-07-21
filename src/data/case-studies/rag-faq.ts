@@ -53,17 +53,17 @@ export const ragFaq: CaseStudyDetail = {
     "Unknown questions automatically categorized and routed to owning departments",
   ],
   diagram: {
-    viewBox: "0 0 720 220",
+    viewBox: "0 0 720 320",
     ariaLabel:
       "Architecture diagram: operator query flows through n8n to pgvector retrieval, OpenAI generation, or department routing fallback",
     nodes: [
-      { id: "op", label: "Operator", sub: "~600 daily", x: 70, y: 110 },
-      { id: "n8n", label: "n8n", sub: "Orchestrator", x: 200, y: 110 },
+      { id: "op", label: "Operator", sub: "~600 daily", x: 70, y: 150 },
+      { id: "n8n", label: "n8n", sub: "Orchestrator", x: 200, y: 150 },
       { id: "embed", label: "Embed", sub: "OpenAI", x: 340, y: 50 },
-      { id: "vec", label: "Search", sub: "pgvector", x: 340, y: 110 },
-      { id: "llm", label: "LLM", sub: "Grounded answer", x: 340, y: 170 },
-      { id: "route", label: "Route", sub: "Dept fallback", x: 500, y: 170 },
-      { id: "dept", label: "Dept", sub: "HR · Fin · QA", x: 620, y: 170 },
+      { id: "vec", label: "Search", sub: "pgvector", x: 340, y: 150 },
+      { id: "llm", label: "LLM", sub: "Grounded answer", x: 340, y: 250 },
+      { id: "route", label: "Route", sub: "Dept fallback", x: 500, y: 250 },
+      { id: "dept", label: "Dept", sub: "HR · Fin · QA", x: 620, y: 250 },
     ],
     edges: [
       { from: "op", to: "n8n" },

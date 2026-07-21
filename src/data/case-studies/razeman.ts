@@ -53,18 +53,18 @@ export const razeman: CaseStudyDetail = {
     "Established reusable module patterns so later domains could join without redesigning the core",
   ],
   diagram: {
-    viewBox: "0 0 720 240",
+    viewBox: "0 0 720 320",
     ariaLabel:
       "Architecture diagram: users access Razeman through a React shell into a modular ASP.NET Core host with HR, finance, and operations modules backed by SQL Server and Redis",
     nodes: [
-      { id: "users", label: "Users", sub: "Thousands", x: 70, y: 120 },
-      { id: "ui", label: "React", sub: "Shared shell", x: 200, y: 120 },
-      { id: "host", label: "Host", sub: "ASP.NET Core", x: 340, y: 120 },
+      { id: "users", label: "Users", sub: "Thousands", x: 70, y: 150 },
+      { id: "ui", label: "React", sub: "Shared shell", x: 200, y: 150 },
+      { id: "host", label: "Host", sub: "ASP.NET Core", x: 340, y: 150 },
       { id: "hr", label: "HR", sub: "Module", x: 480, y: 50 },
-      { id: "fin", label: "Finance", sub: "Module", x: 480, y: 120 },
-      { id: "ops", label: "Ops", sub: "+6 modules", x: 480, y: 190 },
-      { id: "db", label: "SQL", sub: "System of record", x: 620, y: 90 },
-      { id: "cache", label: "Redis", sub: "Hot paths", x: 620, y: 170 },
+      { id: "fin", label: "Finance", sub: "Module", x: 480, y: 150 },
+      { id: "ops", label: "Ops", sub: "+6 modules", x: 480, y: 250 },
+      { id: "db", label: "SQL", sub: "System of record", x: 620, y: 100 },
+      { id: "cache", label: "Redis", sub: "Hot paths", x: 620, y: 200 },
     ],
     edges: [
       { from: "users", to: "ui" },

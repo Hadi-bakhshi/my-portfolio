@@ -53,18 +53,18 @@ export const receptionAssistant: CaseStudyDetail = {
     "Self-trained model integrated, containerized, and deployed to production with an ongoing feedback loop",
   ],
   diagram: {
-    viewBox: "0 0 720 220",
+    viewBox: "0 0 720 280",
     ariaLabel:
       "Architecture diagram: dealership visits generate CATI surveys that flow through Reception Assistant ETL into Reception Assistant, where receptionists access customer history, behavior analysis, and AI-assisted insight",
     nodes: [
-      { id: "dealers", label: "Dealers", sub: "100+ agencies", x: 60, y: 110 },
-      { id: "cati", label: "CATI", sub: "Call-center surveys", x: 190, y: 110 },
-      { id: "etl", label: "RA-ETL", sub: "Real-time sync", x: 320, y: 110 },
-      { id: "api", label: "API", sub: "NestJS", x: 450, y: 110 },
-      { id: "cache", label: "Cache", sub: "Redis", x: 450, y: 40 },
-      { id: "db", label: "DB", sub: "SQL Server", x: 450, y: 180 },
-      { id: "ai", label: "AI", sub: "LLM + Model", x: 580, y: 60 },
-      { id: "reception", label: "Receptionist", sub: "Live use", x: 650, y: 160 },
+      { id: "dealers", label: "Dealers", sub: "100+ agencies", x: 60, y: 140 },
+      { id: "cati", label: "CATI", sub: "Call-center surveys", x: 190, y: 140 },
+      { id: "etl", label: "RA-ETL", sub: "Real-time sync", x: 320, y: 140 },
+      { id: "api", label: "API", sub: "NestJS", x: 450, y: 140 },
+      { id: "cache", label: "Cache", sub: "Redis", x: 450, y: 50 },
+      { id: "db", label: "DB", sub: "SQL Server", x: 450, y: 230 },
+      { id: "ai", label: "AI", sub: "LLM + Model", x: 580, y: 70 },
+      { id: "reception", label: "Receptionist", sub: "Live use", x: 650, y: 180 },
     ],
     edges: [
       { from: "dealers", to: "cati" },
