@@ -299,6 +299,8 @@ export const contact = {
   phone: "+98 930 137 7887",
   location: "Tehran, Iran",
   availability: "Open to remote opportunities in Europe · Open to relocation",
+  intent:
+    "Looking for senior backend / platform roles with European teams — remote-first or relocation. Usually reply within one business day.",
   github: "https://github.com/hadi-bakhshi",
   linkedin: "https://linkedin.com/in/hadi-bakhshi-aa203221b",
 };

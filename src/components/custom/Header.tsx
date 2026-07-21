@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/custom/ThemeToggle";
 
 const navLinks = [
+  { href: "/#about", label: "About" },
   { href: "/#work", label: "Work" },
   { href: "/#stack", label: "Stack" },
   { href: "/#experience", label: "Experience" },

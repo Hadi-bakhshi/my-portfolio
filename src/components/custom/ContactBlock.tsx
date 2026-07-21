@@ -1,5 +1,6 @@
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Github01Icon, Linkedin02Icon } from "@hugeicons/core-free-icons";
+import { Button } from "@/components/ui/button";
 import { education, languages, contact } from "@/data/resume";
 import { Eyebrow } from "@/components/custom/Eyebrow";
 
@@ -30,26 +31,42 @@ export function ContactBlock() {
       </div>
 
       <div className="mt-16 flex flex-col gap-6 border-t border-border pt-12 md:flex-row md:items-end md:justify-between">
-        <div>
+        <div className="max-w-xl">
           <Eyebrow>system.contact</Eyebrow>
           <h2 className="mt-3 font-heading text-3xl md:text-4xl">
             Let&apos;s talk.
           </h2>
+          <p className="mt-3 text-sm leading-6 text-muted-foreground">
+            {contact.intent}
+          </p>
           <a
             href={`mailto:${contact.email}`}
-            className="mt-2 inline-block font-mono text-lg text-primary underline-offset-4 hover:underline"
+            className="mt-4 inline-block font-mono text-lg text-primary underline-offset-4 hover:underline"
           >
             {contact.email}
           </a>
-          <p className="mt-1 font-mono text-sm text-muted-foreground">
-            {contact.phone}
+          <p className="mt-3 font-mono text-xs text-muted-foreground">
+            {contact.location} · {contact.availability}
           </p>
-          <p className="mt-2 font-mono text-xs text-muted-foreground">
-            {contact.location}
-          </p>
-          <p className="mt-1 font-mono text-xs text-primary">
-            {contact.availability}
-          </p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Button
+              size="lg"
+              nativeButton={false}
+              render={<a href={`mailto:${contact.email}`} />}
+            >
+              Email me
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              nativeButton={false}
+              render={
+                <a href={contact.linkedin} target="_blank" rel="noreferrer" />
+              }
+            >
+              LinkedIn
+            </Button>
+          </div>
         </div>
 
         <div className="flex items-center gap-4">

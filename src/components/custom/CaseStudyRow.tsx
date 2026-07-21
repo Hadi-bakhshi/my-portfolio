@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import { ArchitectureDiagram } from "@/components/custom/ArchitectureDiagram";
+import { caseStudyBySlug } from "@/data/case-studies";
 import type { CaseStudy } from "@/data/resume";
 
 interface CaseStudyRowProps {
@@ -9,12 +11,20 @@ interface CaseStudyRowProps {
   reversed?: boolean;
 }
 
+function slugFromHref(href: string): string | null {
+  if (!href.startsWith("/work/")) return null;
+  return href.slice("/work/".length) || null;
+}
+
 /**
- * One case study, full-width, text and media alternating sides. Falls back to
- * a bordered placeholder panel when no `image` is provided in the data — swap
- * in real screenshots later without changing the layout.
+ * One case study, full-width, text and media alternating sides. Prefers a
+ * screenshot when `image` is set; otherwise renders the case-study architecture
+ * diagram so featured work never shows an empty placeholder.
  */
 export function CaseStudyRow({ study, reversed = false }: CaseStudyRowProps) {
+  const slug = slugFromHref(study.href);
+  const diagram = slug ? caseStudyBySlug[slug]?.diagram : undefined;
+
   return (
     <div
       className={`grid items-center gap-8 border-t border-border py-10 md:grid-cols-2 md:gap-12 ${
@@ -54,7 +64,7 @@ export function CaseStudyRow({ study, reversed = false }: CaseStudyRowProps) {
         )}
       </div>
 
-      <Card className="flex aspect-video items-center justify-center overflow-hidden border-border/70 bg-card/80 p-0">
+      <Card className="flex aspect-video items-center justify-center overflow-hidden border-border/70 bg-card/80 p-4">
         {study.image ? (
           <Image
             src={study.image}
@@ -63,6 +73,8 @@ export function CaseStudyRow({ study, reversed = false }: CaseStudyRowProps) {
             height={360}
             className="h-full w-full rounded-lg object-cover"
           />
+        ) : diagram ? (
+          <ArchitectureDiagram diagram={diagram} />
         ) : (
           <span className="font-mono text-xs text-muted-foreground">
             {study.title} — media placeholder
