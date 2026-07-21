@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hadi Bakhshi — Portfolio
 
-## Getting Started
+Personal portfolio site for [Hadi Bakhshi](https://hadibakhshi.dev), a senior software engineer focused on backend architecture, production systems, and practical AI features.
 
-First, run the development server:
+**Live:** [https://hadibakhshi.dev](https://hadibakhshi.dev)
+
+## Stack
+
+- [Next.js](https://nextjs.org/) 16 (App Router)
+- React 19 + TypeScript
+- Tailwind CSS 4
+- [shadcn/ui](https://ui.shadcn.com/) (Base UI primitives)
+- [Biome](https://biomejs.dev/) (lint + format)
+- [Hugeicons](https://hugeicons.com/)
+- [Motion](https://motion.dev/)
+
+## Getting started
+
+Requires [pnpm](https://pnpm.io/) (lockfile is `pnpm-lock.yaml`).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Script | Description |
+| --- | --- |
+| `pnpm dev` | Development server |
+| `pnpm build` | Production build |
+| `pnpm start` | Serve production build |
+| `pnpm lint` | Run Biome checks |
+| `pnpm format` | Format with Biome |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+```
+src/
+  app/                 # Routes, root layout, globals, sitemap
+  components/
+    custom/            # Page sections (Hero, Work, Contact, …)
+    ui/                # shadcn primitives
+  data/
+    resume.ts          # Profile, metrics, experience, stack, contact
+    case-studies/      # Case study copy + architecture diagrams
+  lib/                 # Shared utilities (layout tokens, cn)
+public/                # Static assets, resume.pdf, theme-init.js
+```
 
-To learn more about Next.js, take a look at the following resources:
+Home page sections live in `src/app/page.tsx`. Case studies are served at `/work/[slug]`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Editing content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Résumé-style copy** (hero, about, metrics, experience, stack, education, contact): [`src/data/resume.ts`](src/data/resume.ts)
+- **Case studies** (problem, architecture, decisions, diagram nodes): [`src/data/case-studies/`](src/data/case-studies/)
 
-## Deploy on Vercel
+After changing case study slugs or adding a study, ensure it is registered in the case-studies index and appears in the work section data.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Theme
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Light/dark mode is toggled in the header. A blocking script ([`public/theme-init.js`](public/theme-init.js)) runs early to apply the stored preference and avoid a flash of the wrong theme.
+
+## Deploy
+
+Standard Next.js app — deploy on [Vercel](https://vercel.com/) or any Node host that supports `next build` / `next start`.
