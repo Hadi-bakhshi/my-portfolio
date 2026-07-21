@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -51,6 +51,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
       className={cn(
         "h-full",
         "antialiased",
@@ -60,7 +62,11 @@ export default function RootLayout({
         inter.variable,
       )}
     >
-      <body className="min-h-full flex flex-col">
+      <head>
+        {/* Blocking sync script — prevents theme FOUC without dangerouslySetInnerHTML */}
+        <script src="/theme-init.js" />
+      </head>
+      <body className="flex min-h-full flex-col">
         <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>
